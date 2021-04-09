@@ -34,6 +34,7 @@ const ListaVisite: React.FC = () => {
             let temp_Prenotate: any =[]
 
             snapshot.forEach((doc : any) =>{
+                console.log(doc)
                 let item = doc.data();
                 let timestamp = Date.now()
 
