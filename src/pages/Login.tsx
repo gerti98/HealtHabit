@@ -21,16 +21,15 @@ import { AppContext, userInterface } from "../components/use-reducer-context";
 import "../theme/Login.css";
 import firebase from "firebase";
 
-;
+
+
+
 
 const Login: React.FC = () => {
   const { state, dispatch } = useContext(AppContext);
   const history = useHistory();
 
-  function getData(userInformation: userInterface) {
-    dispatch(userInformation);
-    history.push("/home");
-  }
+  
 
   return (
     <IonPage>

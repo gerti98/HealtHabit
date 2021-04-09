@@ -17,7 +17,6 @@ import { AppContext } from "../components/use-reducer-context";
 import '../components/firebase.js';
 import { db } from "../components/firebase.js";
 
-
 const Questionary: React.FC = () => {
   const [eta, setEta] = useState();
   const [sex, setSex] = useState();
@@ -33,6 +32,21 @@ const Questionary: React.FC = () => {
   const [isCeliaco, setIsCeliaco] = useState();
   const [gravidanza, setGravidanza] = useState();
   const [pillola, setPillola] = useState();
+
+	const array_questions_1 = [
+    ["Data di nascita", "age", setEta],
+    ["Sesso", "sex", setSex],
+    ["Altezza", "height", setHeight],
+    ["Peso", "weight", setWeight],
+    ["Regione", "region", setRegion],
+    ["Frequenza fumo", "freq", setFumo],
+    ["Frequenza uso sostanze stupefacenti", "freq", setDroga],
+    ["Frequenza uso alcolici", "freq", setAlcol],
+    ["Frequenza stile di vita", "freq", setStileVita],
+    ["Diabete in famiglia", "bool", setFamilyDiabete],
+    ["Tumori in famiglia", "bool", setFamilyTumore],
+    ["Sei celiaco/a", "bool", setIsCeliaco],
+  ];
 	
 
 	const sendDataToFirebase = () => {
@@ -79,6 +93,7 @@ const Questionary: React.FC = () => {
 	}
 
   return (
+
     <IonPage>
       <IonHeader>
         <IonToolbar>
@@ -86,81 +101,78 @@ const Questionary: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
+	
         <IonSlides pager={true} className="fullscreen">
+					{array_questions_1.map((i:any) => {
+						return (
+						<BasicSlideQuestion
+							question={i[0]}
+							type={i[1]}
+							hook={i[2]}
+						/>
+					)})}
+					{/*
           <BasicSlideQuestion
-            title={"Domanda 1"}
             question={"Data di nascita"}
             type={"age"}
             hook={setEta}
           />
           <BasicSlideQuestion
-            title={"Domanda 2"}
             question={"Sesso"}
             type={"sex"}
             hook={setSex}
           />
           <BasicSlideQuestion
-            title={"Domanda 3"}
             question={"Altezza"}
             type={"height"}
             hook={setHeight}
           />
           <BasicSlideQuestion
-            title={"Domanda 4"}
             question={"Peso"}
             type={"weight"}
             hook={setWeight}
           />
           <BasicSlideQuestion
-            title={"Domanda 5"}
             question={"Regione"}
             type={"region"}
             hook={setRegion}
           />
           <BasicSlideQuestion
-            title={"Domanda 6"}
             question={"Frequenza fumo"}
             type={"freq"}
             hook={setFumo}
           />
           <BasicSlideQuestion
-            title={"Domanda 7"}
             question={"Frequenza uso sostanze stupefacenti"}
             type={"freq"}
             hook={setDroga}
           />
           <BasicSlideQuestion
-            title={"Domanda 8"}
             question={"Frequenza uso alcolici"}
             type={"freq"}
             hook={setAlcol}
           />
           <BasicSlideQuestion
-            title={"Domanda 9"}
             question={"Frequenza stile di vita"}
             type={"freq"}
             hook={setStileVita}
           />
           <BasicSlideQuestion
-            title={"Domanda 10"}
             question={"Diabete in famiglia"}
             type={"bool"}
             hook={setFamilyDiabete}
           />
           <BasicSlideQuestion
-            title={"Domanda 11"}
             question={"Tumori in famiglia"}
             type={"bool"}
             hook={setFamilyTumore}
           />
           <BasicSlideQuestion
-            title={"Domanda 12"}
             question={"Sei celiaco/a"}
             type={"bool"}
             hook={setIsCeliaco}
           />
           <BasicSlideQuestion
-            title={"Domanda 13"}
             question={"Sei mai stato in gravidanza"}
             type={"bool"}
             hook={setGravidanza}

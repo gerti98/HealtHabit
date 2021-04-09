@@ -22,9 +22,9 @@ import ExploreContainer from "./ExploreContainer";
 import { AppContext } from "./use-reducer-context";
 import { db } from "./firebase";
 import "./firebase.js";
+import "../theme/BasicSlideQuestion.css";
 
 interface obj {
-  title: string;
   question: string;
   type: string;
   hook: Function;
@@ -40,7 +40,10 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook }) => {
     case "bool":
       console.log("bool");
       return (
-        <IonSegment scrollable onIonChange={(e) => hook((e.detail.value) == "true")}>
+        <IonSegment
+          scrollable
+          onIonChange={(e) => hook(e.detail.value == "true")}
+        >
           <IonSegmentButton value="true">
             <IonLabel>T</IonLabel>
           </IonSegmentButton>
@@ -51,7 +54,10 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook }) => {
       );
     case "freq":
       return (
-        <IonSegment scrollable onIonChange={(e) => hook(Number(e.detail.value))}>
+        <IonSegment
+          scrollable
+          onIonChange={(e) => hook(Number(e.detail.value))}
+        >
           <IonSegmentButton value="1">
             <IonLabel>1</IonLabel>
           </IonSegmentButton>
@@ -136,19 +142,21 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook }) => {
  *  "region": Choicebox
  *  "sex": double choice
  * */
-const BasicSlideQuestion: React.FC<obj> = ({ title, question, type, hook}) => {
-  
+const BasicSlideQuestion: React.FC<obj> = ({ question, type, hook }) => {
   return (
     <IonSlide>
       <IonGrid>
-        <IonRow>
-          <IonCol>{title}</IonCol>
-        </IonRow>
-        <IonRow>
+        <IonRow >
           <IonCol>{question}</IonCol>
         </IonRow>
         <IonRow>
-          <GetQuestionFromType type={type} hook={hook} />
+          <IonCol size="10" offset="2">
+          </IonCol>
+        </IonRow>
+        <IonRow>
+          <IonCol size="10" offset="1">
+            <GetQuestionFromType type={type} hook={hook} />
+          </IonCol>
         </IonRow>
       </IonGrid>
     </IonSlide>
