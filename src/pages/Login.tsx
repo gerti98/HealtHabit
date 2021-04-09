@@ -4,7 +4,7 @@ import { useHistory } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
 import GoogleBtn from '../components/GoogleBtn';
 import { AppContext, userInterface } from '../components/use-reducer-context';
-import './Login.css';
+import '../theme/Login.css';
 
 
 const Login: React.FC = () => {

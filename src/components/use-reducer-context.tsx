@@ -7,6 +7,8 @@ export interface userInterface {
     img: string,
     isLoggin: boolean
 }
+
+
 export type Actions = "login";
 
 interface MyContext {
