@@ -1,34 +1,22 @@
-import React, { Component } from 'react'
+import React, { Component, useContext, useState } from 'react'
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
-import { Route } from 'react-router';
+import { Route, useHistory } from 'react-router';
 import { Redirect} from 'react-router-dom';
 
 import "@codetrix-studio/capacitor-google-auth";
 import { Plugins } from '@capacitor/core';
-import { IonButton } from '@ionic/react';
+import { IonButton, IonLoading } from '@ionic/react';
+import { AppContext, userInterface } from './use-reducer-context';
 
 const CLIENT_ID = '207671042231-kp7pcf9da83jgfaf76rdltqoe1bb1l6s.apps.googleusercontent.com';
 
 
-class GoogleBtn extends Component {
-   constructor(props) {
-    super(props);
+const GoogleBtn: React.FC = () => {
 
-    this.state = {
-      isLogined: false,
-      accessToken: '',
-      nome: '',
-      cognome: '',
-      img: '', 
-      email:''
-    };
+  const [busy, setBusy] = useState<boolean>(false);
+  const { state, dispatch } = useContext(AppContext);
+  const history = useHistory();
 
-    this.login = this.login.bind(this);
-    this.handleLoginFailure = this.handleLoginFailure.bind(this);
-    this.logout = this.logout.bind(this); 
-
-    this.handleLogoutFailure = this.handleLogoutFailure.bind(this);
-  }
   // login (response) {
   //   // console.log(response)
     
@@ -47,34 +35,27 @@ class GoogleBtn extends Component {
 
   // }
 
-  async login() {
+  async function login() {
+    setBusy(true);
     const result = await Plugins.GoogleAuth.signIn();
+    setBusy(false);
     console.info('result', result);
     if (result) {
-      this.props.handleLogin({type: 'login', nome: result.name, email: result.email, img: result.imageUrl, isLoggin: true});
+      dispatch({type: 'login', nome: result.name, email: result.email, img: result.imageUrl, isLoggin: true});
+      history.push("/home");
     }
     }
 
-  logout (response) {
-    this.setState(state => ({
-      isLogined: false,
-      accessToken: '',
-      nome: '',
-      email: '',
-      img: ''
-    }));
-    
-  }
 
-  handleLoginFailure (response) {
-    alert('Failed to log in', response.error)
-  }
+  // function  handleLoginFailure (response: any) {
+  //   alert('Failed to log in', response.error)
+  // }
 
-  handleLogoutFailure (response) {
-    alert('Failed to log out')
-  }
+  // function handleLogoutFailure (response :any) {
+  //   alert('Failed to log out')
+  // }
 
-  render() {
+
     return (
     <div>
       {/* { this.state.isLogined ?
@@ -94,12 +75,13 @@ class GoogleBtn extends Component {
         />
 
       } */}
-      <IonButton className="login-button" onClick={() => this.login()} expand="block" fill="solid" color="danger">
+      <IonLoading message="Attendi..." duration={0} isOpen={busy}/>
+      <IonButton className="login-button" onClick={() => login()} expand="block" fill="solid" color="danger">
             Login with Google
       </IonButton>
     </div>
     )
-  }
+  
 }
 
 export default GoogleBtn;

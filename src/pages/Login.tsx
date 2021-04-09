@@ -91,7 +91,7 @@ const Login: React.FC = () => {
             <IonGrid>
               <IonRow>
                 <IonCol>
-                  <GoogleBtn handleLogin={getData} />
+                  <GoogleBtn />
                 </IonCol>
               </IonRow>
             </IonGrid>
