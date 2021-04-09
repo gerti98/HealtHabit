@@ -19,7 +19,7 @@ class GoogleBtn extends Component {
       accessToken: '',
       nome: '',
       cognome: '',
-      img: '',
+      img: '', 
       email:''
     };
 
