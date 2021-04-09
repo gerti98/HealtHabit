@@ -14,13 +14,14 @@ class Notifiche {
 
       await LocalNotifications.schedule({
         notifications: [{
-          title: 'Triumph30',
-          body: "prova prova prova",
+          title: 'Ah Fantastica',
+          body: "Aho mica t'ho detto che fai caa",
           id: 554,
-          schedule: {
-            every: "second",
-            count: 10
-          }
+          schedule: { at: new Date(Date.now() + 1000 * 5) },
+          sound: "bell",
+        
+          actionTypeId: "",
+          extra: null
         }]
       });
     } catch (error) {

@@ -3,6 +3,7 @@ import ExploreContainer from '../components/ExploreContainer';
 import {heart} from 'ionicons/icons'
 
 import HeaderLogo from '../components/HeaderLogo';
+import Notifiche from '../components/Notifiche';
 
 
 const Tab1: React.FC = () => {
@@ -13,6 +14,7 @@ const Tab1: React.FC = () => {
         Tab 1
         <IonButton href="login">APRI LOGIN PAGE</IonButton>
         <IonButton href="/home/questionary">APRI DEMO QUESTIONARIO</IonButton>
+        <IonButton onClick={() => Notifiche.schedule()}>Notifiche</IonButton>
       </IonContent>
     </IonPage>
   );
