@@ -13,12 +13,16 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
+import BasicSlide from "../components/BasicSlide";
 import React, { useContext } from "react";
 import { useHistory } from "react-router";
 import ExploreContainer from "../components/ExploreContainer";
 import GoogleBtn from "../components/GoogleBtn";
 import { AppContext, userInterface } from "../components/use-reducer-context";
 import "../theme/Login.css";
+import firebase from "firebase";
+
+;
 
 const Login: React.FC = () => {
   const { state, dispatch } = useContext(AppContext);
@@ -38,6 +42,7 @@ const Login: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <IonSlides pager={true} className="fullscreen">
+          <BasicSlide title={"Ciaosss"}/>
           <IonSlide>
             <IonGrid>
               <IonRow>
@@ -62,15 +67,12 @@ const Login: React.FC = () => {
                     <IonSegmentButton>
                       <IonLabel>1</IonLabel>
                     </IonSegmentButton>
-
                     <IonSegmentButton>
                       <IonLabel>2</IonLabel>
                     </IonSegmentButton>
-
                     <IonSegmentButton>
                       <IonLabel>3</IonLabel>
                     </IonSegmentButton>
-
                     <IonSegmentButton>
                       <IonLabel>4</IonLabel>
                     </IonSegmentButton>
@@ -103,3 +105,5 @@ const Login: React.FC = () => {
 };
 
 export default Login;
+
+
