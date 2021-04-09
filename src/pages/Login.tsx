@@ -1,22 +1,31 @@
-import { IonCol, IonContent, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
-import { useContext } from 'react';
-import { useHistory } from 'react-router';
-import ExploreContainer from '../components/ExploreContainer';
-import GoogleBtn from '../components/GoogleBtn';
-import { AppContext, userInterface } from '../components/use-reducer-context';
-import '../theme/Login.css';
-
+import {
+  IonCol,
+  IonContent,
+  IonGrid,
+  IonHeader,
+  IonPage,
+  IonRow,
+  IonSlide,
+  IonSlides,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
+import React, { useContext } from "react";
+import { useHistory } from "react-router";
+import ExploreContainer from "../components/ExploreContainer";
+import GoogleBtn from "../components/GoogleBtn";
+import { AppContext, userInterface } from "../components/use-reducer-context";
+import "../theme/Login.css";
 
 const Login: React.FC = () => {
-
-  const {state, dispatch} = useContext(AppContext);
+  const { state, dispatch } = useContext(AppContext);
   const history = useHistory();
 
-  function getData(userInformation:userInterface){
+  function getData(userInformation: userInterface) {
     dispatch(userInformation);
-    history.push('/home');
+    history.push("/home");
   }
-  
+
   return (
     <IonPage>
       <IonHeader>
@@ -25,18 +34,43 @@ const Login: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <IonGrid>
-            <IonRow>
+        <IonSlides pager={true}  className="fullscreen">
+          <IonSlide>
+            <IonGrid >
+              <IonRow>
+              <IonCol>
+                Pagina 1
+              </IonCol>
+              </IonRow>
+              <IonRow>
+              <IonCol>
+                Bella descrizione
+              </IonCol>
+              </IonRow>  
+            </IonGrid>
+          </IonSlide>
+          <IonSlide>
+            
+            <IonTitle>Pagina 2</IonTitle>
+          </IonSlide>
+          <IonSlide>
+            <IonTitle>Pagina 3</IonTitle>
+          </IonSlide>
+          <IonSlide>
+            <IonHeader collapse="condense">
+              <IonToolbar>
+                <IonTitle size="large">Blank</IonTitle>
+              </IonToolbar>
+            </IonHeader>
+            <IonGrid>
+              <IonRow>
                 <IonCol>
-                    <GoogleBtn handleLogin={getData}/>
+                  <GoogleBtn handleLogin={getData} />
                 </IonCol>
-            </IonRow>
-        </IonGrid>
+              </IonRow>
+            </IonGrid>
+          </IonSlide>
+        </IonSlides>
       </IonContent>
     </IonPage>
   );
