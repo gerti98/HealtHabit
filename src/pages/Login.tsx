@@ -42,7 +42,6 @@ const Login: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <IonSlides pager={true} className="fullscreen">
-          <BasicSlide title={"Ciaosss"}/>
           <IonSlide>
             <IonGrid>
               <IonRow>
