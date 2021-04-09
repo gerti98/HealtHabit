@@ -33,7 +33,7 @@ const Login: React.FC = () => {
         <IonGrid>
             <IonRow>
                 <IonCol>
-                    <GoogleBtn handleLogin={getData}/> 
+                    <GoogleBtn handleLogin={getData}/>
                 </IonCol>
             </IonRow>
         </IonGrid>
