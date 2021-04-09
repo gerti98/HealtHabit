@@ -3,7 +3,6 @@ import { useContext } from 'react';
 import { useHistory } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
 import { AppContext } from '../components/use-reducer-context';
-import './Experiment.css';
 
 const Experiment: React.FC = () => {
 
