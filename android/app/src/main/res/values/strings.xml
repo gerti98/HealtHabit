@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">HealtHabit</string>
+    <string name="title_activity_main">HealtHabit</string>
+    <string name="package_name">com.HealtHabit.app</string>
+    <string name="custom_url_scheme">com.HealtHabit.app</string>
+</resources>
