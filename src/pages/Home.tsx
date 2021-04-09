@@ -11,6 +11,8 @@ import '../theme/Home.css';
 import Tab1 from './Tab1';
 import Tab2 from './Tab2';
 import Tab3 from './Tab3';
+import Login from './Login';
+
 import { IonReactRouter } from '@ionic/react-router';
 
 const Home: React.FC = () => {
@@ -31,6 +33,9 @@ const Home: React.FC = () => {
           </Route>
           <Route exact path="/home">
             <Redirect to="/home/tab1" />
+          </Route>
+          <Route exact path="/login">
+            <Login />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">

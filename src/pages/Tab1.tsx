@@ -10,9 +10,10 @@ const Tab1: React.FC = () => {
       <IonPage>
         <HeaderLogo/>
       <IonContent>
-    Tab 1
-    </IonContent>
-</IonPage>
+        Tab 1
+        <IonButton href="login">APRI LOGIN PAGE</IonButton>
+      </IonContent>
+    </IonPage>
   );
 };
 
