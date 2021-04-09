@@ -13,7 +13,6 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import BasicSlide from "../components/BasicSlide";
 import React, { useContext } from "react";
 import { useHistory } from "react-router";
 import ExploreContainer from "../components/ExploreContainer";
@@ -22,7 +21,9 @@ import { AppContext, userInterface } from "../components/use-reducer-context";
 import "../theme/Login.css";
 import firebase from "firebase";
 
-;
+
+
+
 
 const Login: React.FC = () => {
 
