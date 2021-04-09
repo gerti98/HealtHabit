@@ -3,8 +3,11 @@ import {
   IonContent,
   IonGrid,
   IonHeader,
+  IonLabel,
   IonPage,
   IonRow,
+  IonSegment,
+  IonSegmentButton,
   IonSlide,
   IonSlides,
   IonTitle,
@@ -34,24 +37,47 @@ const Login: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonSlides pager={true}  className="fullscreen">
+        <IonSlides pager={true} className="fullscreen">
           <IonSlide>
-            <IonGrid >
+            <IonGrid>
               <IonRow>
-              <IonCol>
-                Pagina 1
-              </IonCol>
+                <IonCol>Pagina 1</IonCol>
               </IonRow>
               <IonRow>
-              <IonCol>
-                Bella descrizione
-              </IonCol>
-              </IonRow>  
+                <IonCol>Bella descrizione</IonCol>
+              </IonRow>
             </IonGrid>
           </IonSlide>
           <IonSlide>
-            
-            <IonTitle>Pagina 2</IonTitle>
+            <IonGrid>
+              <IonRow>
+                <IonCol>Domandona</IonCol>
+              </IonRow>
+              <IonRow>
+                <IonCol>Domandina</IonCol>
+              </IonRow>
+              <IonRow>
+                <IonCol>
+                  <IonSegment scrollable>
+                    <IonSegmentButton>
+                      <IonLabel>1</IonLabel>
+                    </IonSegmentButton>
+
+                    <IonSegmentButton>
+                      <IonLabel>2</IonLabel>
+                    </IonSegmentButton>
+
+                    <IonSegmentButton>
+                      <IonLabel>3</IonLabel>
+                    </IonSegmentButton>
+
+                    <IonSegmentButton>
+                      <IonLabel>4</IonLabel>
+                    </IonSegmentButton>
+                  </IonSegment>
+                </IonCol>
+              </IonRow>
+            </IonGrid>
           </IonSlide>
           <IonSlide>
             <IonTitle>Pagina 3</IonTitle>
