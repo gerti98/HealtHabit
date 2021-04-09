@@ -14,6 +14,7 @@ import Tab3 from './Tab3';
 import Login from './Login';
 
 import { IonReactRouter } from '@ionic/react-router';
+import Questionary from './Questionary';
 
 const Home: React.FC = () => {
 
@@ -30,6 +31,9 @@ const Home: React.FC = () => {
           </Route>
           <Route path="/home/tab3">
             <Tab3 />
+          </Route>
+          <Route path="/home/questionary">
+            <Questionary />
           </Route>
           <Route exact path="/home">
             <Redirect to="/home/tab1" />

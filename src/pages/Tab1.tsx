@@ -12,6 +12,7 @@ const Tab1: React.FC = () => {
       <IonContent>
         Tab 1
         <IonButton href="login">APRI LOGIN PAGE</IonButton>
+        <IonButton href="/home/questionary">APRI DEMO QUESTIONARIO</IonButton>
       </IonContent>
     </IonPage>
   );
