@@ -1,0 +1,7 @@
+{
+  "name": "HealtHabit",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

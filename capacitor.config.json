@@ -1,0 +1,18 @@
+{
+  "appId": "com.HealtHabit.app",
+  "appName": "HealtHabit",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "GoogleAuth": {
+      "scopes": ["profile","email"],
+      "serverClientId": "207671042231-t3safo79upgvq46rigqj19aq2fc7frld.apps.googleusercontent.com"
+    }
+
+  },
+  "cordova": {}
+}
