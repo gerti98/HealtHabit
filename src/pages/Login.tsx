@@ -13,7 +13,6 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import BasicSlide from "../components/BasicSlide";
 import React, { useContext } from "react";
 import { useHistory } from "react-router";
 import ExploreContainer from "../components/ExploreContainer";
