@@ -4,7 +4,7 @@ import { useHistory } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
 import { AppContext } from '../components/use-reducer-context';
 import {Redirect, Route} from 'react-router-dom';
-import {ellipse, square, triangle} from 'ionicons/icons'
+import {buildOutline, documentsOutline, ellipse, linkOutline, personOutline, square, triangle} from 'ionicons/icons'
 
 import '../theme/Home.css';
 
@@ -52,22 +52,22 @@ const Home: React.FC = () => {
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/home/tab1">
-            <IonIcon icon={triangle} />
+            <IonIcon icon={personOutline} />
       
           </IonTabButton>
           <IonTabButton tab="tab2" href="/home/tab2">
-            <IonIcon icon={ellipse} />
+            <IonIcon icon={documentsOutline} />
         
           </IonTabButton>
           <IonTabButton tab="tab3" >
            
           </IonTabButton>
           <IonTabButton tab="tab4" href="/home/tab4">
-            <IonIcon icon={square} />
+            <IonIcon icon={linkOutline} />
            
           </IonTabButton>
           <IonTabButton tab="tab5" href="/home/tab5">
-            <IonIcon icon={square} />
+            <IonIcon icon={buildOutline} />
           
           </IonTabButton>
         </IonTabBar>

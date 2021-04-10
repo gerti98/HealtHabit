@@ -17,7 +17,7 @@ import { Plugins } from "@capacitor/core";
 import React from "react";
 const { Storage } = Plugins;
 
-const Tab3: React.FC = () => {
+const Tab3: React.FC = () => { 
   const data = async () => {
     const ret = await Storage.get({ key: "user" });
     console.log(ret);
