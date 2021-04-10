@@ -1,12 +1,10 @@
 import { IonAvatar, IonButton, IonButtons, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonListHeader, IonPage, IonRow, IonTitle, IonToolbar, useIonViewWillEnter } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import {heart, documentTextOutline, bookOutline, receiptOutline,eyedrop} from 'ionicons/icons'
-
-import "../theme/LinkUtili.css"
 import React, { useEffect, useState } from 'react';
 import { db } from './firebase';
 import {Plugins} from '@capacitor/core';
-
+import "../theme/ListaVisite.css"
 
 
 interface objVisita{
@@ -68,7 +66,7 @@ const ListaVisite: React.FC = () => {
                </IonListHeader>
                {visiteNonPrenotate.map((item:objVisita) =>{
                    return(
-                    <IonItem key={item.Luogo + item.Data + item.Nome} href={"/home/info_visita/" + item.Nome}>
+                    <IonItem className="background-green-item" key={item.Luogo + item.Data + item.Nome} href={"/home/info_visita/" + item.Nome}>
                     <IonAvatar slot="start">
                      <img src="../theme/img/consultation.png"/>
                     </IonAvatar>
