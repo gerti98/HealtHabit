@@ -45,13 +45,13 @@ const LinkUtili: React.FC = () => {
 
 
     return (
-        <IonGrid className="background-green" >
+        <IonGrid  >
             <IonRow>
                 <IonCol >
                     <h1 className="text-center">Link utili {state.regione}</h1>
                 </IonCol>
             </IonRow>
-            <IonRow className="vertical-align" onClick = {() => openLink(link.fascicolo)}>
+            <IonRow className="vertical-align background-green-item" onClick = {() => openLink(link.fascicolo)}>
                 <IonCol size="4" offset="1">
                     <img className="img_rounded" src="assets/images/FS.png"/>
                 </IonCol>
@@ -59,7 +59,7 @@ const LinkUtili: React.FC = () => {
                     <h2>Fascicolo elettronico</h2> 
                 </IonCol>
             </IonRow>
-            <IonRow  className="vertical-align" onClick = {() => openLink(link.prenotazioni)}>
+            <IonRow  className="vertical-align background-green-item" onClick = {() => openLink(link.prenotazioni)}>
             <IonCol size="4" offset="1">
                     <img className="img_rounded" src="assets/images/prenotazione.png"/>
                 </IonCol>
@@ -67,7 +67,7 @@ const LinkUtili: React.FC = () => {
                     <h2>Modifica o sposta una visita</h2>
                 </IonCol>
             </IonRow>
-            <IonRow className="vertical-align" onClick = {() => openLink(link.ricetta)}>
+            <IonRow className="vertical-align background-green-item" onClick = {() => openLink(link.ricetta)}>
                 <IonCol size="4" offset="1">
                     <img className="img_rounded" src="assets/images/ricetta.jpg"/>
                 </IonCol>
@@ -75,7 +75,7 @@ const LinkUtili: React.FC = () => {
                     <h3>Prenota una visita con la ricetta elettronica</h3>
                 </IonCol>
             </IonRow>
-            <IonRow  className="vertical-align" onClick = {() => openLink(link.vaccino)}>
+            <IonRow  className="vertical-align background-green-item" onClick = {() => openLink(link.vaccino)}>
             <IonCol size="4" offset="1">
                     <img className="img_rounded" src="assets/images/vaccino.png"/>
                 </IonCol>
