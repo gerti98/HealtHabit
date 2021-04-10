@@ -1,0 +1,88 @@
+.vertical-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mt-0{
+    margin-top: 0px;
+}
+
+.background-green{
+    margin: 20px 20px 0px 20px;
+    height: 100%;
+   background-color: #36b79a;
+    --ion-background-color: #36b79a;
+    --ion-item-background: #508754;
+}
+.no-radius{
+    border-radius: 0px !important;
+}
+.no-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.background-green-item{
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+   background-color: #36b79a;
+    --ion-background-color: #36b79a;
+    --ion-item-background: #36b79a;
+}
+ion-avatar{
+    width: 50px;
+    height: 50px;
+}
+.blue_text{
+    color: #0085C1;
+}
+.margin-1{
+    margin-left: 1em;
+    margin-right:1em
+}
+
+.white_text{
+    color: white;
+}
+
+
+
+.button-viola{
+    font-size: 12px;
+    width: 100%;
+    background-color: #F3937E;
+    --background:#F3937E;
+}
+.mt-3{
+    margin-top: 2rem;
+}
+
+.bg-viola{
+    background-color: #F3937E;
+    --background:#F3937E;
+}
+
+.bg-blue{
+    background-color: #04b3ae;
+    --background:#04b3ae;
+}
+
+.checkbox-disabled{
+    opacity: 1;
+    --border-color-checked: white;
+    --background-checked: transparent;
+
+
+}
+
+.img_rounded{
+    border-radius: 100%;
+}
