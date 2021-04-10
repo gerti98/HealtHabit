@@ -44,6 +44,8 @@
     opacity: 1;
     --border-color-checked: white;
     --background-checked: transparent;
+}
 
-
+.whiteLabel{
+    color: white;
 }

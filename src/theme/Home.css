@@ -4,8 +4,10 @@
 
 .backgroudDarkGreen{
     --background: #13A29C;
+    --border: none;
 }
 
 .whiteTabButton{
     --color: white;
+    --color-selected: #F9F871;
 }
