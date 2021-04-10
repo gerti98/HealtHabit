@@ -1,5 +1,7 @@
 import {
+  IonBackButton,
   IonButton,
+  IonButtons,
   IonCol,
   IonContent,
   IonGrid,
@@ -26,30 +28,44 @@ interface IndexProps
 const InfoVisita: React.FC<IndexProps> = ({ match }) => {
   console.log(match.params.nome_visita);
 
-	//Titolo
-	//Informativa sulla visita
-	//
-	return (
+  //Titolo
+  //Informativa sulla visita
+  //
+  return (
     <IonPage>
-      <HeaderLogo />
-      <IonContent> 
+
+      <IonContent>
+        <IonHeader>
+          <IonToolbar>
+            <IonButtons slot="start">
+              <IonBackButton defaultHref="/home"/>
+            </IonButtons>
+          </IonToolbar>
+        </IonHeader>
+
         <IonGrid>
-					<IonRow>
-						<IonCol><h2>{match.params.nome_visita}</h2></IonCol>
-					</IonRow>
-					<IonRow>
-						<IonCol><h3>Che cos'è</h3></IonCol>
-					</IonRow>
-					<IonRow>
-						<IonCol>aojdweom ewoifnreifnerio w diwedo aowdjwioe</IonCol>
-					</IonRow>
-					<IonRow>
-						<IonCol><h3>Come si svolge</h3></IonCol>
-					</IonRow>
-					<IonRow>
-						<IonCol>aojdweom ewoifnreifnerio w diwedo aowdjwioe</IonCol>
-					</IonRow>
-				</IonGrid>
+          <IonRow>
+            <IonCol>
+              <h2>{match.params.nome_visita}</h2>
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <h3>Che cos'è</h3>
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>aojdweom ewoifnreifnerio w diwedo aowdjwioe</IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <h3>Come si svolge</h3>
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>aojdweom ewoifnreifnerio w diwedo aowdjwioe</IonCol>
+          </IonRow>
+        </IonGrid>
       </IonContent>
     </IonPage>
   );

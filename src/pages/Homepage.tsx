@@ -4,20 +4,25 @@ import {
   IonContent,
   IonGrid,
   IonHeader,
+  IonItem,
   IonPage,
   IonRow,
   IonTitle,
   IonToolbar,
+  useIonViewWillEnter,
 } from "@ionic/react";
 import ExploreContainer from "../components/ExploreContainer";
 import HeaderLogo from "../components/HeaderLogo";
 import LinkUtili from "../components/LinkUtili";
 
 import { Plugins } from "@capacitor/core";
-import React from "react";
+import React, { useState } from "react";
+import { getByAltText } from "@testing-library/dom";
+import { db } from "../components/firebase";
 const { Storage } = Plugins;
 
-const Homepage: React.FC = () => { 
+const Homepage: React.FC = () => {
+  const [percentage, setPercentage] = useState(0);
   const data = async () => {
     const ret = await Storage.get({ key: "user" });
     console.log(ret);
@@ -25,19 +30,22 @@ const Homepage: React.FC = () => {
 
   data();
 
+  useIonViewWillEnter(() => {
+    db.collection("users")
+      .doc("MEGAPRONTONEEEE") //TODO email
+      .collection("Salute Personale")
+      .get()
+      .then((data) => {
+        data.forEach((doc) => {
+          console.log(doc.id, " => ", doc.data());
+        });
+      });
+  });
   return (
     <IonPage>
       <HeaderLogo />
-      <LinkUtili />
       <IonContent>Homepage</IonContent>
-      <IonButton
-        onClick={() => {
-          Storage.clear();
-          console.log("Svuotato local storage");
-        }}
-      >
-        SVUOTA LOCAL STORAGE
-      </IonButton>
+      <IonItem>{percentage}</IonItem>
     </IonPage>
   );
 };

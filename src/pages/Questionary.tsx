@@ -1,11 +1,14 @@
 import {
+  IonBackButton,
   IonButton,
+  IonButtons,
   IonContent,
   IonHeader,
   IonPage,
   IonSlide,
   IonSlides,
   IonTitle,
+  IonToast,
   IonToolbar,
 } from "@ionic/react";
 import React, { useCallback, useContext, useState } from "react";
@@ -24,6 +27,8 @@ interface IndexProps
   }> {}
 
 const Questionary: React.FC<IndexProps> = ({ match }) => {
+  const [showToast1, setShowToast1] = useState(false);
+
   //Identificazione
   const [eta, setEta] = useState();
   const [sex, setSex] = useState();
@@ -34,7 +39,15 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
   const [istruzione, setIstruzione] = useState();
 
   function sendDataToFirebase(index: number) {
-    var nameQuestionario = ["", "Identificativo", "Categorie a rischio", "Stile di Vita", "Familiarita", "Vaccini", "Salute Personale"];
+    var nameQuestionario = [
+      "",
+      "Identificativo",
+      "Categorie a rischio",
+      "Stile di Vita",
+      "Familiarita",
+      "Vaccini",
+      "Salute Personale",
+    ];
 
     var bigData = [
       {},
@@ -91,10 +104,8 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
       },
     ];
 
-    
-    
     console.log(bigData[index]);
-    
+
     if (index == 1) {
       db.collection("users")
         .doc("MEGAPRONTONEEEE") //TODO: add email
@@ -107,12 +118,13 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
         });
     } else {
       db.collection("users")
-        .doc("MEGAPRONTONEEEE")
+        .doc("MEGAPRONTONEEEE2")
         .collection(nameQuestionario[index])
         .doc() //TODO: add email
         .set(bigData[index])
         .then(() => {
           console.log("Document successfully written!");
+          setShowToast1(true);
         })
         .catch((error) => {
           console.error("Error writing document: ", error);
@@ -381,7 +393,9 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Questionario {sex}</IonTitle>
+          <IonButtons slot="start">
+            <IonBackButton defaultHref="/home" />
+          </IonButtons>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -402,6 +416,14 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
             >
               SEND
             </IonButton>
+            <IonToast
+              isOpen={showToast1}
+              onDidDismiss={() => setShowToast1(false)}
+              animated={true}
+              message="Questionario inviato correttamente"
+              position="bottom"
+              duration={2000}
+            />
           </IonSlide>
         </IonSlides>
       </IonContent>
