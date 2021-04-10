@@ -50,42 +50,41 @@ const Login: React.FC = () => {
           </IonSlide>
           <IonSlide>
             <IonGrid>
+            <IonRow>
+                <IonCol>
+                   <IonImg src="assets/images/Fever-01.png"/>
+                </IonCol>
+              </IonRow>
               <IonRow>
                 <IonCol>Domandona</IonCol>
               </IonRow>
               <IonRow>
                 <IonCol>Domandina</IonCol>
               </IonRow>
-              <IonRow>
+            </IonGrid>
+          </IonSlide>
+          <IonSlide>
+          <IonGrid>
+            <IonRow>
                 <IonCol>
-                  <IonSegment scrollable>
-                    <IonSegmentButton>
-                      <IonLabel>1</IonLabel>
-                    </IonSegmentButton>
-                    <IonSegmentButton>
-                      <IonLabel>2</IonLabel>
-                    </IonSegmentButton>
-                    <IonSegmentButton>
-                      <IonLabel>3</IonLabel>
-                    </IonSegmentButton>
-                    <IonSegmentButton>
-                      <IonLabel>4</IonLabel>
-                    </IonSegmentButton>
-                  </IonSegment>
+                   <IonImg src="assets/images/Covid virus-01.png"/>
                 </IonCol>
+              </IonRow>
+              <IonRow>
+                <IonCol>Domandona</IonCol>
+              </IonRow>
+              <IonRow>
+                <IonCol>Domandina</IonCol>
               </IonRow>
             </IonGrid>
           </IonSlide>
           <IonSlide>
-            <IonTitle>Pagina 3</IonTitle>
-          </IonSlide>
-          <IonSlide>
-            <IonHeader collapse="condense">
-              <IonToolbar>
-                <IonTitle size="large">Blank</IonTitle>
-              </IonToolbar>
-            </IonHeader>
             <IonGrid>
+              <IonRow>
+                <IonCol>
+                  <IonImg src="assets/images/Work at home-01.png"/>
+                </IonCol>
+              </IonRow>
               <IonRow>
                 <IonCol>
                   <GoogleBtn />
