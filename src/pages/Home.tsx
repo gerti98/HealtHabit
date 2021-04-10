@@ -66,11 +66,6 @@ const Home: React.FC = () => {
           </Route>
           <Route
             exact
-            path="/home/questionary/:id"
-            component={Questionary}
-          ></Route>
-          <Route
-            exact
             path="/home/info_visita/:nome_visita"
             component={InfoVisita}
           ></Route>

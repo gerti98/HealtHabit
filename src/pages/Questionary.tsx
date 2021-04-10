@@ -37,7 +37,7 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
   const [region, setRegion] = useState();
   const [tipoPelle, setTipoPelle] = useState();
   const [istruzione, setIstruzione] = useState();
-
+  const history = useHistory();
   const {state, dispatch} = useContext(AppContext)
 
   function sendDataToFirebase(index: number) {
@@ -113,12 +113,14 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
         .doc("MEGAPRONTONEEEE") //TODO: add email
         .set(bigData[index])
         .then(() => {
+
           console.log("Document successfully written!");
           dispatch({
             type: "user",
             eta: eta,
             sesso: sex
           });
+          setShowToast1(true);
           console.log(state)
         })
         .catch((error) => {
@@ -132,12 +134,14 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
         .set(bigData[index])
         .then(() => {
           console.log("Document successfully written!");
-          setShowToast1(true);
+          
         })
         .catch((error) => {
           console.error("Error writing document: ", error);
         });
     }
+    history.push("/home/homepage")
+    
   }
 
   //Categorie a rischio

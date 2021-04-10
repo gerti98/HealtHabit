@@ -26,6 +26,7 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import { useState } from 'react';
 import { AppContextProvider } from './components/use-reducer-context';
+import Questionary from './pages/Questionary';
 
 
 
@@ -45,6 +46,11 @@ const App: React.FC = () => {
 				<Route exact path="/experiment">
 					<Experiment />
 				</Route>
+				<Route
+					exact
+					path="/questionary/:id"
+					component={Questionary}
+				></Route>
 				<Route exact path="/">
 					<Redirect to="/login" />
 				</Route>

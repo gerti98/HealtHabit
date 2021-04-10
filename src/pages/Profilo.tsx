@@ -87,7 +87,7 @@ const Profilo: React.FC = () => {
           <IonItem key={"categorie a rischio"}>
               <IonCheckbox checked={ utente.quiz_categorieRischio? true: false} disabled={true} className="checkBox"></IonCheckbox>      
               <IonLabel>Categorie a rischio</IonLabel>
-              <IonButton slot="end" href="/home/questionary/2" className={ utente.quiz_categorieRischio? "bg-viola": "bg-blue"}>
+              <IonButton slot="end" href="/questionary/2" className={ utente.quiz_categorieRischio? "bg-viola": "bg-blue"}>
                 { utente.quiz_categorieRischio? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>
@@ -95,7 +95,7 @@ const Profilo: React.FC = () => {
           <IonItem key={"familiarita"}>
               <IonCheckbox checked={ utente.quiz_familiarita? true: false} disabled={true}></IonCheckbox>      
               <IonLabel>Familiarità</IonLabel>
-              <IonButton slot="end" href="/home/questionary/4" className={ utente.quiz_familiarita? "bg-viola": "bg-blue"}>
+              <IonButton slot="end" href="/questionary/4" className={ utente.quiz_familiarita? "bg-viola": "bg-blue"}>
                 { utente.quiz_familiarita? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>
@@ -103,7 +103,7 @@ const Profilo: React.FC = () => {
           <IonItem>
               <IonCheckbox checked={ utente.quiz_stileDiVita? true: false} disabled={true}></IonCheckbox>      
               <IonLabel>Stile di vita</IonLabel>
-              <IonButton slot="end" href="/home/questionary/3" className={ utente.quiz_stileDiVita? "bg-viola": "bg-blue"}>
+              <IonButton slot="end" href="/questionary/3" className={ utente.quiz_stileDiVita? "bg-viola": "bg-blue"}>
                   { utente.quiz_stileDiVita? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>
@@ -111,7 +111,7 @@ const Profilo: React.FC = () => {
             <IonItem>
               <IonCheckbox checked={ utente.quiz_vaccini? true: false} disabled={true}></IonCheckbox>      
               <IonLabel>Vaccini</IonLabel>
-              <IonButton slot="end" href="/home/questionary/5" className={ utente.quiz_vaccini? "bg-viola": "bg-blue"}>
+              <IonButton slot="end" href="/questionary/5" className={ utente.quiz_vaccini? "bg-viola": "bg-blue"}>
                   { utente.quiz_vaccini? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>
@@ -120,7 +120,7 @@ const Profilo: React.FC = () => {
             <IonItem>
               <IonCheckbox checked={ utente.quiz_salutePersonale? true: false} disabled={true}></IonCheckbox>      
               <IonLabel>Salute personale</IonLabel>
-              <IonButton slot="end" href="/home/questionary/6" className={ utente.quiz_salutePersonale? "bg-viola": "bg-blue"}>
+              <IonButton slot="end" href="/questionary/6" className={ utente.quiz_salutePersonale? "bg-viola": "bg-blue"}>
                   { utente.quiz_salutePersonale? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>
