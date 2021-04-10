@@ -10,6 +10,9 @@ import React, { useContext, useState } from "react";
 import { AppContext } from "../components/use-reducer-context";
 import { State } from "ionicons/dist/types/stencil-public-runtime";
 import { db } from '../components/firebase';
+import { useHistory } from 'react-router';
+import '../util/global_var';
+import  { GlobalVars } from '../util/global_var';
 
 interface utente{
   sesso: string,
@@ -43,6 +46,17 @@ const Profilo: React.FC = () => {
 })
 
 
+  const history = useHistory();
+  
+  function goToQuestionary(param: number){
+    GlobalVars.global_index_quest = param;
+    history.push(
+      '/home/questionary/${number}',
+      {
+        index: param
+      });
+  } 
+  
   return (
     <IonPage>
       <HeaderLogo />
@@ -61,13 +75,13 @@ const Profilo: React.FC = () => {
          { utente.quiz_categorieRischio && ( <IonItem>
             <IonCheckbox checked={true} disabled={true}></IonCheckbox>      
             <IonLabel>Generale</IonLabel>
-            <IonButton slot="end" href="/home/questionary">
+            <IonButton slot="end" href="/home/questionary/1">
               <IonIcon icon={arrowForwardOutline} slot="end" />
             </IonButton>
-          </IonItem>)}
+          </IonItem>
+          }
           
         </IonList>
-
 
         <IonButton href="login">APRI LOGIN PAGE</IonButton>
         {/*
