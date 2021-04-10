@@ -124,7 +124,8 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
           dispatch({
             type: "user",
             eta: eta,
-            sesso: sex
+            sesso: sex,
+            regione: region
           });
           setShowToast1(true);
           console.log(state)

@@ -1,11 +1,12 @@
-import { IonButton, IonButtons, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonPage, IonRow, IonTitle, IonToolbar, useIonViewWillEnter } from '@ionic/react';
+import { IonButton, IonButtons, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonPage, IonRow, IonTitle, IonToolbar, iosTransitionAnimation, useIonViewWillEnter } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import {heart, documentTextOutline, bookOutline, receiptOutline,eyedrop} from 'ionicons/icons'
 
 import "../theme/LinkUtili.css"
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { db } from './firebase';
 import {Plugins} from '@capacitor/core';
+import { AppContext } from './use-reducer-context';
 
 const { Browser } = Plugins;
 
@@ -17,6 +18,8 @@ interface objLink{
     vaccino: string
 }
 const LinkUtili: React.FC = () => {
+
+    const {state, dispatch} = useContext(AppContext)
     const [link, setlink] = useState({} as objLink);
     useEffect(() =>{
         console.log(link);
@@ -40,38 +43,44 @@ const LinkUtili: React.FC = () => {
         await Browser.open({ url: linkPass });
     }
 
+
     return (
-        <IonGrid >
-            <IonRow onClick = {() => openLink(link.fascicolo)}>
-                <IonCol size="4">
-                    <IonIcon icon={documentTextOutline}/>
-                </IonCol>
-                <IonCol size="8">
-                    Link 
+        <IonGrid className="background-green" >
+            <IonRow>
+                <IonCol >
+                    <h1 className="text-center">Link utili {state.regione}</h1>
                 </IonCol>
             </IonRow>
-            <IonRow onClick = {() => openLink(link.prenotazioni)}>
-                <IonCol size="4">
-                    <IonIcon icon={bookOutline}/>
+            <IonRow className="vertical-align" onClick = {() => openLink(link.fascicolo)}>
+                <IonCol size="4" offset="1">
+                    <img className="img_rounded" src="assets/images/FS.png"/>
                 </IonCol>
-                <IonCol size="8">
-                    Link per prenotare una visita
-                </IonCol>
-            </IonRow>
-            <IonRow onClick = {() => openLink(link.ricetta)}>
-                <IonCol size="4">
-                    <IonIcon icon={receiptOutline}/>
-                </IonCol>
-                <IonCol size="8">
-                    Link per consultare le ricette online
+                <IonCol size="6">
+                    <h2>Fascicolo elettronico</h2> 
                 </IonCol>
             </IonRow>
-            <IonRow onClick = {() => openLink(link.vaccino)}>
-                <IonCol size="4">
-                    <IonIcon icon={eyedrop}/>
+            <IonRow  className="vertical-align" onClick = {() => openLink(link.prenotazioni)}>
+            <IonCol size="4" offset="1">
+                    <img className="img_rounded" src="assets/images/prenotazione.png"/>
                 </IonCol>
-                <IonCol size="8">
-                    Link per prenotare un vaccino
+                <IonCol size="6">
+                    <h2>Modifica o sposta una visita</h2>
+                </IonCol>
+            </IonRow>
+            <IonRow className="vertical-align" onClick = {() => openLink(link.ricetta)}>
+                <IonCol size="4" offset="1">
+                    <img className="img_rounded" src="assets/images/ricetta.jpg"/>
+                </IonCol>
+                <IonCol size="6">
+                    <h3>Prenota una visita con la ricetta elettronica</h3>
+                </IonCol>
+            </IonRow>
+            <IonRow  className="vertical-align" onClick = {() => openLink(link.vaccino)}>
+            <IonCol size="4" offset="1">
+                    <img className="img_rounded" src="assets/images/vaccino.png"/>
+                </IonCol>
+                <IonCol size="6">
+                    <h2>Prenotazione vaccino</h2>
                 </IonCol>
             </IonRow>
             

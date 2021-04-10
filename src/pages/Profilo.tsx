@@ -45,7 +45,14 @@ const Profilo: React.FC = () => {
 
 
   const history = useHistory();
-  
+  function returnImg(eta:number, sesso:string){
+    if(sesso == "Femmina"){
+      return state.eta < 50? "assets/images/woman.png" : "assets/images/old-woman.png"
+    }
+    else{
+      return state.eta < 50? "assets/images/man.png" : "assets/images/old-man.png"
+    }
+  }
   return (
     <IonPage>
       <HeaderLogo />
@@ -54,7 +61,7 @@ const Profilo: React.FC = () => {
         <IonGrid >
           <IonRow className="vertical-align" >
              <IonCol size="4" className="text-center">
-             <img src={state.eta < 50? "assets/images/man.png" : "assets/images/old-man.png"} />
+             <img src={returnImg(state.eta, state.sesso)} />
              </IonCol>
              <IonCol size="8">
                 <IonRow>

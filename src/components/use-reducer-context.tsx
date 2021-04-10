@@ -7,7 +7,8 @@ export interface userInterface {
     img: string,
     isLoggin: boolean,
     sesso: string,
-    eta: number
+    eta: number,
+    regione:string
 }
 
 
@@ -27,6 +28,7 @@ const initialState = {
     isLoggin: false,
     sesso: '',
     eta: '',
+    regione:''
 }
 
 let reducer = (state:userInterface, action:any) => {
@@ -36,7 +38,7 @@ let reducer = (state:userInterface, action:any) => {
       return { ...state, nome: action.nome, email: action.email, img: action.img, isLoggin: action.isLoggin }
     }
     case "user": {
-      return { ...state, sesso: action.sesso, eta: action.eta}
+      return { ...state, sesso: action.sesso, eta: action.eta, regione: action.regione}
     }
   }
   return state;
