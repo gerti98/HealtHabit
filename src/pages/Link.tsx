@@ -29,7 +29,8 @@ import {
       <IonPage>
         <HeaderLogo />
         <LinkUtili />
-        <IonContent>Homepage</IonContent>
+        
+        {/* <IonContent>Homepage</IonContent>
         <IonButton
           onClick={() => {
             Storage.clear();
@@ -37,7 +38,7 @@ import {
           }}
         >
           SVUOTA LOCAL STORAGE
-        </IonButton>
+        </IonButton> */}
       </IonPage>
     );
   };
