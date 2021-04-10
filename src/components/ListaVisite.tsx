@@ -91,13 +91,12 @@ const ListaVisite: React.FC = () => {
 
   return (
     <div>
-      
-        <IonList>
-          <IonListHeader>
-            <h3 className="blue_text">Da prenotare</h3>
-          </IonListHeader>
-          {visiteNonPrenotate.map((item: objVisita) => {
-            return (
+      <IonList>
+        <IonListHeader>
+          <h3 className="blue_text">Da prenotare</h3>
+        </IonListHeader>
+        {visiteNonPrenotate.map((item: objVisita) => {
+          return (
             <IonItemSliding>
               <IonItem
                 lines="none"
@@ -120,26 +119,28 @@ const ListaVisite: React.FC = () => {
                 </IonLabel>
               </IonItem>
               <IonItemOptions side="end">
-          <IonItemOption
-            color="danger"
-            className="IonItemsPrincipalOptionFirst"
-            onClick={() => alert("pressed non mi piace")}
-          >
-            Segnala
-          </IonItemOption>
-        </IonItemOptions>
-      </IonItemSliding>
+                <IonItemOption
+                  color="danger"
+                  className="IonItemsPrincipalOptionFirst"
+                  onClick={() => alert("pressed non mi piace")}
+                  style={{marginRight: "1em"}}
+                >
+                  Segnala
+                </IonItemOption>
+              </IonItemOptions>
+            </IonItemSliding>
+          );
+        })}
+      </IonList>
 
-            );
-          })}
-        </IonList>
-     
       <IonList>
+          
         <IonListHeader>
           <h3 className="blue_text">Prenotate</h3>
         </IonListHeader>
         {visitePrenotate.map((item: objVisita) => {
           return (
+            <IonItemSliding>
             <IonItem lines="none" key={item.Luogo + item.Data + item.Nome}>
               <IonAvatar slot="start">
                 <img
@@ -155,6 +156,17 @@ const ListaVisite: React.FC = () => {
                 </h4>
               </IonLabel>
             </IonItem>
+            <IonItemOptions side="end">
+            <IonItemOption
+              color="danger"
+              className="IonItemsPrincipalOptionFirst"
+              onClick={() => alert("pressed non mi piace")}
+              style={{marginRight: "1em"}}
+            >
+              Segnala
+            </IonItemOption>
+          </IonItemOptions>
+        </IonItemSliding>
           );
         })}
       </IonList>
@@ -165,6 +177,7 @@ const ListaVisite: React.FC = () => {
         </IonListHeader>
         {visiteNonFatte.map((item: objVisita) => {
           return (
+            <IonItemSliding>
             <IonItem lines="none" key={item.Luogo + item.Data + item.Nome}>
               <IonAvatar slot="start">
                 <img
@@ -180,6 +193,17 @@ const ListaVisite: React.FC = () => {
                 </h4>
               </IonLabel>
             </IonItem>
+            <IonItemOptions side="end">
+            <IonItemOption
+              color="danger"
+              className="IonItemsPrincipalOptionFirst"
+              onClick={() => alert("pressed non mi piace")}
+              style={{marginRight: "1em"}}
+            >
+              Segnala
+            </IonItemOption>
+          </IonItemOptions>
+        </IonItemSliding>
           );
         })}
       </IonList>
@@ -190,6 +214,7 @@ const ListaVisite: React.FC = () => {
         </IonListHeader>
         {visiteFatte.map((item: objVisita) => {
           return (
+            <IonItemSliding>
             <IonItem lines="none" key={item.Luogo + item.Data + item.Nome}>
               <IonAvatar slot="start">
                 <img
@@ -205,6 +230,17 @@ const ListaVisite: React.FC = () => {
                 </h4>
               </IonLabel>
             </IonItem>
+            <IonItemOptions side="end">
+            <IonItemOption
+              color="danger"
+              className="IonItemsPrincipalOptionFirst"
+              onClick={() => alert("pressed non mi piace")}
+              style={{marginRight: "1em"}}
+            >
+              Segnala
+            </IonItemOption>
+          </IonItemOptions>
+        </IonItemSliding>
           );
         })}
       </IonList>
