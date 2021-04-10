@@ -27,7 +27,6 @@ interface IndexProps
 
 const InfoVisita: React.FC<IndexProps> = ({ match }) => {
   console.log(match.params.nome_visita);
-
   //Titolo
   //Informativa sulla visita
   //

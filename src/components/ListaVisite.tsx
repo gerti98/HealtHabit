@@ -14,7 +14,8 @@ interface objVisita{
     Tipologia: string,
     Luogo: string,
     Prenotata: boolean,
-    Eseguita: boolean
+    Eseguita: boolean,
+    
 }
 
 const ListaVisite: React.FC = () => {
@@ -69,7 +70,7 @@ const ListaVisite: React.FC = () => {
                    return(
                     <IonItem className="background-green-item" key={item.Luogo + item.Data + item.Nome} href={"/home/info_visita/" + item.Nome}>
                     <IonAvatar slot="start">
-                     <img src="../theme/img/consultation.png"/>
+                        <img src="assets/images/${item.Tipologia}.png"/>
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
@@ -89,7 +90,7 @@ const ListaVisite: React.FC = () => {
                    return(
                     <IonItem key={item.Luogo + item.Data + item.Nome}>
                     <IonAvatar slot="start">
-                    <IonImg src={"../theme/img/consultation.png"}></IonImg>
+                        <img src="assets/images/${item.Tipologia}.png"/>
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
@@ -109,7 +110,7 @@ const ListaVisite: React.FC = () => {
                    return(
                     <IonItem key={item.Luogo + item.Data + item.Nome}>
                     <IonAvatar slot="start">
-                      <img src="../theme/img/consultation.png"/>
+                       <img src="assets/images/${item.Tipologia}.png"/>
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
@@ -129,7 +130,7 @@ const ListaVisite: React.FC = () => {
                    return(
                     <IonItem key={item.Luogo + item.Data + item.Nome}>
                     <IonAvatar slot="start">
-                    <img src="../theme/img/consultation.png"/>
+                    <img src="assets/images/${item.Tipologia}.png"/>
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
