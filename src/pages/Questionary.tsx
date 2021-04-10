@@ -38,6 +38,8 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
   const [tipoPelle, setTipoPelle] = useState();
   const [istruzione, setIstruzione] = useState();
 
+  const {state, dispatch} = useContext(AppContext)
+
   function sendDataToFirebase(index: number) {
     var nameQuestionario = [
       "",
@@ -112,6 +114,12 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
         .set(bigData[index])
         .then(() => {
           console.log("Document successfully written!");
+          dispatch({
+            type: "user",
+            eta: eta,
+            sesso: sex
+          });
+          console.log(state)
         })
         .catch((error) => {
           console.error("Error writing document: ", error);
