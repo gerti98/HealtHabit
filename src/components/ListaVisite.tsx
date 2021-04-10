@@ -1,9 +1,9 @@
-import { IonAvatar, IonButton, IonButtons, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonPage, IonRow, IonTitle, IonToolbar, useIonViewWillEnter } from '@ionic/react';
+import { IonAvatar, IonButton, IonButtons, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonListHeader, IonPage, IonRow, IonTitle, IonToolbar, useIonViewWillEnter } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import {heart, documentTextOutline, bookOutline, receiptOutline,eyedrop} from 'ionicons/icons'
 
 import "../theme/LinkUtili.css"
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { db } from './firebase';
 import {Plugins} from '@capacitor/core';
 
@@ -70,7 +70,7 @@ const ListaVisite: React.FC = () => {
                    return(
                     <IonItem key={item.Luogo + item.Data + item.Nome}>
                     <IonAvatar slot="start">
-                    <img src="../theme/img/consultation.png"/>
+                     <img src="../theme/img/consultation.png"/>
                     </IonAvatar>
                     <IonLabel>
                       <h2>{item.Nome}</h2>
@@ -90,7 +90,7 @@ const ListaVisite: React.FC = () => {
                    return(
                     <IonItem key={item.Luogo + item.Data + item.Nome}>
                     <IonAvatar slot="start">
-                    <img src="../theme/img/consultation.png"/>
+                    <IonImg src={"../theme/img/consultation.png"}></IonImg>
                     </IonAvatar>
                     <IonLabel>
                       <h2>{item.Nome}</h2>
