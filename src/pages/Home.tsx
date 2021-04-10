@@ -36,6 +36,8 @@ const Home: React.FC = () => {
           <Route exact path="/home/profilo">
             <Profilo />
           </Route>
+          <Route exact path="/home/questionary/:id" component={Questionary}>
+          </Route>
           <Route exact path="/home/fascicolo">
             <Fascicolo />
           </Route>
@@ -48,9 +50,7 @@ const Home: React.FC = () => {
           <Route path="/home/impostazioni">
             <Impostazioni />
           </Route>
-          <Route path="/home/questionary">
-            <Questionary />
-          </Route>
+          
           <Route exact path="/home">
             <Redirect to="/home/Profilo" />
           </Route>

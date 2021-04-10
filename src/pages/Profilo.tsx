@@ -9,11 +9,23 @@ import Notifiche from '../components/Notifiche';
 import React, { useContext } from "react";
 import { AppContext } from "../components/use-reducer-context";
 import { State } from "ionicons/dist/types/stencil-public-runtime";
+import { useHistory } from 'react-router';
+import '../util/global_var';
+import  { GlobalVars } from '../util/global_var';
 
 const Profilo: React.FC = () => {
   const { state, dispatch } = useContext(AppContext);
-  console.log(state);
-
+  const history = useHistory();
+  
+  function goToQuestionary(param: number){
+    GlobalVars.global_index_quest = param;
+    history.push(
+      '/home/questionary/${number}',
+      {
+        index: param
+      });
+  } 
+  
   return (
     <IonPage>
       <HeaderLogo />
@@ -31,12 +43,39 @@ const Profilo: React.FC = () => {
           <IonItem>
             <IonCheckbox checked={true} disabled={true}></IonCheckbox>      
             <IonLabel>Generale</IonLabel>
-            <IonButton slot="end" href="/home/questionary">
+            <IonButton slot="end" href="/home/questionary/1">
+              <IonIcon icon={arrowForwardOutline} slot="end" />
+            </IonButton>
+          </IonItem>
+          <IonItem>
+            <IonCheckbox checked={true} disabled={true}></IonCheckbox>      
+            <IonLabel>Riscio</IonLabel>
+            <IonButton slot="end" href="/home/questionary/2">
+              <IonIcon icon={arrowForwardOutline} slot="end" />
+            </IonButton>
+          </IonItem>
+          <IonItem>
+            <IonCheckbox checked={true} disabled={true}></IonCheckbox>      
+            <IonLabel>Stile Di Vita</IonLabel>
+            <IonButton slot="end" href="/home/questionary/3">
+              <IonIcon icon={arrowForwardOutline} slot="end" />
+            </IonButton>
+          </IonItem>
+          <IonItem>
+            <IonCheckbox checked={true} disabled={true}></IonCheckbox>      
+            <IonLabel>Familiarità</IonLabel>
+            <IonButton slot="end" href="/home/questionary/4">
+              <IonIcon icon={arrowForwardOutline} slot="end" />
+            </IonButton>
+          </IonItem>
+          <IonItem>
+            <IonCheckbox checked={true} disabled={true}></IonCheckbox>      
+            <IonLabel>Salute personale</IonLabel>
+            <IonButton slot="end" href="/home/questionary/5">
               <IonIcon icon={arrowForwardOutline} slot="end" />
             </IonButton>
           </IonItem>
         </IonList>
-
 
         <IonButton href="login">APRI LOGIN PAGE</IonButton>
         {/*

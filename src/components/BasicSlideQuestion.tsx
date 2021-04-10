@@ -30,11 +30,13 @@ interface obj {
   question: string;
   type: string;
   hook: Function;
+  answers: Array<String>;
 }
 
 interface type_int {
   type: String;
   hook: Function;
+  answers: Array<String>;
 }
 
 const regioni = [
@@ -60,7 +62,7 @@ const regioni = [
   "Umbria",
 ];
 
-const GetQuestionFromType: React.FC<type_int> = ({ type, hook }) => {
+const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
   switch (type) {
     case "bool":
       console.log("bool");
@@ -134,14 +136,14 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook }) => {
           ></IonInput>
         </IonItem>
       );
-    case "region":
+    case "combo":
       return (
         <IonItem>
           <IonSelect
             onIonChange={(e) => hook(e.detail.value)}
             interface="popover"
           >
-            {regioni.map((i) => {
+            {answers.map((i) => {
               return <IonSelectOption value={i}>{i}</IonSelectOption>;
             })}
           </IonSelect>
@@ -170,10 +172,10 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook }) => {
  *  "height": input height
  *  "weight": input weight
  *  "age": Input age
- *  "region": Choicebox
+ *  "combo": Combobox
  *  "sex": double choice
  * */
-const BasicSlideQuestion: React.FC<obj> = ({ question, type, hook }) => {
+const BasicSlideQuestion: React.FC<obj> = ({ question, type, hook, answers }) => {
   return (
     <IonSlide>
       <IonGrid>
@@ -185,7 +187,7 @@ const BasicSlideQuestion: React.FC<obj> = ({ question, type, hook }) => {
         </IonRow>
         <IonRow>
           <IonCol size="10" offset="1">
-            <GetQuestionFromType type={type} hook={hook} />
+            <GetQuestionFromType type={type} hook={hook} answers={answers}/>
           </IonCol>
         </IonRow>
       </IonGrid>

@@ -3,22 +3,29 @@ import {
   IonContent,
   IonHeader,
   IonPage,
-	IonSlide,
+  IonSlide,
   IonSlides,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
 import React, { useCallback, useContext, useState } from "react";
-import { useHistory } from "react-router";
+import { RouteComponentProps, useHistory } from "react-router";
 import BasicSlideQuestion from "../components/BasicSlideQuestion";
 import BasicSlide from "../components/BasicSlideQuestion";
 import ExploreContainer from "../components/ExploreContainer";
 import { AppContext } from "../components/use-reducer-context";
-import '../components/firebase.js';
+import "../components/firebase.js";
 import { db } from "../components/firebase.js";
+import '../util/global_var';
 
-const Questionary: React.FC = () => {
-  //LEVEL 1
+
+interface IndexProps extends RouteComponentProps<{
+  id: string;
+}> {}
+
+const Questionary: React.FC<IndexProps> = ({match}) => {
+
+  //Identificazione
   const [eta, setEta] = useState();
   const [sex, setSex] = useState();
   const [height, setHeight] = useState();
@@ -26,53 +33,197 @@ const Questionary: React.FC = () => {
   const [region, setRegion] = useState();
   const [tipoPelle, setTipoPelle] = useState();
   const [istruzione, setIstruzione] = useState();
+
+  //Categorie a rischio
   const [diabete, setDiabete] = useState();
+  //const [diagnosiDiabete, setDiagnosiDiabete] = useState();
   const [cardiopatia, setCardiopatia] = useState();
   const [ipertensione, setIpertensione] = useState();
 
+  //Stile di vita
+  const [stileVita, setStileVita] = useState();
+  const [stileVitaWork, setStileVitaWork] = useState();
   const [fumo, setFumo] = useState();
   const [droga, setDroga] = useState();
   const [alcol, setAlcol] = useState();
-  const [stileVita, setStileVita] = useState();
-  const [familyDiabete, setFamilyDiabete] = useState();
-  const [familyTumore, setFamilyTumore] = useState();
-  const [isCeliaco, setIsCeliaco] = useState();
-  const [gravidanza, setGravidanza] = useState();
-  const [pillola, setPillola] = useState();
-  const [pelle, setPelle] = useState();
+  const [dieta, setDieta] = useState();
+ 
 
-	const array_questions_1 = [
-    ["Data di nascita", "age", setEta],
-    ["Sesso", "sex", setSex],
-    ["Altezza", "height", setHeight],
-    ["Peso", "weight", setWeight],
-    ["Regione", "region", setRegion],
-    ["Frequenza fumo", "freq", setFumo],
-    ["Frequenza uso sostanze stupefacenti", "freq", setDroga],
-    ["Frequenza uso alcolici", "freq", setAlcol],
-    ["Frequenza stile di vita", "freq", setStileVita],
-    ["Diabete in famiglia", "bool", setFamilyDiabete],
-    ["Tumori in famiglia", "bool", setFamilyTumore],
-    ["Sei celiaco/a", "bool", setIsCeliaco],
+
+  //Familiarità
+  const [familyOncologiche, setFamilyOncologiche] = useState();
+  const [familyMetaboliche, setFamilyMetaboliche] = useState();
+  const [familyCardiovascolari, setFamilyCardiovascolari] = useState();
+  const [familyRespiratorie, setFamilyRespiratorie] = useState();
+  const [familyOncoGinecologiche, setFamilyOncoGinecologiche] = useState();
+  const [familyOncoAndrologiche, setFamilyOncoAndrologiche] = useState();
+
+  //Vaccini
+  const [vaccinePreumococcica, setVaccinePneumococcica] = useState();
+  const [vaccineZoster, setVaccineZoster] = useState();
+  const [vaccineInfluenzale, setVaccineInfluenzale] = useState();
+
+  //Salute Personale
+  const [lastCheckUpDermatologico, setLastCheckUpDermatologico] = useState();
+  const [
+    lastEsameEmocromocitometrico,
+    setLastEsameEmocromocitometrico,
+  ] = useState();
+  const [lastCheckUpOdontoiatrico, setLastCheckUpOdontoiatrico] = useState();
+  const [lastDosaggioGlicemico, setLastDosaggioGlicemico] = useState();
+  const [lastDosaggioColesterolo, setLastDosaggioColesterolo] = useState();
+  const [lastCheckUpCardiologico, setLastCheckUpCardiologico] = useState();
+  const [lastCheckUpOculistico, setLastCheckUpOculistico] = useState();
+  const [lastSpirometria, setLastSpirometria] = useState();
+  const [lastEsameFeci, setLastEsameFeci] = useState();
+  const [lastCheckUpAndrologico, setLastCheckUpAndrologico] = useState();
+  const [lastCheckUpGinecologico, setLastCheckUpGinecologico] = useState();
+  const [lastCheckUpSenologico, setLastCheckUpSenologico] = useState();
+  const [lastPancolonscopia, setLastPancolonscopia] = useState();
+  const [lastTac, setLastTac] = useState();
+
+
+  const array_questions = [
+    [
+      ["Età", "age", setEta, null],
+      ["Sesso", "sex", setSex, null],
+      ["Altezza", "height", setHeight, null],
+      ["Peso", "weight", setWeight, null],
+      [
+        "Regione",
+        "combo",
+        setRegion,
+        [
+          "Sicilia",
+          "Piemonte",
+          "Marche",
+          "Valle d'Aosta",
+          "Toscana",
+          "Campania",
+          "Puglia",
+          "Veneto",
+          "Lombardia",
+          "Emilia-Romagna",
+          "Trentino-Alto Adige",
+          "Sardegna",
+          "Molise",
+          "Calabria",
+          "Abruzzo",
+          "Lazio",
+          "Liguria",
+          "Friuli-Venezia Giulia",
+          "Basilicata",
+          "Umbria",
+        ],
+      ],
+      [
+        "Tipo Pelle",
+        "combo",
+        setTipoPelle,
+        ["Molto chiara", "Chiara", "Intermedia", "Scura", "MoltoScura"],
+      ],
+      [
+        "Istruzione",
+        "combo",
+        setIstruzione,
+        ["Primaria", "Secondaria", "Laurea Breve", "Master-Phd"],
+      ],
+    ],
+    [
+      ["Hai il diabete", "bool", setDiabete, null],
+      ["Sei cardiopatico", "bool", setCardiopatia, null],
+      ["Soffri di Ipertensione", "bool", setDiabete, null],
+    ],
+    [
+      [
+        "Stile di vita nel Tempo Libero",
+        "combo",
+        setStileVita,
+        ["Leggera", "Moderata", "Pesante"],
+      ],
+      [
+        "Stile di vita durante lo Studio/Lavoro",
+        "combo",
+        setStileVitaWork,
+        ["Leggera", "Moderata", "Pesante"],
+      ],
+      [
+        "Abitudine al fumo",
+        "combo",
+        setFumo,
+        ["Nessuna", "Ex", "Lieve", "Moderata", "Intensa"],
+      ],
+      [
+        "Abitudine all'alcol",
+        "combo",
+        setDroga,
+        ["Nessuna", "Ex", "Lieve", "Moderata", "Intensa"],
+      ],
+      [
+        "Abitudine alla droga",
+        "combo",
+        setAlcol,
+        ["Nessuna", "Ex", "Lieve", "Moderata", "Intensa"],
+      ],
+      [
+        "Dieta",
+        "combo",
+        setDieta,
+        ["Poco Equilibrata", "Regolare", "Molto equilibrata"],
+      ],
+    ],
+    [
+      ["Familiarità patologie oncologiche", "bool", setFamilyOncologiche, null],
+      ["Familiarità patologie metaboliche", "bool", setFamilyMetaboliche, null],
+      [
+        "Familiarità patologie cardiovascolari",
+        "bool",
+        setFamilyCardiovascolari,
+        null,
+      ],
+      [
+        "Familiarità patologie respiratorie",
+        "bool",
+        setFamilyRespiratorie,
+        null,
+      ],
+      [
+        "Familiarità patologie onco-ginecologiche",
+        "bool",
+        setFamilyOncoGinecologiche,
+        null,
+      ],
+      [
+        "Familiarità patologie onco-andrologiche",
+        "bool",
+        setFamilyOncoAndrologiche,
+        null,
+      ],
+    ],
+    [
+      ["Vaccinazione anti-pneumococcia", "bool", setVaccinePneumococcica, null],
+      ["Vaccinazione anti-zoster", "bool", setVaccineZoster, null],
+      ["Vaccinazione anti-influenzale", "bool", setVaccineInfluenzale, null],
+    ],
+    [
+      ["Ultimo check-up dermatologico", "combo", setLastCheckUpDermatologico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultimo esame emocromocitometrico", "combo", setLastEsameEmocromocitometrico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultimo check-up odontoiatrico", "combo", setLastCheckUpOdontoiatrico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultimo dosaggio glicemico", "combo", setLastDosaggioGlicemico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultimo dosaggio del colesterolo", "combo", setLastDosaggioColesterolo, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultimo check-up cardiologico", "combo", setLastCheckUpCardiologico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultimo check-up oculistico", "combo", setLastCheckUpOculistico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultima spirometria", "combo", setLastSpirometria, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultimo esame delle feci", "combo", setLastEsameFeci, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultimo check-up andrologico", "combo", setLastCheckUpAndrologico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultima pancolonscopia", "combo", setLastPancolonscopia, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultimo check-up ginecologico", "combo", setLastCheckUpGinecologico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultimo check-up senologico", "combo", setLastCheckUpSenologico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+      ["Ultima TAC", "combo", setLastTac, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
+    ]
   ];
-	
-
-  const array_questions = [[
-    ["Età", "age", setEta],
-    ["Sesso", "sex", setSex],
-    ["Regione", "region", setRegion],
-    ["Peso", "weight", setWeight],
-    ["Altezza", "height", setHeight],
-    ["Frequenza fumo", "freq", setFumo],
-    ["Frequenza uso sostanze stupefacenti", "freq", setDroga],
-    ["Frequenza uso alcolici", "freq", setAlcol],
-    ["Frequenza stile di vita", "freq", setStileVita],
-    ["Diabete in famiglia", "bool", setFamilyDiabete],
-    ["Tumori in famiglia", "bool", setFamilyTumore],
-    ["Sei celiaco/a", "bool", setIsCeliaco],
-  ]];
-	const sendDataToFirebase = () => {
-		/*
+  const sendDataToFirebase = () => {
+    /*
 		var data = {
 			eta: eta,
 			sex: sex,
@@ -90,128 +241,48 @@ const Questionary: React.FC = () => {
 
 		console.log(data);
 		*/
-		
-		db.collection("users").doc("PRONTO").set({
-			eta: eta,
-			sex: sex,
-			height: height,
-			weight: weight,
-			region: region,
-			f_fumo: fumo,
-			f_droga: droga,
-			f_alcol: alcol,
-			stileVita: stileVita,
-			familyDiabete: familyDiabete,
-			familyTumore: familyTumore,
-			gravidanza: gravidanza,
-		})
-		.then(() => {
-				console.log("Document successfully written!");
-		})
-		.catch((error) => {
-				console.error("Error writing document: ", error);
-		});
-		
-	}
+
+    db.collection("users")
+      .doc("PRONTO")
+      .set({
+        eta: eta,
+        sesso: sex,
+        altezza: height,
+        peso: weight,
+        regione: region,
+        pelle: tipoPelle,
+        istruzione: istruzione,
+      })
+      .then(() => {
+        console.log("Document successfully written!");
+      })
+      .catch((error) => {
+        console.error("Error writing document: ", error);
+      });
+  };
 
   return (
-
     <IonPage>
       <IonHeader>
         <IonToolbar>
-         <IonTitle>Questionario {sex}</IonTitle>
+          <IonTitle>Questionario {sex}</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-	
         <IonSlides pager={true} className="fullscreen">
-					{array_questions_1.map((i:any) => {
-						return (
-						<BasicSlideQuestion
-							question={i[0]}
-							type={i[1]}
-							hook={i[2]}
-						/>
-					)})}
-					{/*
-          <BasicSlideQuestion
-            question={"Data di nascita"}
-            type={"age"}
-            hook={setEta}
-          />
-          <BasicSlideQuestion
-            question={"Sesso"}
-            type={"sex"}
-            hook={setSex}
-          />
-          <BasicSlideQuestion
-            question={"Altezza"}
-            type={"height"}
-            hook={setHeight}
-          />
-          <BasicSlideQuestion
-            question={"Peso"}
-            type={"weight"}
-            hook={setWeight}
-          />
-          <BasicSlideQuestion
-            question={"Regione"}
-            type={"region"}
-            hook={setRegion}
-          />
-          <BasicSlideQuestion
-            question={"Frequenza fumo"}
-            type={"freq"}
-            hook={setFumo}
-          />
-          <BasicSlideQuestion
-            question={"Frequenza uso sostanze stupefacenti"}
-            type={"freq"}
-            hook={setDroga}
-          />
-          <BasicSlideQuestion
-            question={"Frequenza uso alcolici"}
-            type={"freq"}
-            hook={setAlcol}
-          />
-          <BasicSlideQuestion
-            question={"Frequenza stile di vita"}
-            type={"freq"}
-            hook={setStileVita}
-          />
-          <BasicSlideQuestion
-            question={"Diabete in famiglia"}
-            type={"bool"}
-            hook={setFamilyDiabete}
-          />
-          <BasicSlideQuestion
-            question={"Tumori in famiglia"}
-            type={"bool"}
-            hook={setFamilyTumore}
-          />
-          <BasicSlideQuestion
-            question={"Sei celiaco/a"}
-            type={"bool"}
-            hook={setIsCeliaco}
-          />
-          <BasicSlideQuestion
-            question={"Sei mai stato in gravidanza"}
-            type={"bool"}
-            hook={setGravidanza}
-          />
-					{/*
-          <BasicSlideQuestion
-            title={"Domanda 14"}
-            question={"Hai mai usato la pillola"}
-            type={"bool"}
-            hook={setPillola}
-          />
-					*/}
-					<IonSlide>
-						<IonButton onClick={() => sendDataToFirebase()}>
-							SEND
-						</IonButton>
-					</IonSlide>
+          {array_questions[parseInt(match.params.id)].map((i: any) => {
+            return (
+              <BasicSlideQuestion
+                question={i[0]}
+                type={i[1]}
+                hook={i[2]}
+                answers={i[3]}
+              />
+            );
+          })}
+          <IonSlide>
+            <IonButton onClick={() => sendDataToFirebase()}>SEND</IonButton>
+          </IonSlide>
         </IonSlides>
       </IonContent>
     </IonPage>
