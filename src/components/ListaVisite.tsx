@@ -64,7 +64,7 @@ const ListaVisite: React.FC = () => {
         <div>
            <IonList>
                <IonListHeader>
-                   Da prenotare
+                   <h3>Da prenotare</h3>
                </IonListHeader>
                {visiteNonPrenotate.map((item:objVisita) =>{
                    return(
@@ -84,7 +84,7 @@ const ListaVisite: React.FC = () => {
 
            <IonList>
                <IonListHeader>
-                   Prenotate
+                   <h3>Prenotate</h3>
                </IonListHeader>
                {visitePrenotate.map((item:objVisita) =>{
                    return(
@@ -104,7 +104,7 @@ const ListaVisite: React.FC = () => {
 
            <IonList>
                <IonListHeader>
-                   Non eseguite
+                   <h3>Non eseguite</h3>
                </IonListHeader>
                {visiteNonFatte.map((item:objVisita) =>{
                    return(
@@ -124,7 +124,7 @@ const ListaVisite: React.FC = () => {
 
            <IonList>
                <IonListHeader>
-                   Eseguite
+                   <h3>Eseguite</h3>
                </IonListHeader>
                {visiteFatte.map((item:objVisita) =>{
                    return(
