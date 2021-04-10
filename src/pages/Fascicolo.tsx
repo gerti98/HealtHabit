@@ -13,6 +13,7 @@ const Fascicolo: React.FC = () => {
     <IonPage>
       <HeaderLogo/>
       <IonContent>
+          <h2 className="text-center">Storico delle visite</h2>
           <ListaVisite/>
       </IonContent>
     </IonPage>
