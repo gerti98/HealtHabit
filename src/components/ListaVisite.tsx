@@ -38,13 +38,13 @@ const ListaVisite: React.FC = () => {
                 let item = doc.data();
                 let timestamp = Date.now()
 
-                if(item.Prenotata == false && item.eseguita == false){
+                if(item.Prenotata == false && item.Eseguita == false){
                     temp_nonPrenotate.push(item);
                 }
-                else if(item.Prenotata == true && item.eseguita == true){
+                else if(item.Prenotata == true && item.Eseguita == true){
                     temp_fatte.push(item);
                 }
-                else if (item.Prenotata == true && item.eseguita == false){ 
+                else if (item.Prenotata == true && item.Eseguita == false){ 
                     if(item.Data > timestamp){
                         temp_Prenotate.push(item);
                     }
