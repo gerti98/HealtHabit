@@ -5,7 +5,7 @@ import { Redirect } from "react-router-dom";
 
 import "@codetrix-studio/capacitor-google-auth";
 import { Plugins } from "@capacitor/core";
-import { IonButton, IonLoading } from "@ionic/react";
+import { IonAvatar, IonButton, IonItem, IonLoading } from "@ionic/react";
 import { AppContext, userInterface } from "./use-reducer-context";
 
 const { Storage } = Plugins;
@@ -87,6 +87,11 @@ const GoogleBtn: React.FC = () => {
 
       } */}
       <IonLoading message="Attendi..." duration={0} isOpen={busy} />
+      <IonItem button onClick={() => login()}>
+        <IonAvatar>
+        <IonImg src="assets/images/Heroes-01.png"/>
+        </IonAvatar>
+      </IonItem>
       <IonButton
         className="login-button"
         onClick={() => login()}
