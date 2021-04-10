@@ -63,7 +63,7 @@ const ListaVisite: React.FC = () => {
         <div>
            <IonList>
                <IonListHeader>
-                   <h3>Da prenotare</h3>
+                   <h3 className="blue_text">Da prenotare</h3>
                </IonListHeader>
                {visiteNonPrenotate.map((item:objVisita) =>{
                    return(
@@ -72,7 +72,7 @@ const ListaVisite: React.FC = () => {
                      <img src="../theme/img/consultation.png"/>
                     </IonAvatar>
                     <IonLabel>
-                      <h2>{item.Nome}</h2>
+                      <h2 className="white_text">{item.Nome}</h2>
                       <h3>{item.Prenotata}</h3>
                    <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
                     </IonLabel>
@@ -83,7 +83,7 @@ const ListaVisite: React.FC = () => {
 
            <IonList>
                <IonListHeader>
-                   <h3>Prenotate</h3>
+                   <h3 className="blue_text">Prenotate</h3>
                </IonListHeader>
                {visitePrenotate.map((item:objVisita) =>{
                    return(
@@ -92,7 +92,7 @@ const ListaVisite: React.FC = () => {
                     <IonImg src={"../theme/img/consultation.png"}></IonImg>
                     </IonAvatar>
                     <IonLabel>
-                      <h2>{item.Nome}</h2>
+                      <h2 className="white_text">{item.Nome}</h2>
                       <h3>{item.Prenotata}</h3>
                    <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
                     </IonLabel>
@@ -103,7 +103,7 @@ const ListaVisite: React.FC = () => {
 
            <IonList>
                <IonListHeader>
-                   <h3>Non eseguite</h3>
+                   <h3 className="blue_text">Non eseguite</h3>
                </IonListHeader>
                {visiteNonFatte.map((item:objVisita) =>{
                    return(
@@ -112,7 +112,7 @@ const ListaVisite: React.FC = () => {
                       <img src="../theme/img/consultation.png"/>
                     </IonAvatar>
                     <IonLabel>
-                      <h2>{item.Nome}</h2>
+                      <h2 className="white_text">{item.Nome}</h2>
                       <h3>{item.Prenotata}</h3>
                    <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
                     </IonLabel>
@@ -123,7 +123,7 @@ const ListaVisite: React.FC = () => {
 
            <IonList>
                <IonListHeader>
-                   <h3>Eseguite</h3>
+                   <h3 className="blue_text">Eseguite</h3>
                </IonListHeader>
                {visiteFatte.map((item:objVisita) =>{
                    return(
@@ -132,7 +132,7 @@ const ListaVisite: React.FC = () => {
                     <img src="../theme/img/consultation.png"/>
                     </IonAvatar>
                     <IonLabel>
-                      <h2>{item.Nome}</h2>
+                      <h2 className="white_text">{item.Nome}</h2>
                       <h3>{item.Prenotata}</h3>
                    <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
                     </IonLabel>

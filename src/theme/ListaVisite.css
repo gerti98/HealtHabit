@@ -1,12 +1,10 @@
-
-
-
 .vertical-align{
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
 }
+
 .text-center{
     text-align: center;
 }
@@ -22,6 +20,7 @@
     --ion-background-color: #36b79a;
     --ion-item-background: #508754;
 }
+
 .background-green-item{
     margin-bottom: 10px;
     padding: 10px;
@@ -31,13 +30,15 @@
     --ion-item-background: #36b79a;
 }
 
-h2{
+.blue_text{
     color: #0085C1;
 }
 
-h3{
+.white_text{
     color: white;
 }
+
+
 
 .button-viola{
     font-size: 12px;
