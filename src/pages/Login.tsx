@@ -3,6 +3,7 @@ import {
   IonContent,
   IonGrid,
   IonHeader,
+  IonImg,
   IonLabel,
   IonPage,
   IonRow,
@@ -30,15 +31,15 @@ const Login: React.FC = () => {
   
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <IonContent fullscreen>
         <IonSlides pager={true} className="fullscreen">
           <IonSlide>
             <IonGrid>
+              <IonRow>
+                <IonCol>
+                   <IonImg src="assets/images/Heroes-01.png"/>
+                </IonCol>
+              </IonRow>
               <IonRow>
                 <IonCol>Pagina 1</IonCol>
               </IonRow>

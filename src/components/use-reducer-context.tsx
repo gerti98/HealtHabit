@@ -5,7 +5,9 @@ export interface userInterface {
     nome: string,
     email: string,
     img: string,
-    isLoggin: boolean
+    isLoggin: boolean,
+    sesso: string,
+    eta: number
 }
 
 
@@ -22,7 +24,9 @@ const initialState = {
     nome: '',
     email:'',
     img: '',
-    isLoggin: false
+    isLoggin: false,
+    sesso: '',
+    eta: '',
 }
 
 let reducer = (state:userInterface, action:any) => {
@@ -30,6 +34,9 @@ let reducer = (state:userInterface, action:any) => {
   switch(action.type) {
     case "login": {
       return { ...state, nome: action.nome, email: action.email, img: action.img, isLoggin: action.isLoggin }
+    }
+    case "user": {
+      return { ...state, sesso: action.sesso, eta: action.eta}
     }
   }
   return state;

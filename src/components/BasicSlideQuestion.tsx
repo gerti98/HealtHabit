@@ -153,10 +153,10 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
     case "sex":
       return (
         <IonSegment scrollable onIonChange={(e) => hook(e.detail.value)}>
-          <IonSegmentButton value="M">
+          <IonSegmentButton value="Maschio">
             <IonLabel>Maschio</IonLabel>
           </IonSegmentButton>
-          <IonSegmentButton value="F">
+          <IonSegmentButton value="Femmina">
             <IonLabel>Femmina</IonLabel>
           </IonSegmentButton>
         </IonSegment>
