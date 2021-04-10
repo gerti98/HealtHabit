@@ -43,7 +43,6 @@ const LinkUtili: React.FC = () => {
         await Browser.open({ url: linkPass });
     }
 
-
     return (
         <IonGrid  >
             <IonRow>
@@ -55,23 +54,23 @@ const LinkUtili: React.FC = () => {
                 <IonCol size="4" offset="1">
                     <img className="img_rounded" src="assets/images/FS.png"/>
                 </IonCol>
-                <IonCol size="6">
-                    <h2>Fascicolo elettronico</h2> 
+                <IonCol size="7">
+                    <h3>Fascicolo elettronico</h3> 
                 </IonCol>
             </IonRow>
             <IonRow  className="vertical-align background-green-item" onClick = {() => openLink(link.prenotazioni)}>
             <IonCol size="4" offset="1">
                     <img className="img_rounded" src="assets/images/prenotazione.png"/>
                 </IonCol>
-                <IonCol size="6">
-                    <h2>Modifica o sposta una visita</h2>
+                <IonCol size="7">
+                    <h3>Modifica o sposta una visita</h3>
                 </IonCol>
             </IonRow>
             <IonRow className="vertical-align background-green-item" onClick = {() => openLink(link.ricetta)}>
                 <IonCol size="4" offset="1">
                     <img className="img_rounded" src="assets/images/ricetta.jpg"/>
                 </IonCol>
-                <IonCol size="6">
+                <IonCol size="7">
                     <h3>Prenota una visita con la ricetta elettronica</h3>
                 </IonCol>
             </IonRow>
@@ -79,8 +78,8 @@ const LinkUtili: React.FC = () => {
             <IonCol size="4" offset="1">
                     <img className="img_rounded" src="assets/images/vaccino.png"/>
                 </IonCol>
-                <IonCol size="6">
-                    <h2>Prenotazione vaccino</h2>
+                <IonCol size="7">
+                    <h3>Prenotazione vaccino</h3>
                 </IonCol>
             </IonRow>
         </IonGrid>
