@@ -15,8 +15,6 @@ import '../theme/Profilo.css'
 
 
 interface utente{
-  sesso: string,
-  eta: number,
   quiz_categorieRischio: boolean,
   quiz_stileDiVita:  boolean,
   quiz_familiarita:boolean,
@@ -33,8 +31,6 @@ const Profilo: React.FC = () => {
         let item = snapshot.data();
         if(item != undefined){
             let objLink = {
-                sesso: item.sesso,
-                eta: item.eta,
                 quiz_categorieRischio: item.quiz_categorieRischio,
                 quiz_stileDiVita:  item.quiz_stileDiVita,
                 quiz_familiarita: item.quiz_familiarita,
@@ -58,7 +54,7 @@ const Profilo: React.FC = () => {
         <IonGrid >
           <IonRow className="vertical-align" >
              <IonCol size="4" className="text-center">
-             <img src={utente.eta < 50? "assets/images/man.png" : "assets/images/old-man.png"} />
+             <img src={state.eta < 50? "assets/images/man.png" : "assets/images/old-man.png"} />
              </IonCol>
              <IonCol size="8">
                 <IonRow>
@@ -68,7 +64,7 @@ const Profilo: React.FC = () => {
                 </IonRow>
                 <IonRow>
                   <IonCol>     
-                    <h3 className="mt-0">{utente.sesso}, {utente.eta} anni</h3>
+                    <h3 className="mt-0">{state.sesso}, {state.eta} anni</h3>
                   </IonCol>
               </IonRow>
               </IonCol>
