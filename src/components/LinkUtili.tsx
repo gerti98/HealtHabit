@@ -74,7 +74,6 @@ const LinkUtili: React.FC = () => {
                     Link per prenotare un vaccino
                 </IonCol>
             </IonRow>
-            
         </IonGrid>
             
     );
