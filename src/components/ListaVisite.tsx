@@ -74,8 +74,8 @@ const ListaVisite: React.FC = () => {
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
-                      <h3>{item.Prenotata}</h3>
-                   <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
+                      <h4 className="white_text">{item.Prenotata}</h4>
+                   <h4 className="white_text">Luogo: {item.Luogo} - Data: {item.Data}</h4>
                     </IonLabel>
                   </IonItem>
                    )
@@ -94,8 +94,8 @@ const ListaVisite: React.FC = () => {
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
-                      <h3>{item.Prenotata}</h3>
-                   <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
+                      <h4 className="white_text">{item.Prenotata}</h4>
+                   <h4 className="white_text">Luogo: {item.Luogo} - Data: {item.Data}</h4>
                     </IonLabel>
                   </IonItem>
                    )
@@ -114,8 +114,8 @@ const ListaVisite: React.FC = () => {
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
-                      <h3>{item.Prenotata}</h3>
-                   <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
+                      <h4 className="white_text">{item.Prenotata}</h4>
+                   <h4 className="white_text">Luogo: {item.Luogo} - Data: {item.Data}</h4>
                     </IonLabel>
                   </IonItem>
                    )
@@ -134,8 +134,8 @@ const ListaVisite: React.FC = () => {
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
-                      <h3>{item.Prenotata}</h3>
-                   <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
+                      <h4 className="white_text">{item.Prenotata}</h4>
+                   <h4 className="white_text">Luogo: {item.Luogo} - Data: {item.Data}</h4>
                     </IonLabel>
                   </IonItem>
                    )
