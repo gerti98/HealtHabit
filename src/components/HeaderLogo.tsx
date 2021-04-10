@@ -19,11 +19,6 @@ const HeaderLogo: React.FC = () => {
   return (
     <IonHeader>
       <IonToolbar className="whiteHeader">
-        <IonButtons slot="start">
-          <IonButton>
-            <IonIcon icon={heart}></IonIcon>
-          </IonButton>
-        </IonButtons>
         <IonTitle className="TextLogoCenter">HealtHabit</IonTitle>
       </IonToolbar>
     </IonHeader>
