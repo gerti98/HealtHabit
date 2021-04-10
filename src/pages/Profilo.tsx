@@ -8,12 +8,11 @@ import Notifiche from '../components/Notifiche';
 
 import React, { useContext, useState } from "react";
 import { AppContext } from "../components/use-reducer-context";
-import { State } from "ionicons/dist/types/stencil-public-runtime";
 import { db } from '../components/firebase';
 import { useHistory } from 'react-router';
 import '../util/global_var';
 import '../theme/Profilo.css'
-import  { GlobalVars } from '../util/global_var';
+
 
 interface utente{
   sesso: string,
