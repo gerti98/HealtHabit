@@ -55,7 +55,7 @@ const InfoVisita: React.FC<IndexProps> = ({ match }) => {
             </IonCol>
           </IonRow>
           <IonRow>
-            <IonCol>aojdweom ewoifnreifnerio w diwedo aowdjwioe</IonCol>
+            <IonCol>Descrizione</IonCol>
           </IonRow>
           <IonRow>
             <IonCol>
@@ -63,7 +63,7 @@ const InfoVisita: React.FC<IndexProps> = ({ match }) => {
             </IonCol>
           </IonRow>
           <IonRow>
-            <IonCol>aojdweom ewoifnreifnerio w diwedo aowdjwioe</IonCol>
+            <IonCol>Descrizione di come si svolge</IonCol>
           </IonRow>
         </IonGrid>
       </IonContent>
