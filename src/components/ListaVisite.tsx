@@ -91,13 +91,14 @@ const ListaVisite: React.FC = () => {
 
   return (
     <div>
-      <IonItemSliding>
+      
         <IonList>
           <IonListHeader>
             <h3 className="blue_text">Da prenotare</h3>
           </IonListHeader>
           {visiteNonPrenotate.map((item: objVisita) => {
             return (
+            <IonItemSliding>
               <IonItem
                 lines="none"
                 className="background-green-item"
@@ -118,10 +119,7 @@ const ListaVisite: React.FC = () => {
                   </h4>
                 </IonLabel>
               </IonItem>
-            );
-          })}
-        </IonList>
-        <IonItemOptions side="end">
+              <IonItemOptions side="end">
           <IonItemOption
             color="danger"
             className="IonItemsPrincipalOptionFirst"
@@ -132,6 +130,10 @@ const ListaVisite: React.FC = () => {
         </IonItemOptions>
       </IonItemSliding>
 
+            );
+          })}
+        </IonList>
+     
       <IonList>
         <IonListHeader>
           <h3 className="blue_text">Prenotate</h3>
