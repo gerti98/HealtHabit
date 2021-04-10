@@ -17,7 +17,7 @@ import { Plugins } from "@capacitor/core";
 import React from "react";
 const { Storage } = Plugins;
 
-const Tab3: React.FC = () => { 
+const Homepage: React.FC = () => { 
   const data = async () => {
     const ret = await Storage.get({ key: "user" });
     console.log(ret);
@@ -29,7 +29,7 @@ const Tab3: React.FC = () => {
     <IonPage>
       <HeaderLogo />
       <LinkUtili />
-      <IonContent>tab3</IonContent>
+      <IonContent>Homepage</IonContent>
       <IonButton
         onClick={() => {
           Storage.clear();
@@ -42,4 +42,4 @@ const Tab3: React.FC = () => {
   );
 };
 
-export default Tab3;
+export default Homepage;

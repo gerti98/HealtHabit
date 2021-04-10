@@ -6,7 +6,7 @@ import ListaVisite from '../components/ListaVisite';
 import Notifiche from '../components/Notifiche';
 
 
-const Tab2: React.FC = () => {
+const Fascicolo: React.FC = () => {
     
   return (
     <IonPage>
@@ -18,4 +18,4 @@ const Tab2: React.FC = () => {
   );
 };
 
-export default Tab2;
+export default Fascicolo;

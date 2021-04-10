@@ -18,11 +18,18 @@ import '../components/firebase.js';
 import { db } from "../components/firebase.js";
 
 const Questionary: React.FC = () => {
+  //LEVEL 1
   const [eta, setEta] = useState();
   const [sex, setSex] = useState();
   const [height, setHeight] = useState();
   const [weight, setWeight] = useState();
   const [region, setRegion] = useState();
+  const [tipoPelle, setTipoPelle] = useState();
+  const [istruzione, setIstruzione] = useState();
+  const [diabete, setDiabete] = useState();
+  const [cardiopatia, setCardiopatia] = useState();
+  const [ipertensione, setIpertensione] = useState();
+
   const [fumo, setFumo] = useState();
   const [droga, setDroga] = useState();
   const [alcol, setAlcol] = useState();
@@ -32,6 +39,7 @@ const Questionary: React.FC = () => {
   const [isCeliaco, setIsCeliaco] = useState();
   const [gravidanza, setGravidanza] = useState();
   const [pillola, setPillola] = useState();
+  const [pelle, setPelle] = useState();
 
 	const array_questions_1 = [
     ["Data di nascita", "age", setEta],
@@ -49,6 +57,20 @@ const Questionary: React.FC = () => {
   ];
 	
 
+  const array_questions = [[
+    ["Età", "age", setEta],
+    ["Sesso", "sex", setSex],
+    ["Regione", "region", setRegion],
+    ["Peso", "weight", setWeight],
+    ["Altezza", "height", setHeight],
+    ["Frequenza fumo", "freq", setFumo],
+    ["Frequenza uso sostanze stupefacenti", "freq", setDroga],
+    ["Frequenza uso alcolici", "freq", setAlcol],
+    ["Frequenza stile di vita", "freq", setStileVita],
+    ["Diabete in famiglia", "bool", setFamilyDiabete],
+    ["Tumori in famiglia", "bool", setFamilyTumore],
+    ["Sei celiaco/a", "bool", setIsCeliaco],
+  ]];
 	const sendDataToFirebase = () => {
 		/*
 		var data = {

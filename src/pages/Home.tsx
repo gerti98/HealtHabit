@@ -8,13 +8,15 @@ import {buildOutline, documentsOutline, ellipse, linkOutline, personOutline, squ
 
 import '../theme/Home.css';
 
-import Tab1 from './Tab1';
-import Tab2 from './Tab2';
-import Tab3 from './Tab3';
+import Profilo from './Profilo';
+import Fascicolo from './Fascicolo';
+import Homepage from './Homepage';
 import Login from './Login';
+import Link from './Link';
 
 import { IonReactRouter } from '@ionic/react-router';
 import Questionary from './Questionary';
+import Impostazioni from './Impostazioni';
 
 const Home: React.FC = () => {
 
@@ -23,7 +25,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <IonFab vertical="bottom" horizontal="center" slot="fixed" className="fab-margin" >
-          <IonFabButton>
+          <IonFabButton onClick={() => history.push("/home/homepage")}>
             <IonImg src="assets/images/logo.png" />
          </IonFabButton>
         </IonFab>
@@ -31,42 +33,48 @@ const Home: React.FC = () => {
            
         <IonRouterOutlet>
           
-          <Route exact path="/home/tab1">
-            <Tab1 />
+          <Route exact path="/home/profilo">
+            <Profilo />
           </Route>
-          <Route exact path="/home/tab2">
-            <Tab2 />
+          <Route exact path="/home/fascicolo">
+            <Fascicolo />
           </Route>
-          <Route path="/home/tab3">
-            <Tab3 />
+          <Route path="/home/homepage">
+            <Homepage />
+          </Route>
+          <Route path="/home/link">
+            <Link />
+          </Route>
+          <Route path="/home/impostazioni">
+            <Impostazioni />
           </Route>
           <Route path="/home/questionary">
             <Questionary />
           </Route>
           <Route exact path="/home">
-            <Redirect to="/home/tab1" />
+            <Redirect to="/home/Profilo" />
           </Route>
           <Route exact path="/login">
             <Login />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/home/tab1">
+          <IonTabButton tab="Profilo" href="/home/profilo">
             <IonIcon icon={personOutline} />
       
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/home/tab2">
+          <IonTabButton tab="Fascicolo" href="/home/fascicolo">
             <IonIcon icon={documentsOutline} />
         
           </IonTabButton>
-          <IonTabButton tab="tab3" >
+          <IonTabButton tab="Homepage" >
            
           </IonTabButton>
-          <IonTabButton tab="tab4" href="/home/tab4">
+          <IonTabButton tab="Link" href="/home/link">
             <IonIcon icon={linkOutline} />
            
           </IonTabButton>
-          <IonTabButton tab="tab5" href="/home/tab5">
+          <IonTabButton tab="Impostazioni" href="/home/impostazioni">
             <IonIcon icon={buildOutline} />
           
           </IonTabButton>

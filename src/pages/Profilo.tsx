@@ -10,7 +10,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../components/use-reducer-context";
 import { State } from "ionicons/dist/types/stencil-public-runtime";
 
-const Tab1: React.FC = () => {
+const Profilo: React.FC = () => {
   const { state, dispatch } = useContext(AppContext);
   console.log(state);
 
@@ -36,8 +36,10 @@ const Tab1: React.FC = () => {
             </IonButton>
           </IonItem>
         </IonList>
-        {/*         
+
+
         <IonButton href="login">APRI LOGIN PAGE</IonButton>
+        {/*
         <IonButton onClick={() => Notifiche.schedule()}>Notifiche</IonButton>
          */}
       </IonContent>
@@ -45,4 +47,4 @@ const Tab1: React.FC = () => {
   );
 };
 
-export default Tab1;
+export default Profilo;
