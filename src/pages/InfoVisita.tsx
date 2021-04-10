@@ -49,9 +49,9 @@ const InfoVisita: React.FC<IndexProps> = ({ match }) => {
 
       <IonContent>
         <IonHeader>
-          <IonToolbar>
+          <IonToolbar className="whiteHeader">
             <IonButtons slot="start">
-              <IonBackButton defaultHref="/home"/>
+              <IonBackButton defaultHref="/home/fascicolo"/>
             </IonButtons>
           </IonToolbar>
         </IonHeader>

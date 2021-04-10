@@ -14,12 +14,11 @@ class Notifiche {
 
       await LocalNotifications.schedule({
         notifications: [{
-          title: 'Ah Fantastica',
-          body: "Aho mica t'ho detto che fai caa",
+          title: 'Remainder Visita',
+          body: "Apri l'app HealtHabit",
           id: 554,
           schedule: { at: new Date(Date.now() + 1000 * 5) },
           sound: "bell",
-        
           actionTypeId: "",
           extra: null
         }]

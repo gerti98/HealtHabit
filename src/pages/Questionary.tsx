@@ -20,6 +20,7 @@ import { AppContext } from "../components/use-reducer-context";
 import "../components/firebase.js";
 import { db } from "../components/firebase.js";
 import "../util/global_var";
+import "../theme/Questionary.css";
 
 interface IndexProps
   extends RouteComponentProps<{
@@ -423,7 +424,7 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
+        <IonToolbar className="whiteHeader">
           <IonButtons slot="start">
             <IonBackButton defaultHref="/home" />
           </IonButtons>
