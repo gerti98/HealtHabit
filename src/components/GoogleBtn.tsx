@@ -87,7 +87,7 @@ const GoogleBtn: React.FC = () => {
 
       } */}
       <IonLoading message="Attendi..." duration={0} isOpen={busy} />
-      <IonItem button onClick={() => login()} >
+      <IonItem button onClick={() => login()} lines="none">
         <IonAvatar slot="start">
           <IonImg src="assets/images/google_logo.png"/>
         </IonAvatar>

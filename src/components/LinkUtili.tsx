@@ -83,7 +83,6 @@ const LinkUtili: React.FC = () => {
                     <h2>Prenotazione vaccino</h2>
                 </IonCol>
             </IonRow>
-            
         </IonGrid>
             
     );
