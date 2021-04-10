@@ -1,4 +1,4 @@
-import { IonButton, IonContent, IonHeader, IonPage, IonTabs, IonRouterOutlet, IonTabBar, IonTabButton, IonIcon, IonLabel, IonToolbar, IonTitle, IonButtons } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonPage, IonTabs, IonRouterOutlet, IonTabBar, IonTabButton, IonIcon, IonLabel, IonToolbar, IonTitle, IonButtons, IonImg, IonFab, IonFabButton } from '@ionic/react';
 import { useContext } from 'react';
 import { useHistory } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
@@ -21,8 +21,16 @@ const Home: React.FC = () => {
   const {state, dispatch} = useContext(AppContext)
   const history = useHistory();
   return (
+    <div>
+      <IonFab vertical="bottom" horizontal="center" slot="fixed" className="fab-margin" >
+          <IonFabButton>
+            <IonImg src="assets/images/logo.png" />
+         </IonFabButton>
+        </IonFab>
       <IonTabs>
+           
         <IonRouterOutlet>
+          
           <Route exact path="/home/tab1">
             <Tab1 />
           </Route>
@@ -45,18 +53,27 @@ const Home: React.FC = () => {
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/home/tab1">
             <IonIcon icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+      
           </IonTabButton>
           <IonTabButton tab="tab2" href="/home/tab2">
             <IonIcon icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+        
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/home/tab3">
+          <IonTabButton tab="tab3" >
+           
+          </IonTabButton>
+          <IonTabButton tab="tab4" href="/home/tab4">
             <IonIcon icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+           
+          </IonTabButton>
+          <IonTabButton tab="tab5" href="/home/tab5">
+            <IonIcon icon={square} />
+          
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
+</div>
+
 
   );
 };

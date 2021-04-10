@@ -19,15 +19,14 @@ interface objVisita{
 }
 
 const ListaVisite: React.FC = () => {
-    const [visiteFatte, setVisiteFatte] = useState([{} as objVisita]);
+    const [visiteFatte, setVisiteFatte] = useState([]);
     const [visiteNonFatte, setVisiteNonFatte] = useState([{} as objVisita]);
     const [visitePrenotate, setVisitePrenotate] = useState([{} as objVisita]);
     const [visiteNonPrenotate, setVisiteNonPrenotate] = useState([{} as objVisita]);
-    useEffect(() =>{
-        console.log(visiteFatte);
-    })
+    
     useIonViewWillEnter(() =>{
         db.collection("visite").doc("Giovanni").collection("visite").orderBy('Data', "asc").get().then((snapshot) =>{
+            console.log(snapshot)
             let temp_fatte: any = []
             let temp_nonFatte: any =[]
             let temp_nonPrenotate: any =[]
@@ -38,13 +37,13 @@ const ListaVisite: React.FC = () => {
                 let item = doc.data();
                 let timestamp = Date.now()
 
-                if(item.Prenotata == false && item.eseguita == false){
+                if(item.Prenotata == false && item.Eseguita == false){
                     temp_nonPrenotate.push(item);
                 }
-                else if(item.Prenotata == true && item.eseguita == true){
+                else if(item.Prenotata == true && item.Eseguita == true){
                     temp_fatte.push(item);
                 }
-                else if (item.Prenotata == true && item.eseguita == false){ 
+                else if (item.Prenotata == true && item.Eseguita == false){ 
                     if(item.Data > timestamp){
                         temp_Prenotate.push(item);
                     }
