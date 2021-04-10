@@ -70,12 +70,13 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
       return (
         <IonSegment
           scrollable
+          mode="ios"
           onIonChange={(e) => hook(e.detail.value == "true")}
         >
-          <IonSegmentButton value="true">
+          <IonSegmentButton mode="ios" value="true">
             <IonLabel>T</IonLabel>
           </IonSegmentButton>
-          <IonSegmentButton value="false">
+          <IonSegmentButton mode="ios" value="false">
             <IonLabel>F</IonLabel>
           </IonSegmentButton>
         </IonSegment>
@@ -108,6 +109,7 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
       return (
         <IonItem>
           <IonInput
+            mode="ios"
             placeholder="Inserisci Altezza"
             onIonChange={(e) => hook(Number(e.detail.value))}
             inputMode="decimal"
@@ -119,6 +121,7 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
       return (
         <IonItem>
           <IonInput
+            mode="ios"
             placeholder="Inserisci Peso"
             onIonChange={(e) => hook(Number(e.detail.value))}
             inputMode="decimal"
@@ -130,6 +133,7 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
       return (
         <IonItem>
           <IonInput
+            mode="ios"
             placeholder="Inserisci Età"
             onIonChange={(e) => hook(Number(e.detail.value))}
             inputMode="numeric"
@@ -141,6 +145,8 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
       return (
         <IonItem>
           <IonSelect
+            mode="ios"
+            
             onIonChange={(e) => hook(e.detail.value)}
             interface="popover"
           >
@@ -152,11 +158,11 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
       );
     case "sex":
       return (
-        <IonSegment scrollable onIonChange={(e) => hook(e.detail.value)}>
-          <IonSegmentButton value="Maschio">
+        <IonSegment scrollable mode="ios" onIonChange={(e) => hook(e.detail.value)}>
+          <IonSegmentButton mode="ios" value="Maschio">
             <IonLabel className="blueText">Maschio</IonLabel>
           </IonSegmentButton>
-          <IonSegmentButton value="Femmina">
+          <IonSegmentButton mode="ios" value="Femmina">
             <IonLabel className="blueText">Femmina</IonLabel>
           </IonSegmentButton>
         </IonSegment>
