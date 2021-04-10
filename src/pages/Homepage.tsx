@@ -25,6 +25,8 @@ const { Storage } = Plugins;
 
 const Homepage: React.FC = () => {
   const [percentage, setPercentage] = useState(0);
+  const [numVisite, setNumVisite] = useState(0);
+
   const data = async () => {
     const ret = await Storage.get({ key: "user" });
     console.log(ret);
@@ -82,7 +84,8 @@ const Homepage: React.FC = () => {
           if (item.cup_tac == "Meno di 1 anno fa") {
             curr++;
           }
-
+          
+          setNumVisite(curr);
           setPercentage(curr / 14);
         });
       });
@@ -91,8 +94,20 @@ const Homepage: React.FC = () => {
   return (
     <IonPage>
       <HeaderLogo />
-      <IonContent>Homepage</IonContent>
-      <IonProgressBar value={percentage}></IonProgressBar>
+
+      <IonContent>
+        <IonItem lines="none">
+        {(percentage*100).toPrecision(2)} %
+        
+        </IonItem>
+        <IonProgressBar buffer={percentage} value={percentage}></IonProgressBar>
+        <IonItem lines="none">
+          Visite effettuate: {numVisite}
+        </IonItem>
+        <IonItem lines="none">
+          Visite mancanti: {14 - numVisite}
+        </IonItem>
+      </IonContent>
     </IonPage>
   );
 };
