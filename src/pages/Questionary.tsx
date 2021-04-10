@@ -49,6 +49,7 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
       "Familiarita",
       "Vaccini",
       "Salute Personale",
+      "Covid",
     ];
 
     var bigData = [
@@ -104,6 +105,11 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
         cup_seno: lastCheckUpSenologico,
         cup_tac: lastTac,
       },
+      {
+        covid: covid,
+        sintomi: sintomi,
+        vaccino: vaccino,
+      }
     ];
 
     console.log(bigData[index]);
@@ -126,6 +132,7 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
         .catch((error) => {
           console.error("Error writing document: ", error);
         });
+
     } else {
       db.collection("users")
         .doc("MEGAPRONTONEEEE2")
@@ -190,6 +197,12 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
   const [lastPancolonscopia, setLastPancolonscopia] = useState();
   const [lastTac, setLastTac] = useState();
 
+
+  //Const 
+  const [covid, setCovid] = useState();
+  const [sintomi, setSintomi] = useState();
+  const [vaccino, setVaccinoCovid] = useState();
+  
   const array_questions = [
     [],
     [
@@ -398,6 +411,11 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
         setLastTac,
         ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
       ],
+    ],
+      [
+        ["Hai mai avuto il covid", "bool", setCovid, null],
+        ["Livello dei sintomi", "combo", setSintomi, ["Nessuno", "Lievi", "Gravi"]],
+        ["Sei vaccinato al Covid", "bool", setVaccinoCovid, null],
     ],
   ];
 

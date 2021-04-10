@@ -22,6 +22,7 @@ interface utente{
   quiz_familiarita:boolean,
   quiz_vaccini: boolean,
   quiz_salutePersonale: boolean
+  quiz_covid: boolean
 }
 const Profilo: React.FC = () => {
   const { state, dispatch } = useContext(AppContext);
@@ -38,7 +39,8 @@ const Profilo: React.FC = () => {
                 quiz_stileDiVita:  item.quiz_stileDiVita,
                 quiz_familiarita: item.quiz_familiarita,
                 quiz_vaccini: item.quiz_vaccini,
-                quiz_salutePersonale: item.quiz_salutePersonale
+                quiz_salutePersonale: item.quiz_salutePersonale,
+                quiz_covid: item.quiz_covid
             }
             setUtente(objLink);
         }
@@ -122,6 +124,13 @@ const Profilo: React.FC = () => {
               <IonLabel>Salute personale</IonLabel>
               <IonButton slot="end" href="/questionary/6" className={ utente.quiz_salutePersonale? "bg-viola": "bg-blue"}>
                   { utente.quiz_salutePersonale? "Modifica": "Esegui"}
+              </IonButton>
+            </IonItem>
+            <IonItem>
+              <IonCheckbox checked={ utente.quiz_covid? true: false} disabled={true}></IonCheckbox>      
+              <IonLabel>Covid</IonLabel>
+              <IonButton slot="end" href="/home/questionary/7" className={ utente.quiz_covid? "bg-viola": "bg-blue"}>
+                  { utente.quiz_covid? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>
   
