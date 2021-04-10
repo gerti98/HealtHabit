@@ -154,10 +154,10 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
       return (
         <IonSegment scrollable onIonChange={(e) => hook(e.detail.value)}>
           <IonSegmentButton value="Maschio">
-            <IonLabel>Maschio</IonLabel>
+            <IonLabel className="blueText">Maschio</IonLabel>
           </IonSegmentButton>
           <IonSegmentButton value="Femmina">
-            <IonLabel>Femmina</IonLabel>
+            <IonLabel className="blueText">Femmina</IonLabel>
           </IonSegmentButton>
         </IonSegment>
       );

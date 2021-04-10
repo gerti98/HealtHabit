@@ -2,7 +2,8 @@ import { IonAvatar, IonButton, IonButtons, IonCol, IonContent, IonGrid, IonHeade
 import ExploreContainer from '../components/ExploreContainer';
 import {heart, documentTextOutline, bookOutline, receiptOutline,eyedrop} from 'ionicons/icons'
 
-import "../theme/LinkUtili.css"
+import "../theme/ListaVisite.css"
+
 import React, { useEffect, useState } from 'react';
 import { db } from './firebase';
 import {Plugins} from '@capacitor/core';
