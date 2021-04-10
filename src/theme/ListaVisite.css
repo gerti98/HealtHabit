@@ -31,8 +31,12 @@
     --ion-item-background: #36b79a;
 }
 
-h3, h2{
+h2{
     color: #0085C1;
+}
+
+h3{
+    color: white;
 }
 
 .button-viola{

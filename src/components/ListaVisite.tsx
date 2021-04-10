@@ -2,12 +2,10 @@ import { IonAvatar, IonButton, IonButtons, IonCol, IonContent, IonGrid, IonHeade
 import ExploreContainer from '../components/ExploreContainer';
 import {heart, documentTextOutline, bookOutline, receiptOutline,eyedrop} from 'ionicons/icons'
 
-import "../theme/ListaVisite.css"
-
 import React, { useEffect, useState } from 'react';
 import { db } from './firebase';
 import {Plugins} from '@capacitor/core';
-
+import "../theme/ListaVisite.css"
 
 
 interface objVisita{
@@ -65,11 +63,11 @@ const ListaVisite: React.FC = () => {
         <div>
            <IonList>
                <IonListHeader>
-                   Da prenotare
+                   <h3>Da prenotare</h3>
                </IonListHeader>
                {visiteNonPrenotate.map((item:objVisita) =>{
                    return(
-                    <IonItem key={item.Luogo + item.Data + item.Nome} href={"/home/info_visita/" + item.Nome}>
+                    <IonItem className="background-green-item" key={item.Luogo + item.Data + item.Nome} href={"/home/info_visita/" + item.Nome}>
                     <IonAvatar slot="start">
                      <img src="../theme/img/consultation.png"/>
                     </IonAvatar>
@@ -85,7 +83,7 @@ const ListaVisite: React.FC = () => {
 
            <IonList>
                <IonListHeader>
-                   Prenotate
+                   <h3>Prenotate</h3>
                </IonListHeader>
                {visitePrenotate.map((item:objVisita) =>{
                    return(
@@ -105,7 +103,7 @@ const ListaVisite: React.FC = () => {
 
            <IonList>
                <IonListHeader>
-                   Non eseguite
+                   <h3>Non eseguite</h3>
                </IonListHeader>
                {visiteNonFatte.map((item:objVisita) =>{
                    return(
@@ -125,7 +123,7 @@ const ListaVisite: React.FC = () => {
 
            <IonList>
                <IonListHeader>
-                   Eseguite
+                   <h3>Eseguite</h3>
                </IonListHeader>
                {visiteFatte.map((item:objVisita) =>{
                    return(
