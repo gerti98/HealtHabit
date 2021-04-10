@@ -4,6 +4,7 @@ import {
     IonContent,
     IonGrid,
     IonHeader,
+    IonItem,
     IonPage,
     IonRow,
     IonTitle,
@@ -15,6 +16,7 @@ import {
   
   import { Plugins } from "@capacitor/core";
   import React from "react";
+import Notifiche from "../components/Notifiche";
   const { Storage } = Plugins;
   
   const Impostazioni: React.FC = () => { 
@@ -28,9 +30,12 @@ import {
     return (
       <IonPage>
         <HeaderLogo />
-        <LinkUtili />
-        <IonContent>Homepage</IonContent>
-        <IonButton
+        <IonContent>
+          <IonItem lines="none">
+          Demo
+          </IonItem>
+          <IonButton
+          expand="block"
           onClick={() => {
             Storage.clear();
             console.log("Svuotato local storage");
@@ -38,6 +43,10 @@ import {
         >
           SVUOTA LOCAL STORAGE
         </IonButton>
+        <IonButton expand="block" onClick={() => Notifiche.schedule()}>Notifiche</IonButton>
+        </IonContent>
+        
+         
       </IonPage>
     );
   };
