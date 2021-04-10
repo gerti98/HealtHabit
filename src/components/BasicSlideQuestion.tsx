@@ -11,6 +11,8 @@ import {
   IonRow,
   IonSegment,
   IonSegmentButton,
+  IonSelect,
+  IonSelectOption,
   IonSlide,
   IonTitle,
   IonToolbar,
@@ -34,6 +36,29 @@ interface type_int {
   type: String;
   hook: Function;
 }
+
+const regioni = [
+  "Sicilia",
+  "Piemonte",
+  "Marche",
+  "Valle d'Aosta",
+  "Toscana",
+  "Campania",
+  "Puglia",
+  "Veneto",
+  "Lombardia",
+  "Emilia-Romagna",
+  "Trentino-Alto Adige",
+  "Sardegna",
+  "Molise",
+  "Calabria",
+  "Abruzzo",
+  "Lazio",
+  "Liguria",
+  "Friuli-Venezia Giulia",
+  "Basilicata",
+  "Umbria",
+];
 
 const GetQuestionFromType: React.FC<type_int> = ({ type, hook }) => {
   switch (type) {
@@ -83,6 +108,7 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook }) => {
             placeholder="Inserisci Altezza"
             onIonChange={(e) => hook(Number(e.detail.value))}
             inputMode="decimal"
+            type="number"
           ></IonInput>
         </IonItem>
       );
@@ -93,6 +119,7 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook }) => {
             placeholder="Inserisci Peso"
             onIonChange={(e) => hook(Number(e.detail.value))}
             inputMode="decimal"
+            type="number"
           ></IonInput>
         </IonItem>
       );
@@ -103,17 +130,21 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook }) => {
             placeholder="Inserisci Età"
             onIonChange={(e) => hook(Number(e.detail.value))}
             inputMode="numeric"
+            type="number"
           ></IonInput>
         </IonItem>
       );
     case "region":
       return (
         <IonItem>
-          <IonInput
-            placeholder="Inserisci Regione"
+          <IonSelect
             onIonChange={(e) => hook(e.detail.value)}
-            inputMode="text"
-          ></IonInput>
+            interface="popover"
+          >
+            {regioni.map((i) => {
+              return <IonSelectOption value={i}>{i}</IonSelectOption>;
+            })}
+          </IonSelect>
         </IonItem>
       );
     case "sex":
@@ -146,12 +177,11 @@ const BasicSlideQuestion: React.FC<obj> = ({ question, type, hook }) => {
   return (
     <IonSlide>
       <IonGrid>
-        <IonRow >
+        <IonRow>
           <IonCol>{question}</IonCol>
         </IonRow>
         <IonRow>
-          <IonCol size="10" offset="2">
-          </IonCol>
+          <IonCol size="10" offset="2"></IonCol>
         </IonRow>
         <IonRow>
           <IonCol size="10" offset="1">
