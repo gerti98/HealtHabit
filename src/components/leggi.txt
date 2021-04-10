@@ -31,6 +31,5 @@
             
         <IonItemOptions side="end">
           <IonItemOption color="danger" className="IonItemsPrincipalOptionFirst" onClick = { () => alert('pressed non mi piace')}>Segnala</IonItemOption>
-          <IonItemOption color="success" className="IonItemsPrincipalOptionSecond" onClick = { () => alert('pressed mi piace')}>Iscriviti</IonItemOption>
         </IonItemOptions>
     </IonItemSliding>
