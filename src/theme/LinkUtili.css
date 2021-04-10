@@ -1,3 +1,6 @@
+
+
+
 .vertical-align{
     display: flex;
     align-items: center;
@@ -27,6 +30,11 @@
     --ion-background-color: #36b79a;
     --ion-item-background: #36b79a;
 }
+
+h1{
+    color: #0085C1;
+}
+
 .button-viola{
     font-size: 12px;
     width: 100%;
