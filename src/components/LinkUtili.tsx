@@ -41,22 +41,40 @@ const LinkUtili: React.FC = () => {
     }
 
     return (
-        <IonGrid>
-            <IonRow>
-                <IonCol size="3">
-                    <IonButton expand="full" color="primary" onClick = {() => openLink(link.fascicolo)} > <IonIcon icon={documentTextOutline}/></IonButton>
+        <IonGrid >
+            <IonRow onClick = {() => openLink(link.fascicolo)}>
+                <IonCol size="4">
+                    <IonIcon icon={documentTextOutline}/>
                 </IonCol>
-                <IonCol size="3">
-                    <IonButton expand="full" color="primary" onClick = {() => openLink(link.prenotazioni)}> <IonIcon icon={bookOutline}/></IonButton>
+                <IonCol size="8">
+                    Link 
                 </IonCol>
-                    <IonCol size="3">
-                <IonButton expand="full" color="primary" onClick = {() => openLink(link.ricetta)}> <IonIcon icon={receiptOutline}/></IonButton>
-                </IonCol>
-                <IonCol size="3">
-                    <IonButton expand="full" color="primary " onClick = {() => openLink(link.vaccino)}> <IonIcon icon={eyedrop}/></IonButton>
-                </IonCol>
-
             </IonRow>
+            <IonRow onClick = {() => openLink(link.prenotazioni)}>
+                <IonCol size="4">
+                    <IonIcon icon={bookOutline}/>
+                </IonCol>
+                <IonCol size="8">
+                    Link per prenotare una visita
+                </IonCol>
+            </IonRow>
+            <IonRow onClick = {() => openLink(link.ricetta)}>
+                <IonCol size="4">
+                    <IonIcon icon={receiptOutline}/>
+                </IonCol>
+                <IonCol size="8">
+                    Link per consultare le ricette online
+                </IonCol>
+            </IonRow>
+            <IonRow onClick = {() => openLink(link.vaccino)}>
+                <IonCol size="4">
+                    <IonIcon icon={eyedrop}/>
+                </IonCol>
+                <IonCol size="8">
+                    Link per prenotare un vaccino
+                </IonCol>
+            </IonRow>
+            
         </IonGrid>
             
     );

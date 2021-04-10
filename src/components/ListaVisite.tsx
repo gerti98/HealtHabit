@@ -68,7 +68,7 @@ const ListaVisite: React.FC = () => {
                </IonListHeader>
                {visiteNonPrenotate.map((item:objVisita) =>{
                    return(
-                    <IonItem key={item.Luogo + item.Data + item.Nome}>
+                    <IonItem key={item.Luogo + item.Data + item.Nome} href={"/home/info_visita/" + item.Nome}>
                     <IonAvatar slot="start">
                      <img src="../theme/img/consultation.png"/>
                     </IonAvatar>
