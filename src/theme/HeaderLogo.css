@@ -1,3 +1,9 @@
 .TextLogoCenter{
     text-align: center;
 }
+
+.whiteHeader{
+    --color: white;
+    --border-color: #13A29C;
+    --background: #13A29C;
+}

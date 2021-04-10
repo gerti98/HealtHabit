@@ -89,18 +89,18 @@ const Home: React.FC = () => {
             <Login />
           </Route>
         </IonRouterOutlet>
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="Profilo" href="/home/profilo">
+        <IonTabBar slot="bottom" className="backgroudDarkGreen">
+          <IonTabButton tab="Profilo" href="/home/profilo" className="whiteTabButton">
             <IonIcon icon={personOutline} />
           </IonTabButton>
-          <IonTabButton tab="Fascicolo" href="/home/fascicolo">
+          <IonTabButton tab="Fascicolo" href="/home/fascicolo" className="whiteTabButton">
             <IonIcon icon={documentsOutline} />
           </IonTabButton>
           <IonTabButton tab="Homepage"></IonTabButton>
-          <IonTabButton tab="Link" href="/home/link">
+          <IonTabButton tab="Link" href="/home/link" className="whiteTabButton">
             <IonIcon icon={linkOutline} />
           </IonTabButton>
-          <IonTabButton tab="Impostazioni" href="/home/impostazioni">
+          <IonTabButton tab="Impostazioni" href="/home/impostazioni" className="whiteTabButton">
             <IonIcon icon={buildOutline} />
           </IonTabButton>
         </IonTabBar>
