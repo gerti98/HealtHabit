@@ -68,14 +68,14 @@ const ListaVisite: React.FC = () => {
                </IonListHeader>
                {visiteNonPrenotate.map((item:objVisita) =>{
                    return(
-                    <IonItem className="background-green-item" key={item.Luogo + item.Data + item.Nome} href={"/home/info_visita/" + item.Nome}>
+                    <IonItem lines="none" className="background-green-item" key={item.Luogo + item.Data + item.Nome} href={"/home/info_visita/" + item.Nome}>
                     <IonAvatar slot="start">
-                        <img src="assets/images/${item.Tipologia}.png"/>
+                        <img className="no-radius" src={"assets/images/"+item.Tipologia+".png"}/>
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
-                      <h4 className="white_text">{item.Prenotata}</h4>
-                   <h4 className="white_text">Luogo: {item.Luogo} - Data: {item.Data}</h4>
+                      <h3>{item.Prenotata}</h3>
+                   <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
                     </IonLabel>
                   </IonItem>
                    )
@@ -88,14 +88,14 @@ const ListaVisite: React.FC = () => {
                </IonListHeader>
                {visitePrenotate.map((item:objVisita) =>{
                    return(
-                    <IonItem key={item.Luogo + item.Data + item.Nome}>
+                    <IonItem lines="none" key={item.Luogo + item.Data + item.Nome}>
                     <IonAvatar slot="start">
-                        <img src="assets/images/${item.Tipologia}.png"/>
+                        <img className="no-radius" src={"assets/images/"+item.Tipologia+".png"}/>
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
-                      <h4 className="white_text">{item.Prenotata}</h4>
-                   <h4 className="white_text">Luogo: {item.Luogo} - Data: {item.Data}</h4>
+                      <h3>{item.Prenotata}</h3>
+                   <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
                     </IonLabel>
                   </IonItem>
                    )
@@ -108,14 +108,14 @@ const ListaVisite: React.FC = () => {
                </IonListHeader>
                {visiteNonFatte.map((item:objVisita) =>{
                    return(
-                    <IonItem key={item.Luogo + item.Data + item.Nome}>
+                    <IonItem lines="none" key={item.Luogo + item.Data + item.Nome}>
                     <IonAvatar slot="start">
-                       <img src="assets/images/${item.Tipologia}.png"/>
+                       <img className="no-radius" src={"assets/images/"+item.Tipologia+".png"}/>
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
-                      <h4 className="white_text">{item.Prenotata}</h4>
-                   <h4 className="white_text">Luogo: {item.Luogo} - Data: {item.Data}</h4>
+                      <h3>{item.Prenotata}</h3>
+                   <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
                     </IonLabel>
                   </IonItem>
                    )
@@ -128,14 +128,14 @@ const ListaVisite: React.FC = () => {
                </IonListHeader>
                {visiteFatte.map((item:objVisita) =>{
                    return(
-                    <IonItem key={item.Luogo + item.Data + item.Nome}>
+                    <IonItem lines="none" key={item.Luogo + item.Data + item.Nome}>
                     <IonAvatar slot="start">
-                    <img src="assets/images/${item.Tipologia}.png"/>
+                        <img className="no-radius" src={"assets/images/"+item.Tipologia+".png"}/>
                     </IonAvatar>
                     <IonLabel>
                       <h2 className="white_text">{item.Nome}</h2>
-                      <h4 className="white_text">{item.Prenotata}</h4>
-                   <h4 className="white_text">Luogo: {item.Luogo} - Data: {item.Data}</h4>
+                      <h3>{item.Prenotata}</h3>
+                   <p>Luogo: {item.Luogo} - Data: {item.Data}</p>
                     </IonLabel>
                   </IonItem>
                    )

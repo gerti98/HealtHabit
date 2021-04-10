@@ -20,7 +20,9 @@
     --ion-background-color: #36b79a;
     --ion-item-background: #508754;
 }
-
+.no-radius{
+    border-radius: 0px !important;
+}
 .background-green-item{
     margin-bottom: 10px;
     padding: 10px;
