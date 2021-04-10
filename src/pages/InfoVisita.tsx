@@ -19,6 +19,8 @@ import ExploreContainer from "../components/ExploreContainer";
 import HeaderLogo from "../components/HeaderLogo";
 import ListaVisite from "../components/ListaVisite";
 import Notifiche from "../components/Notifiche";
+import "../theme/InfoVisita.css";
+
 
 interface IndexProps
   extends RouteComponentProps<{
@@ -35,9 +37,9 @@ const InfoVisita: React.FC<IndexProps> = ({ match }) => {
 
       <IonContent>
         <IonHeader>
-          <IonToolbar>
+          <IonToolbar className="whiteHeader">
             <IonButtons slot="start">
-              <IonBackButton defaultHref="/home"/>
+              <IonBackButton defaultHref="/home/fascicolo"/>
             </IonButtons>
           </IonToolbar>
         </IonHeader>
