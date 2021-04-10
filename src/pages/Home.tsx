@@ -52,7 +52,7 @@ const Home: React.FC = () => {
           </Route>
           
           <Route exact path="/home">
-            <Redirect to="/home/Profilo" />
+            <Redirect to="/home/homepage" />
           </Route>
           <Route exact path="/login">
             <Login />

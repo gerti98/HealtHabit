@@ -55,7 +55,7 @@ const GoogleBtn: React.FC = () => {
         }),
       });
       console.log("Storage set");
-      history.push("/home");
+      history.push("/home/questionary/1");
     }
   }
 
