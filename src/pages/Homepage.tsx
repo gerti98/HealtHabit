@@ -1,6 +1,3 @@
-
-
-
 import {
   IonButton,
   IonCol,
