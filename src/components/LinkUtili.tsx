@@ -56,7 +56,7 @@ const LinkUtili: React.FC = () => {
                     <img className="img_rounded" src="assets/images/FS.png"/>
                 </IonCol>
                 <IonCol size="6">
-                    <h2>Fascicolo elettronico</h2> 
+                    <h3>Fascicolo elettronico</h3> 
                 </IonCol>
             </IonRow>
             <IonRow  className="vertical-align background-green-item" onClick = {() => openLink(link.prenotazioni)}>
@@ -64,7 +64,7 @@ const LinkUtili: React.FC = () => {
                     <img className="img_rounded" src="assets/images/prenotazione.png"/>
                 </IonCol>
                 <IonCol size="6">
-                    <h2>Modifica o sposta una visita</h2>
+                    <h3>Modifica o sposta una visita</h3>
                 </IonCol>
             </IonRow>
             <IonRow className="vertical-align background-green-item" onClick = {() => openLink(link.ricetta)}>
@@ -80,7 +80,7 @@ const LinkUtili: React.FC = () => {
                     <img className="img_rounded" src="assets/images/vaccino.png"/>
                 </IonCol>
                 <IonCol size="6">
-                    <h2>Prenotazione vaccino</h2>
+                    <h3>Prenotazione vaccino</h3>
                 </IonCol>
             </IonRow>
         </IonGrid>
