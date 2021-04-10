@@ -68,7 +68,7 @@ const InfoVisita: React.FC<IndexProps> = ({ match }) => {
             </IonCol>
           </IonRow>
           <IonRow>
-            <IonCol className="background-green-item">{desc}</IonCol>
+            <IonCol className="background-green-item " style={{color: "white", fontSize: "16px"}}>{desc}</IonCol>
           </IonRow>
           <IonRow>
             <IonCol className="no-padding">
@@ -76,7 +76,7 @@ const InfoVisita: React.FC<IndexProps> = ({ match }) => {
             </IonCol>
           </IonRow>
           <IonRow>
-            <IonCol className="background-green-item">{how}</IonCol>
+            <IonCol className="background-green-item" style={{color: "white", fontSize: "16px"}}>{how}</IonCol>
           </IonRow>
         </IonGrid>
       </IonContent>
