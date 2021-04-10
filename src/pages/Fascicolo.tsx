@@ -4,6 +4,7 @@ import ExploreContainer from '../components/ExploreContainer';
 import HeaderLogo from '../components/HeaderLogo';
 import ListaVisite from '../components/ListaVisite';
 import Notifiche from '../components/Notifiche';
+import '../theme/Fascicolo.css';
 
 
 const Fascicolo: React.FC = () => {
