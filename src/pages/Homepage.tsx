@@ -6,6 +6,7 @@ import {
   IonHeader,
   IonItem,
   IonPage,
+  IonProgressBar,
   IonRow,
   IonTitle,
   IonToolbar,
@@ -19,6 +20,7 @@ import { Plugins } from "@capacitor/core";
 import React, { useState } from "react";
 import { getByAltText } from "@testing-library/dom";
 import { db } from "../components/firebase";
+
 const { Storage } = Plugins;
 
 const Homepage: React.FC = () => {
@@ -38,14 +40,59 @@ const Homepage: React.FC = () => {
       .then((data) => {
         data.forEach((doc) => {
           console.log(doc.id, " => ", doc.data());
+          let item = doc.data();
+
+          let curr = 0;
+          if (item.cup_derma == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_odonto == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_glicemia == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_cole == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_cardio == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_oculo == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_spiro == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_feci == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_andro == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_colon == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_gino == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_seno == "Meno di 1 anno fa") {
+            curr++;
+          }
+          if (item.cup_tac == "Meno di 1 anno fa") {
+            curr++;
+          }
+
+          setPercentage(curr / 14);
         });
       });
   });
+
   return (
     <IonPage>
       <HeaderLogo />
       <IonContent>Homepage</IonContent>
-      <IonItem>{percentage}</IonItem>
+      <IonProgressBar value={percentage}></IonProgressBar>
     </IonPage>
   );
 };
