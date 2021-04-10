@@ -16,15 +16,14 @@ import ExploreContainer from "../components/ExploreContainer";
 import { AppContext } from "../components/use-reducer-context";
 import "../components/firebase.js";
 import { db } from "../components/firebase.js";
-import '../util/global_var';
+import "../util/global_var";
 
+interface IndexProps
+  extends RouteComponentProps<{
+    id: string;
+  }> {}
 
-interface IndexProps extends RouteComponentProps<{
-  id: string;
-}> {}
-
-const Questionary: React.FC<IndexProps> = ({match}) => {
-
+const Questionary: React.FC<IndexProps> = ({ match }) => {
   //Identificazione
   const [eta, setEta] = useState();
   const [sex, setSex] = useState();
@@ -33,6 +32,93 @@ const Questionary: React.FC<IndexProps> = ({match}) => {
   const [region, setRegion] = useState();
   const [tipoPelle, setTipoPelle] = useState();
   const [istruzione, setIstruzione] = useState();
+
+  function sendDataToFirebase(index: number) {
+    var nameQuestionario = ["", "Identificativo", "Categorie a rischio", "Stile di Vita", "Familiarita", "Vaccini", "Salute Personale"];
+
+    var bigData = [
+      {},
+      {
+        eta: eta,
+        sesso: sex,
+        altezza: height,
+        peso: weight,
+        regione: region,
+        pelle: tipoPelle,
+        istruzione: istruzione,
+      },
+      {
+        diabete: diabete,
+        cardiopatia: cardiopatia,
+        ipertensione: ipertensione,
+      },
+      {
+        attivita_lavoro: stileVitaWork,
+        attivita_tl: stileVita,
+        fumo: fumo,
+        alcol: alcol,
+        sostanze: droga,
+        dieta: dieta,
+      },
+      {
+        fam_onco: familyOncologiche,
+        fam_meta: familyMetaboliche,
+        fam_cardio: familyCardiovascolari,
+        fam_resp: familyRespiratorie,
+        fam_onco_gino: familyOncoGinecologiche,
+        fam_onco_andro: familyOncoAndrologiche,
+      },
+      {
+        vacc_pnmccc: vaccinePreumococcica,
+        vacc_zoster: vaccinePreumococcica,
+        vacc_influ: vaccineInfluenzale,
+      },
+      {
+        cup_derma: lastCheckUpDermatologico,
+        cup_sangue: lastEsameEmocromocitometrico,
+        cup_odonto: lastCheckUpOdontoiatrico,
+        cup_glicemia: lastDosaggioGlicemico,
+        cup_cole: lastDosaggioColesterolo,
+        cup_cardio: lastCheckUpCardiologico,
+        cup_oculo: lastCheckUpOculistico,
+        cup_spiro: lastSpirometria,
+        cup_feci: lastEsameFeci,
+        cup_andro: lastCheckUpAndrologico,
+        cup_colon: lastPancolonscopia,
+        cup_gino: lastCheckUpGinecologico,
+        cup_seno: lastCheckUpSenologico,
+        cup_tac: lastTac,
+      },
+    ];
+
+    
+    
+    console.log(bigData[index]);
+    
+    if (index == 1) {
+      db.collection("users")
+        .doc("MEGAPRONTONEEEE") //TODO: add email
+        .set(bigData[index])
+        .then(() => {
+          console.log("Document successfully written!");
+        })
+        .catch((error) => {
+          console.error("Error writing document: ", error);
+        });
+    } else {
+      db.collection("users")
+        .doc("MEGAPRONTONEEEE")
+        .collection(nameQuestionario[index])
+        .doc() //TODO: add email
+        .set(bigData[index])
+        .then(() => {
+          console.log("Document successfully written!");
+        })
+        .catch((error) => {
+          console.error("Error writing document: ", error);
+        });
+    }
+  }
 
   //Categorie a rischio
   const [diabete, setDiabete] = useState();
@@ -47,8 +133,6 @@ const Questionary: React.FC<IndexProps> = ({match}) => {
   const [droga, setDroga] = useState();
   const [alcol, setAlcol] = useState();
   const [dieta, setDieta] = useState();
- 
-
 
   //Familiarità
   const [familyOncologiche, setFamilyOncologiche] = useState();
@@ -82,8 +166,8 @@ const Questionary: React.FC<IndexProps> = ({match}) => {
   const [lastPancolonscopia, setLastPancolonscopia] = useState();
   const [lastTac, setLastTac] = useState();
 
-
   const array_questions = [
+    [],
     [
       ["Età", "age", setEta, null],
       ["Sesso", "sex", setSex, null],
@@ -132,7 +216,7 @@ const Questionary: React.FC<IndexProps> = ({match}) => {
     [
       ["Hai il diabete", "bool", setDiabete, null],
       ["Sei cardiopatico", "bool", setCardiopatia, null],
-      ["Soffri di Ipertensione", "bool", setDiabete, null],
+      ["Soffri di Ipertensione", "bool", setIpertensione, null],
     ],
     [
       [
@@ -206,60 +290,92 @@ const Questionary: React.FC<IndexProps> = ({match}) => {
       ["Vaccinazione anti-influenzale", "bool", setVaccineInfluenzale, null],
     ],
     [
-      ["Ultimo check-up dermatologico", "combo", setLastCheckUpDermatologico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultimo esame emocromocitometrico", "combo", setLastEsameEmocromocitometrico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultimo check-up odontoiatrico", "combo", setLastCheckUpOdontoiatrico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultimo dosaggio glicemico", "combo", setLastDosaggioGlicemico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultimo dosaggio del colesterolo", "combo", setLastDosaggioColesterolo, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultimo check-up cardiologico", "combo", setLastCheckUpCardiologico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultimo check-up oculistico", "combo", setLastCheckUpOculistico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultima spirometria", "combo", setLastSpirometria, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultimo esame delle feci", "combo", setLastEsameFeci, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultimo check-up andrologico", "combo", setLastCheckUpAndrologico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultima pancolonscopia", "combo", setLastPancolonscopia, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultimo check-up ginecologico", "combo", setLastCheckUpGinecologico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultimo check-up senologico", "combo", setLastCheckUpSenologico, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-      ["Ultima TAC", "combo", setLastTac, ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"]],
-    ]
+      [
+        "Ultimo check-up dermatologico",
+        "combo",
+        setLastCheckUpDermatologico,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultimo esame emocromocitometrico",
+        "combo",
+        setLastEsameEmocromocitometrico,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultimo check-up odontoiatrico",
+        "combo",
+        setLastCheckUpOdontoiatrico,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultimo dosaggio glicemico",
+        "combo",
+        setLastDosaggioGlicemico,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultimo dosaggio del colesterolo",
+        "combo",
+        setLastDosaggioColesterolo,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultimo check-up cardiologico",
+        "combo",
+        setLastCheckUpCardiologico,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultimo check-up oculistico",
+        "combo",
+        setLastCheckUpOculistico,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultima spirometria",
+        "combo",
+        setLastSpirometria,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultimo esame delle feci",
+        "combo",
+        setLastEsameFeci,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultimo check-up andrologico",
+        "combo",
+        setLastCheckUpAndrologico,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultima pancolonscopia",
+        "combo",
+        setLastPancolonscopia,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultimo check-up ginecologico",
+        "combo",
+        setLastCheckUpGinecologico,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultimo check-up senologico",
+        "combo",
+        setLastCheckUpSenologico,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+      [
+        "Ultima TAC",
+        "combo",
+        setLastTac,
+        ["Meno di 1 anno fa", "1-3 anni fa", "3-5 anni fa", "oltre 5 anni fa"],
+      ],
+    ],
   ];
-  const sendDataToFirebase = () => {
-    /*
-		var data = {
-			eta: eta,
-			sex: sex,
-			height: height,
-			weight: weight,
-			region: region,
-			f_fumo: fumo,
-			f_droga: droga,
-			f_alcol: alcol,
-			stileVita: stileVita,
-			familyDiabete: familyDiabete,
-			familyTumore: familyTumore,
-			gravidanza: gravidanza,
-		};
-
-		console.log(data);
-		*/
-
-    db.collection("users")
-      .doc("PRONTO")
-      .set({
-        eta: eta,
-        sesso: sex,
-        altezza: height,
-        peso: weight,
-        regione: region,
-        pelle: tipoPelle,
-        istruzione: istruzione,
-      })
-      .then(() => {
-        console.log("Document successfully written!");
-      })
-      .catch((error) => {
-        console.error("Error writing document: ", error);
-      });
-  };
 
   return (
     <IonPage>
@@ -281,7 +397,11 @@ const Questionary: React.FC<IndexProps> = ({match}) => {
             );
           })}
           <IonSlide>
-            <IonButton onClick={() => sendDataToFirebase()}>SEND</IonButton>
+            <IonButton
+              onClick={() => sendDataToFirebase(parseInt(match.params.id))}
+            >
+              SEND
+            </IonButton>
           </IonSlide>
         </IonSlides>
       </IonContent>

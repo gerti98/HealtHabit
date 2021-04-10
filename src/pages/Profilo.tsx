@@ -17,15 +17,6 @@ const Profilo: React.FC = () => {
   const { state, dispatch } = useContext(AppContext);
   const history = useHistory();
   
-  function goToQuestionary(param: number){
-    GlobalVars.global_index_quest = param;
-    history.push(
-      '/home/questionary/${number}',
-      {
-        index: param
-      });
-  } 
-  
   return (
     <IonPage>
       <HeaderLogo />
@@ -49,7 +40,7 @@ const Profilo: React.FC = () => {
           </IonItem>
           <IonItem>
             <IonCheckbox checked={true} disabled={true}></IonCheckbox>      
-            <IonLabel>Riscio</IonLabel>
+            <IonLabel>Rischio</IonLabel>
             <IonButton slot="end" href="/home/questionary/2">
               <IonIcon icon={arrowForwardOutline} slot="end" />
             </IonButton>
@@ -70,8 +61,15 @@ const Profilo: React.FC = () => {
           </IonItem>
           <IonItem>
             <IonCheckbox checked={true} disabled={true}></IonCheckbox>      
-            <IonLabel>Salute personale</IonLabel>
+            <IonLabel>Vaccini</IonLabel>
             <IonButton slot="end" href="/home/questionary/5">
+              <IonIcon icon={arrowForwardOutline} slot="end" />
+            </IonButton>
+          </IonItem>
+          <IonItem>
+            <IonCheckbox checked={true} disabled={true}></IonCheckbox>      
+            <IonLabel>Salute personale</IonLabel>
+            <IonButton slot="end" href="/home/questionary/6">
               <IonIcon icon={arrowForwardOutline} slot="end" />
             </IonButton>
           </IonItem>
