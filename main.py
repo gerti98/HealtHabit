@@ -245,6 +245,12 @@ def create_users():
         my_row['cup_onco'] = np.random.choice(TIMING, 1)[0]
         if my_row['alcol'] in ABITUDINE[2:] or my_row['fumo'] in ABITUDINE[2:]:
             my_row['cup_tac'] = np.random.choice(TIMING, 1)[0]
+            
+    my_row['covid'] = fake.pybool()
+    if my_row['covid']:
+        my_row['sintomi'] = np.random.choice(SINTOMI, 1)[0]
+    my_row['vaccino'] = fake.pybool()
+    
 
     if bool(set(my_row.keys()) & set(RISCHIO)):
         my_row['quiz_categorieRischio'] = True
