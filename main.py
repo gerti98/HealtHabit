@@ -159,7 +159,7 @@ def send_visit_to_fb(my_visit):
     doc_ref.set({
         k: my_visit[k] for k in VISITA if k in my_visit.keys()
     })
-    
+
 
 def create_users():
     my_row = {}
@@ -167,7 +167,7 @@ def create_users():
     # IDENTIFICAZIONE
     my_row['data'] = fake.date_between_dates(date_start=datetime(2020, 1, 1))
     my_row['data_iscrizione'] = timestamp(dt=my_row['data'])
-    my_row['sesso'] = np.random.choice(SESSO, 1)[0]
+    my_row['sesso'] = np.random.choice(SESSO, 1, p=[0.45, 0.45, 0.1])[0]
     if my_row['sesso'] == 'Donna':
         my_row['nome_cognome'] = fake.name_female()
     elif my_row['sesso'] == 'Uomo':
@@ -187,14 +187,14 @@ def create_users():
         my_row['istruzione'] = np.random.choice(ISTRUZIONE[:-1], 1)[0]
     else:
         my_row['istruzione'] = np.random.choice(ISTRUZIONE, 1)[0]
-    
+
     # CATEGORIA A RISCHIO
     my_row['diabete'] = fake.pybool()
     if my_row['diabete']:
         my_row['diag_diabete'] = fake.date().split('-')[0]
     my_row['cardiopatia'] = fake.pybool()
     my_row['ipertensione'] = fake.pybool()
-    
+
     # STILE  DI VITA
     my_row['attivita_lavoro'] = np.random.choice(ATTIVITA, 1)[0]
     my_row['attivita_tl'] = np.random.choice(ATTIVITA, 1)[0]
@@ -202,7 +202,7 @@ def create_users():
     my_row['alcol'] = np.random.choice(ABITUDINE, 1)[0]
     my_row['sostanze'] = np.random.choice(ABITUDINE, 1)[0]
     my_row['dieta'] = np.random.choice(DIETA, 1)[0]
-    
+
     # FAMILIARITA
     my_row['fam_onco'] = fake.pybool()
     my_row['fam_meta'] = fake.pybool()
@@ -212,13 +212,13 @@ def create_users():
         my_row['fam_onco_gino'] = fake.pybool()
     if my_row['sesso'] == 'Uomo' or my_row['sesso'] == 'Altro':
         my_row['fam_onco_andro'] = fake.pybool()
-    
+
     # VACCINI
     if my_row['eta'] >= 65:
         my_row['vacc_pnmccc'] = fake.pybool()
         my_row['vacc_zoster'] = fake.pybool()
         my_row['vacc_influ'] = fake.pybool()
-    
+
     # ULTIMO CHECK-UP
     if my_row['pelle'] in PELLE[0:3]:
         my_row['cup_derma'] = np.random.choice(TIMING, 1)[0]
@@ -245,7 +245,7 @@ def create_users():
         my_row['cup_onco'] = np.random.choice(TIMING, 1)[0]
         if my_row['alcol'] in ABITUDINE[2:] or my_row['fumo'] in ABITUDINE[2:]:
             my_row['cup_tac'] = np.random.choice(TIMING, 1)[0]
-    
+
     if bool(set(my_row.keys()) & set(RISCHIO)):
         my_row['quiz_categorieRischio'] = True
     if bool(set(my_row.keys()) & set(FAMILIARITA)):
@@ -258,7 +258,7 @@ def create_users():
         my_row['quiz_stileDiVita'] = True
     if bool(set(my_row.keys()) & set(CUP)):
         my_row['quiz_salutePersonale'] = True
-    
+
     my_visit['mail'] = my_row['mail']
     my_visit['Data'] = timestamp(dt=fake.date_between_dates(date_start=my_row['data']))
     my_visit['Nome'] = np.random.choice(VISITE, 1)[0]
@@ -281,7 +281,7 @@ def create_users():
         my_visit['Eseguita'] = fake.pybool()
     else:
         my_visit['Eseguita'] = False
-    
+
     return send_user_to_fb(my_row), send_visit_to_fb(my_visit)
 
 
