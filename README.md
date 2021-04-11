@@ -25,6 +25,7 @@ I dati dell'applicazione vengono raccolti in modo anonimo e vengono presentati i
   * **Backend**: Firebase
   * **Dashboard**: Tableau Public
   * **Code**: Python
+  * **Project Management**: Trello
 
 
 # Team
