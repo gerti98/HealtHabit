@@ -7,7 +7,7 @@
 # Link Utili
  1. [Video presentazione (formato verticale)](https://youtu.be/9a3hPKswI5Y)
  1. [Video presentazione (formato landscape)](https://www.youtube.com/watch?v=xqUfsBED6OQ)
- 2. [Dashboard per le analytics](https://public.tableau.com/views/HealtHabit/Foglio1?:language=it&:display_count=y&publish=yes&:origin=viz_share_link)
+ 2. [Dashboard per le analytics](https://public.tableau.com/profile/giulia.ciardi#!/vizhome/HealtHabit/Stat)
 # Descrizione
 A causa dell'emergenza sanitaria causata dal Covid-19, a partire da Marzo 2020, molti pazienti sono rimasti indietro nei percorsi di cura cura diagnostici terapeutici, nelle nuove diagnosi, nelle visite di follow-up o negli esami di routine. Ad aggravare la situazione, inoltre, c'è la totale mancanza di dati che impedisce di poter quantificare il danno di salute provocato ai cittadini che non hanno potuto sottoporsi a tali servizi
 
