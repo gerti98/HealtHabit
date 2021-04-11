@@ -146,9 +146,8 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
         <IonItem>
           <IonSelect
             mode="ios"
-            
             onIonChange={(e) => hook(e.detail.value)}
-            interface="popover"
+            interface="action-sheet"
           >
             {answers.map((i) => {
               return <IonSelectOption value={i}>{i}</IonSelectOption>;
