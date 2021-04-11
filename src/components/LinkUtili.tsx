@@ -44,7 +44,7 @@ const LinkUtili: React.FC = () => {
     }
 
     return (
-        <IonGrid  >
+        <IonGrid style={{backgroundColor: "white"}} >
             <IonRow>
                 <IonCol >
                     <h1 className="text-center mt-0">Link utili {state.regione}</h1>
