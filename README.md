@@ -13,7 +13,7 @@ I dati dell'applicazione vengono raccolti in modo anonimo e vengono presentati i
 
 
 ## Features
-  * Supportata dai component del framework *Ionic* l'app si presenta con un'interfaccia facile ed intuitiva, adatta ad ogni età.
+  * Supportata dai component del framework [Ionic!](https://ionicframework.com/),  l'app si presenta con un'interfaccia facile ed intuitiva, adatta ad ogni età.
   * L'applicazioni si predispone inoltre per essere integrata con l'APP IO, essendo creata con la stessa tecnologia, ed con il portale MioDottore.it per prenotare in modo facile e veloce gli esami consigliati dall'applicazione.
 
 
