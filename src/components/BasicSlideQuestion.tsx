@@ -109,6 +109,7 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
       return (
         <IonItem>
           <IonInput
+            style={{textAlign: "center"}}
             mode="ios"
             placeholder="Inserisci Altezza"
             onIonChange={(e) => hook(Number(e.detail.value))}
@@ -121,6 +122,7 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
       return (
         <IonItem>
           <IonInput
+            style={{textAlign: "center"}}
             mode="ios"
             placeholder="Inserisci Peso"
             onIonChange={(e) => hook(Number(e.detail.value))}
@@ -133,6 +135,7 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
       return (
         <IonItem>
           <IonInput
+            style={{textAlign: "center"}}
             mode="ios"
             placeholder="Inserisci Età"
             onIonChange={(e) => hook(Number(e.detail.value))}
@@ -145,6 +148,7 @@ const GetQuestionFromType: React.FC<type_int> = ({ type, hook, answers }) => {
       return (
         <IonItem>
           <IonSelect
+            style={{textAlign: "center"}}
             mode="ios"
             onIonChange={(e) => hook(e.detail.value)}
             interface="action-sheet"
@@ -186,7 +190,7 @@ const BasicSlideQuestion: React.FC<obj> = ({ question, type, hook, answers }) =>
     <IonSlide>
       <IonGrid>
         <IonRow>
-          <IonCol>{question}</IonCol>
+          <IonCol><h2>{question}</h2></IonCol>
         </IonRow>
         <IonRow>
           <IonCol size="10" offset="2"></IonCol>
