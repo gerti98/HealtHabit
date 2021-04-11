@@ -1,5 +1,5 @@
 # <h1 align="center">HealtHabit</h1>
-<p align="center"><img align="center" src="https://github.com/GregoryPardini/HealtHabit/blob/master/public/assets/images/logo.png" width="25%" style="text-align: center"></p>
+<p align="center"><img align="center" src="https://github.com/GregoryPardini/HealtHabit/blob/master/ios/App/App/Assets.xcassets/AppIcon.appiconset/1024.png" width="25%" style="text-align: center"></p>
 
 # Informazioni
  1. Video presentazione:
