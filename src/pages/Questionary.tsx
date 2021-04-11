@@ -426,7 +426,7 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
       <IonHeader>
         <IonToolbar className="whiteHeader">
           <IonButtons slot="start">
-            <IonBackButton style={{color: "white"}} defaultHref="/home" />
+            <IonBackButton style={{color: "white"}} defaultHref="/home"/>
           </IonButtons>
         </IonToolbar>
       </IonHeader>
