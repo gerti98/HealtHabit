@@ -20,7 +20,7 @@ I dati dell'applicazione vengono raccolti in modo anonimo e vengono presentati i
 # Stack tecnologico
   * **App Mobile**: Ionic React Framework
   * **Backend**: Firebase
-  * **Dashboard**: Tableau
+  * **Dashboard**: Tableau Public
 
 
 # Team
