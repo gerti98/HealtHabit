@@ -5,6 +5,9 @@ import {
   IonGrid,
   IonHeader,
   IonItem,
+  IonItemDivider,
+  IonLabel,
+  IonList,
   IonPage,
   IonProgressBar,
   IonRow,
@@ -115,7 +118,7 @@ const Homepage: React.FC = () => {
           if (item.cup_tac == "Meno di 1 anno fa") {
             curr++;
           }
-          
+
           setNumVisite(curr);
           setPercentage(curr / 14);
         });
