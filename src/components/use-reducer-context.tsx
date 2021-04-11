@@ -5,8 +5,13 @@ export interface userInterface {
     nome: string,
     email: string,
     img: string,
-    isLoggin: boolean
+    isLoggin: boolean,
+    sesso: string,
+    eta: number,
+    regione:string
 }
+
+
 export type Actions = "login";
 
 interface MyContext {
@@ -20,7 +25,10 @@ const initialState = {
     nome: '',
     email:'',
     img: '',
-    isLoggin: false
+    isLoggin: false,
+    sesso: '',
+    eta: '',
+    regione:''
 }
 
 let reducer = (state:userInterface, action:any) => {
@@ -28,6 +36,9 @@ let reducer = (state:userInterface, action:any) => {
   switch(action.type) {
     case "login": {
       return { ...state, nome: action.nome, email: action.email, img: action.img, isLoggin: action.isLoggin }
+    }
+    case "user": {
+      return { ...state, sesso: action.sesso, eta: action.eta, regione: state.regione, nome: state.nome, email: state.email, img: state.img, isLoggin: state.isLoggin  }
     }
   }
   return state;

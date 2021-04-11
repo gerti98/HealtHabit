@@ -1,0 +1,13 @@
+.fab-margin{
+    margin-bottom: 35px;
+}
+
+.backgroudDarkGreen{
+    --background: #13A29C;
+    --border: none;
+}
+
+.whiteTabButton{
+    --color: white;
+    --color-selected: #F9F871;
+}

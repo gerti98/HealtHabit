@@ -3,6 +3,8 @@ import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Experiment from './pages/Experiment';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,13 +24,14 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import { useState } from 'react';
-import { AppContextProvider } from './components/use-reducer-context';
-
+import { useContext, useState } from 'react';
+import { AppContext, AppContextProvider } from './components/use-reducer-context';
+import Questionary from './pages/Questionary';
+import { State } from 'ionicons/dist/types/stencil-public-runtime';
 
 
 const App: React.FC = () => {
-	
+
 	return(
 		<IonApp>
 		<AppContextProvider>
@@ -37,11 +40,19 @@ const App: React.FC = () => {
 				<Route exact path="/login">
 					<Login />
 				</Route>
-				<Route exact path="/home">
+				<Route  path="/home">
 					<Home />
 				</Route>
+				<Route exact path="/experiment">
+					<Experiment />
+				</Route>
+				<Route
+					exact
+					path="/questionary/:id"
+					component={Questionary}
+				></Route>
 				<Route exact path="/">
-					<Redirect to="/home" />
+					<Redirect to="/login" />
 				</Route>
 				</IonRouterOutlet>
 			</IonReactRouter>
