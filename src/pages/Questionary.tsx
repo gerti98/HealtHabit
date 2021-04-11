@@ -120,7 +120,7 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
         .doc("MEGAPRONTONEEEE") //TODO: add email
         .set(bigData[index])
         .then(() => {
-
+       
           console.log("Document successfully written!");
           dispatch({
             type: "user",
@@ -128,12 +128,20 @@ const Questionary: React.FC<IndexProps> = ({ match }) => {
             sesso: sex,
             regione: region
           });
+        
+          sessionStorage.setItem("sesso",sex || "prova");
+          sessionStorage.setItem("eta",String(eta));
+          sessionStorage.setItem("regione",region ||"prova");
+          
           setShowToast1(true);
           console.log(state)
+        
         })
         .catch((error) => {
           console.error("Error writing document: ", error);
         });
+      
+       
 
     } else {
       db.collection("users")

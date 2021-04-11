@@ -31,11 +31,6 @@ import { State } from 'ionicons/dist/types/stencil-public-runtime';
 
 
 const App: React.FC = () => {
-	const { state, dispatch } = useContext(AppContext);
-
-	const int = setInterval(function(){
-		console.log(state);
-	  }.bind(this), 1000);
 
 	return(
 		<IonApp>

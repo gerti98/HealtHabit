@@ -13,11 +13,12 @@
 }
 
 .background-green{
+    border-radius: 30px 30px 0px 0px;
     margin: 20px 20px 0px 20px;
     height: 100%;
-   background-color: #508754;
-    --ion-background-color: #508754;
-    --ion-item-background: #508754;
+   background-color: #36b79a;
+    --ion-background-color: #36b79a;
+    --ion-item-background: #36b79a;
 }
 
 .button-viola{
@@ -35,9 +36,9 @@
     --background:#F3937E;
 }
 
-.bg-blue{
-    background-color: #04b3ae;
-    --background:#04b3ae;
+.bg-blue-profilo{
+    background-color: #0096b4;
+    --background:#0096b4;
 }
 
 .checkbox-disabled{
@@ -48,4 +49,9 @@
 
 .whiteLabel{
     color: white;
+}
+.background-green-list{
+       background-color: #36b79a;
+    --ion-background-color: #36b79a;
+    --ion-item-background: #36b79a;
 }

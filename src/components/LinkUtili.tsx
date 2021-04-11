@@ -25,7 +25,7 @@ const LinkUtili: React.FC = () => {
         console.log(link);
     })
     useIonViewWillEnter(() =>{
-        db.collection("linkUtili").doc(state.regione).get().then((snapshot) =>{
+        db.collection("linkUtili").doc(sessionStorage.getItem("regione") || "Toscana").get().then((snapshot) =>{
             let item = snapshot.data();
             if(item != undefined){
                 let objLink = {
@@ -47,7 +47,7 @@ const LinkUtili: React.FC = () => {
         <IonGrid style={{backgroundColor: "white"}} >
             <IonRow>
                 <IonCol >
-                    <h1 className="text-center mt-0">Link utili {state.regione}</h1>
+                    <h1 className="text-center mt-0">Link utili {sessionStorage.getItem("regione")}</h1>
                 </IonCol>
             </IonRow>
             <IonRow className="vertical-align background-green-item" onClick = {() => openLink(link.fascicolo)}>

@@ -27,7 +27,8 @@ const Profilo: React.FC = () => {
   const [utente, setUtente] = useState({} as utente);
 
   useIonViewWillEnter(() =>{
-    db.collection("users").doc(state.email).get().then((snapshot) =>{
+    if(sessionStorage.getItem("email") != null){
+      db.collection("users").doc(sessionStorage.getItem("email") || "Toscana").get().then((snapshot) =>{
         let item = snapshot.data();
         if(item != undefined){
             let objLink = {
@@ -41,6 +42,8 @@ const Profilo: React.FC = () => {
             setUtente(objLink);
         }
     })
+    }
+  
 })
 
 
@@ -61,17 +64,17 @@ const Profilo: React.FC = () => {
         <IonGrid >
           <IonRow className="vertical-align" >
              <IonCol size="4" className="text-center">
-             <img src={returnImg(state.eta, state.sesso)} />
+             <img src={returnImg(Number(sessionStorage.getItem("eta")) , sessionStorage.getItem("sesso")||"prova")} />
              </IonCol>
              <IonCol size="8">
                 <IonRow>
                   <IonCol>
-                    <h2 className="whiteLabel">{state.nome}</h2>
+                    <h2 className="whiteLabel">{sessionStorage.getItem("nome")}</h2>
                   </IonCol>
                 </IonRow>
                 <IonRow>
                   <IonCol>     
-                    <h3 className="mt-0">{state.sesso}, {state.eta} anni</h3>
+                    <h3 className="mt-0">{sessionStorage.getItem("sesso")}, {Number(sessionStorage.getItem("eta"))} anni</h3>
                   </IonCol>
               </IonRow>
               </IonCol>
@@ -85,14 +88,14 @@ const Profilo: React.FC = () => {
           </IonRow>
         </IonGrid>
       
-        <IonList className="mt-3">
+        <IonList className="mt-3 background-green-list"  >
          <h1 className="text-center whiteLabel">Sondaggi: </h1>
 
       
           <IonItem key={"categorie a rischio"} lines="none">
               <IonCheckbox checked={ utente.quiz_categorieRischio? true: false} disabled={true} className="checkBox"></IonCheckbox>      
               <IonLabel><h2 className="whiteLabel">Categorie a rischio</h2></IonLabel>
-              <IonButton slot="end" href="/questionary/2" className={ utente.quiz_categorieRischio? "bg-viola": "bg-blue"}>
+              <IonButton slot="end" href="/questionary/2" className={ utente.quiz_categorieRischio? "bg-viola": "bg-blue-profilo"}>
                 { utente.quiz_categorieRischio? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>
@@ -100,7 +103,7 @@ const Profilo: React.FC = () => {
           <IonItem key={"familiarita"} lines="none">
               <IonCheckbox checked={ utente.quiz_familiarita? true: false} disabled={true}></IonCheckbox>      
               <IonLabel><h2 className="whiteLabel">Familiarità</h2></IonLabel>
-              <IonButton slot="end" href="/questionary/4" className={ utente.quiz_familiarita? "bg-viola": "bg-blue"}>
+              <IonButton slot="end" href="/questionary/4" className={ utente.quiz_familiarita? "bg-viola": "bg-blue-profilo"}>
                 { utente.quiz_familiarita? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>
@@ -108,7 +111,7 @@ const Profilo: React.FC = () => {
           <IonItem lines="none">
               <IonCheckbox checked={ utente.quiz_stileDiVita? true: false} disabled={true}></IonCheckbox>      
               <IonLabel><h2 className="whiteLabel">Stile di vita</h2></IonLabel>
-              <IonButton slot="end" href="/questionary/3" className={ utente.quiz_stileDiVita? "bg-viola": "bg-blue"}>
+              <IonButton slot="end" href="/questionary/3" className={ utente.quiz_stileDiVita? "bg-viola": "bg-blue-profilo"}>
                   { utente.quiz_stileDiVita? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>
@@ -116,7 +119,7 @@ const Profilo: React.FC = () => {
             <IonItem lines="none"> 
               <IonCheckbox checked={ utente.quiz_vaccini? true: false} disabled={true}></IonCheckbox>      
               <IonLabel><h2 className="whiteLabel">Vaccini</h2></IonLabel>
-              <IonButton slot="end" href="/questionary/5" className={ utente.quiz_vaccini? "bg-viola": "bg-blue"}>
+              <IonButton slot="end" href="/questionary/5" className={ utente.quiz_vaccini? "bg-viola": "bg-blue-profilo"}>
                   { utente.quiz_vaccini? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>
@@ -125,14 +128,14 @@ const Profilo: React.FC = () => {
             <IonItem lines="none">
               <IonCheckbox checked={ utente.quiz_salutePersonale? true: false} disabled={true}></IonCheckbox>      
               <IonLabel><h2 className="whiteLabel">Salute personale</h2></IonLabel>
-              <IonButton slot="end" href="/questionary/6" className={ utente.quiz_salutePersonale? "bg-viola": "bg-blue"}>
+              <IonButton slot="end" href="/questionary/6" className={ utente.quiz_salutePersonale? "bg-viola": "bg-blue-profilo"}>
                   { utente.quiz_salutePersonale? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>
             <IonItem lines="none">
               <IonCheckbox checked={ utente.quiz_covid? true: false} disabled={true}></IonCheckbox>      
               <IonLabel><h2 className="whiteLabel">Covid</h2></IonLabel>
-              <IonButton slot="end" href="/home/questionary/7" className={ utente.quiz_covid? "bg-viola": "bg-blue"}>
+              <IonButton slot="end" href="/home/questionary/7" className={ utente.quiz_covid? "bg-viola": "bg-blue-profilo"}>
                   { utente.quiz_covid? "Modifica": "Esegui"}
               </IonButton>
             </IonItem>

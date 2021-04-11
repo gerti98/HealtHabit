@@ -38,7 +38,7 @@ let reducer = (state:userInterface, action:any) => {
       return { ...state, nome: action.nome, email: action.email, img: action.img, isLoggin: action.isLoggin }
     }
     case "user": {
-      return { ...state, sesso: action.sesso, eta: action.eta, regione: action.regione}
+      return { ...state, sesso: action.sesso, eta: action.eta, regione: state.regione, nome: state.nome, email: state.email, img: state.img, isLoggin: state.isLoggin  }
     }
   }
   return state;

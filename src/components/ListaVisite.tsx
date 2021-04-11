@@ -121,7 +121,6 @@ const ListaVisite: React.FC = () => {
               <IonItemOptions side="end">
                 <IonItemOption
                   color="danger"
-                  className="IonItemsPrincipalOptionFirst"
                   onClick={() => alert("pressed non mi piace")}
                   style={{marginRight: "1em"}}
                 >

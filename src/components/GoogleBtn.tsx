@@ -54,6 +54,9 @@ const GoogleBtn: React.FC = () => {
           email: result.email,
         }),
       });
+      sessionStorage.setItem("nome", result.name);
+      sessionStorage.setItem("email", result.email);
+
       console.log("Storage set");
       history.push("/questionary/1");
     }

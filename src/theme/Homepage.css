@@ -1,0 +1,34 @@
+.style-button{
+  
+    --background: #36b79a;
+    font-size: 13px;
+    --background-activated: #0085c1;
+}
+
+.style-button-bg-blue{
+  
+    --background: #36b79a;
+    font-size: 13px;
+    --background-activated: #c8799c;
+}
+.background-viola{
+    background-color: #c8799c;
+}
+
+.ml-2{
+    margin-left: -10px;
+}
+
+.mt-5{
+    margin-top: 3rem
+}
+
+.background-blue{
+    background-color: #0085c1;
+}
+
+.btn-background-viola{
+  
+    --background:#c8799c;
+    --background-activated: #36b79a;
+}
