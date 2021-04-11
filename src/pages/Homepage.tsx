@@ -5,6 +5,9 @@ import {
   IonGrid,
   IonHeader,
   IonItem,
+  IonItemDivider,
+  IonLabel,
+  IonList,
   IonPage,
   IonProgressBar,
   IonRow,
@@ -84,7 +87,7 @@ const Homepage: React.FC = () => {
           if (item.cup_tac == "Meno di 1 anno fa") {
             curr++;
           }
-          
+
           setNumVisite(curr);
           setPercentage(curr / 14);
         });
@@ -96,17 +99,19 @@ const Homepage: React.FC = () => {
       <HeaderLogo />
 
       <IonContent>
-        <IonItem lines="none">
-        {(percentage*100).toPrecision(2)} %
+      <IonProgressBar buffer={percentage} value={percentage}></IonProgressBar>
         
-        </IonItem>
-        <IonProgressBar buffer={percentage} value={percentage}></IonProgressBar>
-        <IonItem lines="none">
-          Visite effettuate: {numVisite}
-        </IonItem>
-        <IonItem lines="none">
-          Visite mancanti: {14 - numVisite}
-        </IonItem>
+        <h1 style={{ textAlign: "center" }}>
+          Status: {(percentage * 100).toPrecision(2)}%
+        </h1>
+
+        <IonItemDivider color="primary">
+          <IonLabel style={{color: "white"}}>Statistiche visite</IonLabel>
+        </IonItemDivider>
+        <IonList lines="full">
+          <IonItem>Visite effettuate: {numVisite}</IonItem>
+          <IonItem>Visite mancanti: {14 - numVisite}</IonItem>
+        </IonList>
       </IonContent>
     </IonPage>
   );
