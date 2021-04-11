@@ -1,0 +1,1001 @@
+,mail,Data,Nome,Tipologia,Prenotata,Eseguita
+0,alberico.morrocco@gmail.com,2021-02-03,Biopsia prostatica,Andrologica,False,True
+1,alessio.galuppi@gmail.com,2021-03-28,Biopsia prostatica,Andrologica,True,False
+2,pomponio.castellitto-brichese@gmail.com,2020-08-26,Mammografia,Ginecologica,True,True
+3,temistocle.pascarella@gmail.com,2021-01-23,Spirometria,Generale,True,False
+4,antonio.caccianemico@gmail.com,2021-01-23,Colonscopia,Oncologica,True,False
+5,sole.lucchesi@gmail.com,2021-02-10,Scintigrafia,Diagnostica,False,True
+6,francesco.surian@gmail.com,2020-09-29,Esame del sangue,Generale,True,True
+7,melania.galuppi@gmail.com,2021-03-28,Mammografia,Ginecologica,False,False
+8,claudia.gozzano@gmail.com,2021-03-22,Ecocardiografia,Cardiologica,False,True
+9,margherita.sagnelli-ceri@gmail.com,2020-12-27,Visita odontoiatrica,Odontoiatrica,True,True
+10,piergiuseppe.renier@gmail.com,2020-10-10,Biopsia prostatica,Andrologica,True,True
+11,ivan.castellitto@gmail.com,2020-06-11,Visita odontoiatrica,Odontoiatrica,True,False
+12,dott..amleto.paruta@gmail.com,2021-04-06,Marcatori tumorali,Oncologica,False,True
+13,giorgia.cavalcanti-trentin@gmail.com,2021-04-11,Ecografia transvaginale,Ginecologica,True,False
+14,amico.polesel@gmail.com,2020-09-19,Scintigrafia,Diagnostica,True,True
+15,sante.gulotta-moresi@gmail.com,2020-09-23,Risonanza magnetica (RM),Diagnostica,False,True
+16,fabio.filippini@gmail.com,2020-12-12,Visita odontoiatrica,Odontoiatrica,False,True
+17,mirco.marconi@gmail.com,2021-03-01,Ecografia transvaginale,Ginecologica,True,False
+18,daniele.montalti@gmail.com,2020-01-05,Visita odontoiatrica,Odontoiatrica,False,True
+19,dott..sergius.casadei@gmail.com,2021-01-19,Pet,Diagnostica,False,False
+20,sig..uberto.botticelli@gmail.com,2020-11-18,Elettrocardiogramma,Cardiologica,False,True
+21,beatrice.mengolo@gmail.com,2020-06-21,Coronarografia,Cardiologica,False,True
+22,roberto.zecchini@gmail.com,2021-03-09,Risonanza magnetica (RM),Diagnostica,True,False
+23,giuseppe.russo@gmail.com,2021-04-06,Agoaspirato,Oncologica,False,False
+24,gianpaolo.malatesta-tropea@gmail.com,2021-02-26,Mammografia,Ginecologica,False,False
+25,corrado.zaccardo@gmail.com,2021-03-12,Mammografia,Ginecologica,True,True
+26,gianpietro.polesel-gucci@gmail.com,2020-09-17,Pet,Diagnostica,False,True
+27,achille.notarbartolo@gmail.com,2020-12-22,Visita odontoiatrica,Odontoiatrica,True,True
+28,gionata.einaudi@gmail.com,2020-09-17,Risonanza magnetica (RM),Diagnostica,False,False
+29,maura.vanvitelli-turati@gmail.com,2020-09-01,Mammografia,Ginecologica,True,False
+30,liliana.santi-novaro@gmail.com,2021-04-10,Coronarografia,Cardiologica,False,True
+31,piergiuseppe.rubbia@gmail.com,2020-12-21,Hpv Dna Test,Ginecologica,False,True
+32,dott..francesca.vespa@gmail.com,2021-02-14,Visita odontoiatrica,Odontoiatrica,True,False
+33,elmo.prodi@gmail.com,2021-03-30,Ecografia mammaria,Ginecologica,True,False
+34,annalisa.gasperi@gmail.com,2020-12-04,Ecografia transvaginale,Ginecologica,True,False
+35,gabriele.cicala-traetta@gmail.com,2021-01-18,Colonscopia,Oncologica,False,False
+36,enzio.bettoni@gmail.com,2020-12-01,Pap-Test,Ginecologica,False,True
+37,fortunata.boitani@gmail.com,2020-02-24,Marcatori tumorali,Oncologica,False,True
+38,gianluigi.errigo@gmail.com,2021-03-29,Coronarografia,Cardiologica,False,True
+39,dott..mercedes.trapanese@gmail.com,2021-03-31,Scintigrafia,Diagnostica,True,False
+40,martina.littizzetto@gmail.com,2021-03-19,Pet,Diagnostica,False,False
+41,irma.detti@gmail.com,2020-04-18,Ecografia transvaginale,Ginecologica,True,True
+42,michelangelo.t@gmail.com,2021-02-02,Holter,Cardiologica,False,False
+43,ignazio.canevascini@gmail.com,2021-04-10,Visita odontoiatrica,Odontoiatrica,False,True
+44,dott..marina.ceci@gmail.com,2021-03-01,Ecocardiografia,Cardiologica,True,True
+45,maria.berrè@gmail.com,2020-05-11,Marcatori tumorali,Oncologica,False,True
+46,bartolomeo.donini@gmail.com,2020-06-02,Coronarografia,Cardiologica,True,True
+47,lidia.simeoni@gmail.com,2021-01-26,Risonanza magnetica (RM),Diagnostica,False,True
+48,isa.zamorani-paoletti@gmail.com,2020-11-23,Pap-Test,Ginecologica,True,True
+49,sig.ra.alina.mascheroni@gmail.com,2020-09-01,Colonscopia,Oncologica,False,True
+50,fabia.viola@gmail.com,2021-04-11,Risonanza magnetica (RM),Diagnostica,False,True
+51,melania.scialpi-contrafatto@gmail.com,2021-01-30,Ecografia transvaginale,Ginecologica,False,True
+52,greca.cilea-tanzini@gmail.com,2021-01-27,Hpv Dna Test,Ginecologica,False,False
+53,lara.cignaroli@gmail.com,2020-01-09,Pap-Test,Ginecologica,False,True
+54,rosa.gualandi@gmail.com,2020-11-13,Hpv Dna Test,Ginecologica,False,False
+55,sig..raffaele.finetti@gmail.com,2020-03-28,Scintigrafia,Diagnostica,True,True
+56,sig..nicolò.curatoli@gmail.com,2021-01-11,Scintigrafia,Diagnostica,False,False
+57,sig.ra.dolores.vecellio@gmail.com,2021-02-05,Marcatori tumorali,Oncologica,False,True
+58,jolanda.garobbio@gmail.com,2021-03-31,Mammografia,Ginecologica,False,False
+59,geronimo.vasari@gmail.com,2020-06-28,Hpv Dna Test,Ginecologica,False,True
+60,giuliana.duodo@gmail.com,2020-11-09,Holter,Cardiologica,True,True
+61,sig..biagio.golino@gmail.com,2021-03-30,Ecocardiografia,Cardiologica,True,True
+62,nedda.zamorani@gmail.com,2021-03-13,Ecografia mammaria,Ginecologica,False,True
+63,cecilia.micca@gmail.com,2020-09-26,Spirometria,Generale,False,True
+64,raffaellino.pizzamano-piovani@gmail.com,2021-01-01,Biopsia prostatica,Andrologica,False,False
+65,valeria.campano@gmail.com,2021-02-09,Coronarografia,Cardiologica,True,False
+66,chiara.parisi@gmail.com,2020-11-19,Pet,Diagnostica,False,True
+67,sig.ra.matilda.fioravanti@gmail.com,2021-02-02,Pap-Test,Ginecologica,False,False
+68,vincenza.gentileschi@gmail.com,2021-03-12,Agoaspirato,Oncologica,False,False
+69,carlo.sagese@gmail.com,2021-03-24,Ecografia mammaria,Ginecologica,False,True
+70,orazio.santorio-montanelli@gmail.com,2020-08-17,Esame del sangue,Generale,False,True
+71,livia.cadorna@gmail.com,2021-03-19,Spirometria,Generale,False,True
+72,pina.ficino@gmail.com,2021-03-03,Agoaspirato,Oncologica,True,False
+73,vanessa.canevascini-paganini@gmail.com,2020-09-27,Esame del sangue,Generale,True,True
+74,camilla.vercelloni@gmail.com,2021-03-29,Ecografia mammaria,Ginecologica,False,False
+75,lucia.corradi-ferraris@gmail.com,2021-04-08,Esame del sangue,Generale,False,False
+76,laureano.gabrieli@gmail.com,2020-09-27,Scintigrafia,Diagnostica,False,True
+77,dott..gianpaolo.tarantino@gmail.com,2021-04-04,Spirometria,Generale,False,False
+78,antonina.ariasso@gmail.com,2020-11-18,Biopsia prostatica,Andrologica,True,False
+79,amanda.fischetti@gmail.com,2020-12-06,Visita odontoiatrica,Odontoiatrica,True,True
+80,ermanno.ajello@gmail.com,2020-08-29,Pap-Test,Ginecologica,False,False
+81,dott..ciro.beffa@gmail.com,2021-03-10,Ecografia transvaginale,Ginecologica,True,True
+82,aurora.turati@gmail.com,2021-04-09,Ecografia mammaria,Ginecologica,True,False
+83,maurizio.zanazzo@gmail.com,2020-05-19,Ecocardiografia,Cardiologica,False,True
+84,manuel.contarini@gmail.com,2021-04-02,Coronarografia,Cardiologica,False,True
+85,bianca.bertoli-natta@gmail.com,2020-09-06,Agoaspirato,Oncologica,True,False
+86,gabriella.lombardo-manzoni@gmail.com,2021-04-06,Holter,Cardiologica,False,False
+87,gastone.gritti-bertoli@gmail.com,2020-04-18,Biopsia prostatica,Andrologica,True,True
+88,sig.ra.veronica.chittolini@gmail.com,2021-01-12,Colonscopia,Oncologica,False,False
+89,corrado.salgari@gmail.com,2021-01-05,Agoaspirato,Oncologica,True,True
+90,manuel.viviani@gmail.com,2020-12-30,Risonanza magnetica (RM),Diagnostica,True,False
+91,dott..leone.ortolani@gmail.com,2021-02-18,Coronarografia,Cardiologica,False,False
+92,fulvio.pellico@gmail.com,2021-01-15,Hpv Dna Test,Ginecologica,False,True
+93,azeglio.ruffini@gmail.com,2021-01-08,Biopsia prostatica,Andrologica,True,True
+94,gioacchino.pisani@gmail.com,2021-03-30,Risonanza magnetica (RM),Diagnostica,False,False
+95,cristina.ferragni@gmail.com,2020-11-05,Scintigrafia,Diagnostica,False,False
+96,stefania.vento@gmail.com,2021-01-15,Coronarografia,Cardiologica,False,False
+97,rossana.liverotti-porcellato@gmail.com,2020-10-18,Risonanza magnetica (RM),Diagnostica,True,False
+98,dolores.gaiatto-borsellino@gmail.com,2021-02-26,Mammografia,Ginecologica,True,False
+99,irma.camilleri@gmail.com,2020-10-14,Pap-Test,Ginecologica,False,False
+100,gioachino.scamarcio@gmail.com,2021-01-27,Marcatori tumorali,Oncologica,True,False
+101,graziella.piazzi@gmail.com,2021-03-27,Ecografia mammaria,Ginecologica,False,True
+102,sig..federico.avogadro@gmail.com,2021-01-14,Coronarografia,Cardiologica,False,True
+103,massimo.pigafetta-sansoni@gmail.com,2020-07-06,Pet,Diagnostica,True,False
+104,ermanno.durante@gmail.com,2021-02-10,Colonscopia,Oncologica,False,True
+105,dott..elena.vivaldi@gmail.com,2021-03-17,Hpv Dna Test,Ginecologica,True,False
+106,sig.ra.roberta.ludovisi@gmail.com,2020-11-10,Esame del sangue,Generale,True,True
+107,bartolomeo.semitecolo@gmail.com,2021-03-12,Marcatori tumorali,Oncologica,True,False
+108,sig.ra.vincenza.bonomo@gmail.com,2020-07-30,Scintigrafia,Diagnostica,False,True
+109,sig.ra.rosalia.spadafora@gmail.com,2020-11-28,Ecografia transvaginale,Ginecologica,False,True
+110,iolanda.cuzzocrea@gmail.com,2020-09-13,Hpv Dna Test,Ginecologica,False,True
+111,dott..eleanora.bombieri@gmail.com,2021-04-06,Mammografia,Ginecologica,False,True
+112,veronica.pizzo-bragaglia@gmail.com,2021-01-15,Ecocardiografia,Cardiologica,True,False
+113,beatrice.cainero@gmail.com,2021-02-24,Holter,Cardiologica,False,True
+114,paloma.leone@gmail.com,2021-03-03,Spirometria,Generale,True,True
+115,margherita.lovato-sagnelli@gmail.com,2021-03-24,Coronarografia,Cardiologica,True,True
+116,natalia.monteverdi@gmail.com,2021-01-31,Spirometria,Generale,False,False
+117,morena.grisoni-tamborini@gmail.com,2020-06-22,Holter,Cardiologica,True,False
+118,graziano.terragni-papetti@gmail.com,2021-01-11,Elettrocardiogramma,Cardiologica,True,True
+119,tullio.lombardi@gmail.com,2021-01-28,Coronarografia,Cardiologica,True,True
+120,tatiana.vecoli@gmail.com,2021-03-07,Ecografia mammaria,Ginecologica,False,False
+121,rembrandt.trentin@gmail.com,2021-03-15,Risonanza magnetica (RM),Diagnostica,False,True
+122,liliana.zaccardo@gmail.com,2021-02-02,Pap-Test,Ginecologica,True,True
+123,donato.morandini@gmail.com,2021-04-05,Pet,Diagnostica,False,False
+124,corrado.regge@gmail.com,2020-11-15,Pet,Diagnostica,True,False
+125,susanna.disdero@gmail.com,2020-07-10,Ecografia transvaginale,Ginecologica,False,False
+126,ruggero.tutino@gmail.com,2021-03-22,Ecografia mammaria,Ginecologica,False,False
+127,ornella.murri@gmail.com,2021-02-18,Biopsia prostatica,Andrologica,True,True
+128,lina.palombi-endrizzi@gmail.com,2020-09-17,Colonscopia,Oncologica,False,True
+129,dott..paride.gramsci@gmail.com,2021-03-05,Coronarografia,Cardiologica,False,True
+130,leonardo.zeffirelli@gmail.com,2020-11-21,Scintigrafia,Diagnostica,True,False
+131,ferdinando.cilea@gmail.com,2021-04-03,Spirometria,Generale,True,False
+132,flavio.gaiatto@gmail.com,2020-10-04,Visita odontoiatrica,Odontoiatrica,False,False
+133,sole.muratori@gmail.com,2020-10-07,Marcatori tumorali,Oncologica,False,True
+134,dott..eva.antelami@gmail.com,2021-03-10,Visita odontoiatrica,Odontoiatrica,False,False
+135,veronica.mantegazza-donarelli@gmail.com,2021-01-22,Marcatori tumorali,Oncologica,True,True
+136,giuliana.lucarelli@gmail.com,2021-03-18,Marcatori tumorali,Oncologica,False,False
+137,umberto.abate@gmail.com,2021-03-17,Mammografia,Ginecologica,False,False
+138,matilda.perini-spinola@gmail.com,2021-01-01,Ecografia transvaginale,Ginecologica,True,True
+139,fredo.tresoldi@gmail.com,2021-02-24,Hpv Dna Test,Ginecologica,True,False
+140,ivan.smirnoff@gmail.com,2021-02-08,Spirometria,Generale,False,False
+141,sig.ra.stefania.giorgetti@gmail.com,2021-02-09,Ecografia transvaginale,Ginecologica,False,False
+142,piergiorgio.montesano@gmail.com,2020-12-15,Ecografia mammaria,Ginecologica,True,True
+143,graziano.fusani-ughi@gmail.com,2021-04-07,Colonscopia,Oncologica,True,True
+144,achille.soffici-leopardi@gmail.com,2021-02-27,Scintigrafia,Diagnostica,False,False
+145,rolando.gatto@gmail.com,2021-04-03,Mammografia,Ginecologica,True,False
+146,liliana.donini@gmail.com,2021-04-11,Hpv Dna Test,Ginecologica,False,True
+147,stefania.giulietti@gmail.com,2020-10-04,Esame del sangue,Generale,True,False
+148,francesco.ruggeri@gmail.com,2020-11-01,Agoaspirato,Oncologica,True,True
+149,valerio.donini@gmail.com,2020-01-16,Marcatori tumorali,Oncologica,True,True
+150,dott..serena.stefanelli@gmail.com,2021-02-26,Ecografia transvaginale,Ginecologica,True,False
+151,cipriano.columbo@gmail.com,2021-03-07,Biopsia prostatica,Andrologica,True,True
+152,priscilla.gentileschi@gmail.com,2021-01-30,Ecografia mammaria,Ginecologica,False,False
+153,giampiero.polizzi@gmail.com,2021-01-20,Scintigrafia,Diagnostica,True,True
+154,dario.segrè@gmail.com,2020-09-15,Spirometria,Generale,False,True
+155,dino.borgia-comeriato@gmail.com,2020-09-06,Elettrocardiogramma,Cardiologica,False,False
+156,dino.oscuro@gmail.com,2020-12-30,Elettrocardiogramma,Cardiologica,False,False
+157,dante.missoni@gmail.com,2021-02-22,Risonanza magnetica (RM),Diagnostica,True,False
+158,federico.carli@gmail.com,2021-02-12,Ecografia transvaginale,Ginecologica,True,True
+159,martina.cimini@gmail.com,2020-10-11,Ecografia transvaginale,Ginecologica,False,True
+160,dott..ramona.mancini@gmail.com,2021-04-05,Holter,Cardiologica,True,False
+161,eraldo.alfonsi@gmail.com,2021-01-16,Elettrocardiogramma,Cardiologica,True,False
+162,maurizio.curatoli@gmail.com,2021-02-14,Pet,Diagnostica,False,True
+163,dott..pier.gregori@gmail.com,2021-01-29,Mammografia,Ginecologica,False,False
+164,concetta.ferrata@gmail.com,2020-10-15,Esame del sangue,Generale,False,True
+165,sig..ernesto.gioberti@gmail.com,2021-03-23,Marcatori tumorali,Oncologica,False,True
+166,cirillo.ughi@gmail.com,2021-01-21,Pap-Test,Ginecologica,True,True
+167,angelo.alonzi@gmail.com,2021-02-16,Pet,Diagnostica,False,True
+168,telemaco.treves-antonini@gmail.com,2020-04-30,Scintigrafia,Diagnostica,True,False
+169,luigi.doglioni-opizzi@gmail.com,2021-02-05,Mammografia,Ginecologica,True,True
+170,gianpietro.trentin-scandone@gmail.com,2020-08-23,Ecografia transvaginale,Ginecologica,False,True
+171,nicoletta.navarria@gmail.com,2021-02-02,Ecografia mammaria,Ginecologica,False,False
+172,sig.ra.angelina.marini@gmail.com,2021-01-24,Hpv Dna Test,Ginecologica,True,True
+173,fredo.casadei@gmail.com,2021-01-22,Agoaspirato,Oncologica,True,False
+174,sig..riccardo.ramazzotti@gmail.com,2020-12-01,Biopsia prostatica,Andrologica,False,False
+175,cristina.buscetta@gmail.com,2020-03-18,Visita odontoiatrica,Odontoiatrica,False,False
+176,ettore.chiappetta@gmail.com,2021-01-21,Hpv Dna Test,Ginecologica,False,True
+177,stefania.toscani@gmail.com,2021-02-21,Coronarografia,Cardiologica,False,False
+178,massimo.jacuzzi@gmail.com,2020-06-28,Biopsia prostatica,Andrologica,True,False
+179,giampiero.malacarne@gmail.com,2021-03-02,Holter,Cardiologica,True,True
+180,mariano.majewski-mascagni@gmail.com,2020-12-14,Ecocardiografia,Cardiologica,False,False
+181,michela.rosmini@gmail.com,2021-04-09,Pet,Diagnostica,True,True
+182,federico.pellegrini@gmail.com,2021-02-01,Coronarografia,Cardiologica,False,False
+183,paola.brichese@gmail.com,2020-07-19,Agoaspirato,Oncologica,True,True
+184,dott..oreste.alfieri@gmail.com,2020-11-18,Coronarografia,Cardiologica,True,False
+185,francesca.alfonsi@gmail.com,2020-12-10,Colonscopia,Oncologica,True,False
+186,francesco.ferrara-eco@gmail.com,2020-02-26,Visita odontoiatrica,Odontoiatrica,False,True
+187,elisa.jilani@gmail.com,2020-08-12,Elettrocardiogramma,Cardiologica,True,True
+188,giuseppina.bramante@gmail.com,2021-01-04,Marcatori tumorali,Oncologica,False,False
+189,sig..donato.biagiotti@gmail.com,2020-10-02,Ecografia mammaria,Ginecologica,False,True
+190,sig..baldassare.santoro@gmail.com,2020-12-24,Biopsia prostatica,Andrologica,False,True
+191,laura.innocenti@gmail.com,2020-10-05,Elettrocardiogramma,Cardiologica,True,False
+192,orlando.rubbia@gmail.com,2021-02-04,Coronarografia,Cardiologica,False,True
+193,dott..arsenio.campanella@gmail.com,2020-12-07,Risonanza magnetica (RM),Diagnostica,True,True
+194,gioffre.magrassi@gmail.com,2020-11-14,Risonanza magnetica (RM),Diagnostica,True,False
+195,nina.serraglio@gmail.com,2020-08-29,Ecografia transvaginale,Ginecologica,False,True
+196,ludovico.querini@gmail.com,2021-03-23,Hpv Dna Test,Ginecologica,True,False
+197,liberto.modiano@gmail.com,2021-03-14,Agoaspirato,Oncologica,True,True
+198,simone.venier@gmail.com,2020-12-21,Ecografia transvaginale,Ginecologica,True,False
+199,micheletto.scandone@gmail.com,2020-11-13,Visita odontoiatrica,Odontoiatrica,False,False
+200,donatello.ferrabosco@gmail.com,2021-03-29,Ecocardiografia,Cardiologica,False,True
+201,fiorino.cossiga@gmail.com,2021-04-09,Risonanza magnetica (RM),Diagnostica,False,False
+202,dott..marcella.bertoni@gmail.com,2020-09-15,Hpv Dna Test,Ginecologica,True,False
+203,sylvia.gilardoni-seddio@gmail.com,2020-09-10,Risonanza magnetica (RM),Diagnostica,False,True
+204,milena.niggli@gmail.com,2021-02-01,Ecocardiografia,Cardiologica,False,True
+205,gemma.boccaccio@gmail.com,2021-02-13,Hpv Dna Test,Ginecologica,False,True
+206,marissa.sauli-dalla@gmail.com,2021-03-19,Biopsia prostatica,Andrologica,False,True
+207,mattia.gussoni@gmail.com,2021-02-28,Biopsia prostatica,Andrologica,True,True
+208,raffaella.pininfarina@gmail.com,2020-05-14,Colonscopia,Oncologica,False,False
+209,mattia.anastasi@gmail.com,2020-12-13,Ecocardiografia,Cardiologica,False,False
+210,sig.ra.rosaria.curiel@gmail.com,2021-02-12,Elettrocardiogramma,Cardiologica,False,True
+211,gioffre.carocci@gmail.com,2020-09-03,Pet,Diagnostica,True,False
+212,giada.valier@gmail.com,2020-12-13,Ecocardiografia,Cardiologica,False,False
+213,dott..guglielmo.sibilia@gmail.com,2021-04-01,Mammografia,Ginecologica,True,True
+214,amadeo.abbagnale@gmail.com,2021-03-04,Ecocardiografia,Cardiologica,False,False
+215,piero.tarantini-canevascini@gmail.com,2021-01-14,Ecografia mammaria,Ginecologica,True,False
+216,fortunata.lancisi@gmail.com,2020-12-22,Mammografia,Ginecologica,False,False
+217,gianfranco.bellocchio@gmail.com,2020-05-14,Agoaspirato,Oncologica,False,True
+218,loretta.bevilacqua@gmail.com,2021-03-23,Ecografia transvaginale,Ginecologica,False,True
+219,silvio.comboni-polani@gmail.com,2020-12-02,Visita odontoiatrica,Odontoiatrica,False,False
+220,umberto.ariosto@gmail.com,2021-04-10,Esame del sangue,Generale,True,True
+221,lara.ossani@gmail.com,2020-04-15,Mammografia,Ginecologica,True,True
+222,lamberto.balbo@gmail.com,2020-06-05,Colonscopia,Oncologica,True,False
+223,piergiuseppe.cimini@gmail.com,2020-10-14,Ecografia transvaginale,Ginecologica,True,False
+224,dott..bianca.tamburini@gmail.com,2020-12-30,Visita odontoiatrica,Odontoiatrica,True,False
+225,dott..lauretta.boezio@gmail.com,2021-03-24,Ecocardiografia,Cardiologica,False,True
+226,sig..giuliano.filangieri@gmail.com,2021-02-11,Pet,Diagnostica,False,True
+227,carla.trombetta@gmail.com,2020-03-22,Biopsia prostatica,Andrologica,False,False
+228,gianmarco.parmitano-martucci@gmail.com,2021-01-07,Coronarografia,Cardiologica,False,True
+229,gianpietro.amaldi@gmail.com,2021-04-09,Mammografia,Ginecologica,False,False
+230,annetta.contarini@gmail.com,2020-06-06,Spirometria,Generale,False,False
+231,dott..livio.piccio@gmail.com,2021-03-28,Marcatori tumorali,Oncologica,False,True
+232,lucrezia.baroffio@gmail.com,2020-04-05,Ecografia mammaria,Ginecologica,True,True
+233,anita.panatta@gmail.com,2021-03-25,Pet,Diagnostica,True,False
+234,enzio.giannone@gmail.com,2020-11-01,Pet,Diagnostica,True,True
+235,roberta.storladi@gmail.com,2021-03-12,Elettrocardiogramma,Cardiologica,False,False
+236,maura.troisi@gmail.com,2021-03-01,Scintigrafia,Diagnostica,True,True
+237,matteo.juvara@gmail.com,2021-03-24,Coronarografia,Cardiologica,True,True
+238,flavio.martinelli@gmail.com,2020-12-28,Spirometria,Generale,True,False
+239,dott..romolo.tirabassi@gmail.com,2021-01-05,Marcatori tumorali,Oncologica,True,False
+240,caterina.vittadello@gmail.com,2021-03-02,Elettrocardiogramma,Cardiologica,False,False
+241,matilda.quasimodo@gmail.com,2021-01-07,Agoaspirato,Oncologica,True,False
+242,etta.endrizzi@gmail.com,2020-10-21,Scintigrafia,Diagnostica,False,False
+243,dott..hugo.tutino@gmail.com,2021-01-10,Spirometria,Generale,True,True
+244,paulina.paganini@gmail.com,2020-09-25,Holter,Cardiologica,False,True
+245,veronica.cassarà@gmail.com,2021-01-16,Coronarografia,Cardiologica,False,False
+246,sig..adelmo.conte@gmail.com,2020-03-23,Hpv Dna Test,Ginecologica,False,False
+247,sig.ra.serafina.capecchi@gmail.com,2021-02-06,Agoaspirato,Oncologica,False,False
+248,dott..angelina.alighieri@gmail.com,2021-02-20,Holter,Cardiologica,True,True
+249,marta.toldo-broggini@gmail.com,2020-11-08,Mammografia,Ginecologica,False,False
+250,oreste.cesarotti-bonanno@gmail.com,2020-12-02,Risonanza magnetica (RM),Diagnostica,True,True
+251,camillo.martinelli@gmail.com,2020-04-18,Risonanza magnetica (RM),Diagnostica,True,True
+252,morena.stradivari-mondaini@gmail.com,2020-04-28,Biopsia prostatica,Andrologica,False,False
+253,tiziana.carosone@gmail.com,2020-07-11,Ecografia transvaginale,Ginecologica,False,False
+254,ermanno.majewski@gmail.com,2021-04-09,Pet,Diagnostica,False,False
+255,antonello.barzini@gmail.com,2021-01-19,Mammografia,Ginecologica,False,True
+256,ludovica.cignaroli@gmail.com,2021-04-05,Agoaspirato,Oncologica,True,True
+257,sylvia.boccioni@gmail.com,2021-02-24,Hpv Dna Test,Ginecologica,False,False
+258,lazzaro.spinelli@gmail.com,2020-09-18,Spirometria,Generale,True,False
+259,ranieri.tomasetti@gmail.com,2020-06-25,Coronarografia,Cardiologica,True,False
+260,dott..letizia.guarana@gmail.com,2021-03-08,Ecografia transvaginale,Ginecologica,False,False
+261,paola.pace@gmail.com,2021-04-02,Hpv Dna Test,Ginecologica,True,True
+262,lamberto.grassi-biagiotti@gmail.com,2021-03-22,Visita odontoiatrica,Odontoiatrica,True,True
+263,sandro.mazzanti@gmail.com,2021-01-25,Scintigrafia,Diagnostica,True,True
+264,leonardo.trupiano@gmail.com,2021-04-10,Scintigrafia,Diagnostica,False,False
+265,dott..carmelo.borgia@gmail.com,2021-03-02,Ecografia transvaginale,Ginecologica,True,False
+266,sig.ra.ninetta.pizzetti@gmail.com,2020-10-01,Colonscopia,Oncologica,True,True
+267,galasso.brambilla@gmail.com,2021-03-16,Pap-Test,Ginecologica,False,False
+268,antonia.faranda@gmail.com,2021-03-02,Elettrocardiogramma,Cardiologica,False,True
+269,greca.rensi@gmail.com,2020-11-08,Esame del sangue,Generale,True,True
+270,pasqual.renzi@gmail.com,2021-03-24,Marcatori tumorali,Oncologica,True,True
+271,ernesto.fanucci@gmail.com,2020-02-11,Scintigrafia,Diagnostica,False,False
+272,rembrandt.marangoni@gmail.com,2020-06-17,Agoaspirato,Oncologica,False,True
+273,serena.merisi@gmail.com,2021-01-08,Spirometria,Generale,False,False
+274,sig..graziano.goldoni@gmail.com,2021-02-07,Risonanza magnetica (RM),Diagnostica,True,True
+275,carla.vanvitelli-pacelli@gmail.com,2021-02-12,Pap-Test,Ginecologica,False,True
+276,mercedes.nitti-giorgetti@gmail.com,2021-03-24,Ecocardiografia,Cardiologica,False,True
+277,pompeo.camiscione@gmail.com,2020-10-08,Pap-Test,Ginecologica,False,True
+278,sante.trussardi-passalacqua@gmail.com,2021-02-03,Holter,Cardiologica,False,False
+279,luca.guarana@gmail.com,2020-10-22,Mammografia,Ginecologica,False,True
+280,etta.dallapé-udinese@gmail.com,2021-03-23,Pap-Test,Ginecologica,True,True
+281,mariana.angiolello-stucchi@gmail.com,2021-01-25,Pap-Test,Ginecologica,True,True
+282,priscilla.salvini@gmail.com,2021-04-10,Ecografia mammaria,Ginecologica,False,True
+283,gianfranco.nolcini-biagi@gmail.com,2021-03-24,Hpv Dna Test,Ginecologica,True,True
+284,raffaellino.casagrande@gmail.com,2020-12-28,Mammografia,Ginecologica,True,False
+285,daria.comisso@gmail.com,2020-10-19,Colonscopia,Oncologica,True,True
+286,enzo.anichini-pignatti@gmail.com,2021-01-23,Ecografia mammaria,Ginecologica,False,False
+287,nedda.mezzetta@gmail.com,2020-10-07,Colonscopia,Oncologica,True,False
+288,francesco.guinizzelli@gmail.com,2021-02-13,Visita odontoiatrica,Odontoiatrica,True,True
+289,livio.carfagna@gmail.com,2020-09-21,Hpv Dna Test,Ginecologica,False,True
+290,umberto.scamarcio@gmail.com,2020-11-20,Scintigrafia,Diagnostica,True,True
+291,dott..alina.guarneri@gmail.com,2020-11-02,Ecografia mammaria,Ginecologica,False,False
+292,fausto.fo@gmail.com,2021-04-06,Spirometria,Generale,True,False
+293,vittoria.golgi@gmail.com,2021-03-23,Colonscopia,Oncologica,False,True
+294,paola.acerbi@gmail.com,2020-08-08,Ecografia mammaria,Ginecologica,False,False
+295,flora.casini@gmail.com,2021-01-28,Coronarografia,Cardiologica,False,False
+296,rembrandt.lupo@gmail.com,2021-03-18,Visita odontoiatrica,Odontoiatrica,False,False
+297,giacobbe.gremese@gmail.com,2021-02-27,Coronarografia,Cardiologica,False,True
+298,zaira.gori@gmail.com,2020-11-15,Ecografia transvaginale,Ginecologica,True,False
+299,eva.ferrari-toldo@gmail.com,2021-03-25,Pet,Diagnostica,True,True
+300,simonetta.fuseli@gmail.com,2021-02-09,Ecografia transvaginale,Ginecologica,False,False
+301,simonetta.fantini@gmail.com,2021-02-27,Esame del sangue,Generale,True,False
+302,sig..domenico.carducci@gmail.com,2021-01-04,Marcatori tumorali,Oncologica,False,False
+303,dott..franco.tozzo@gmail.com,2021-03-19,Mammografia,Ginecologica,True,True
+304,arturo.zanichelli@gmail.com,2020-08-19,Coronarografia,Cardiologica,True,True
+305,vincenza.beccaria@gmail.com,2021-03-31,Spirometria,Generale,False,True
+306,pierangelo.mazzanti-dulbecco@gmail.com,2020-11-29,Ecografia transvaginale,Ginecologica,True,False
+307,sig..martino.novaro@gmail.com,2021-02-12,Scintigrafia,Diagnostica,True,True
+308,ornella.faugno@gmail.com,2020-05-27,Risonanza magnetica (RM),Diagnostica,True,False
+309,leopoldo.fantini@gmail.com,2021-03-16,Agoaspirato,Oncologica,False,True
+310,eva.navarria@gmail.com,2021-02-04,Mammografia,Ginecologica,True,True
+311,alfredo.scamarcio@gmail.com,2021-03-27,Holter,Cardiologica,True,True
+312,fiamma.interminelli-argan@gmail.com,2020-11-18,Spirometria,Generale,True,False
+313,ida.bragadin@gmail.com,2020-11-16,Esame del sangue,Generale,False,False
+314,dott..letizia.traversa@gmail.com,2021-04-01,Marcatori tumorali,Oncologica,False,True
+315,alessandra.bongiorno@gmail.com,2020-07-09,Marcatori tumorali,Oncologica,True,True
+316,tullio.armellini@gmail.com,2020-11-07,Agoaspirato,Oncologica,True,True
+317,tiziana.caboto-golgi@gmail.com,2020-07-20,Hpv Dna Test,Ginecologica,False,True
+318,lauretta.bixio@gmail.com,2020-11-26,Agoaspirato,Oncologica,True,False
+319,niccolò.giannetti-andreotti@gmail.com,2020-12-25,Hpv Dna Test,Ginecologica,True,True
+320,aurora.gargallo@gmail.com,2021-04-09,Biopsia prostatica,Andrologica,True,True
+321,sandra.malacarne@gmail.com,2020-07-30,Hpv Dna Test,Ginecologica,True,True
+322,angelina.iacovelli@gmail.com,2020-12-26,Risonanza magnetica (RM),Diagnostica,True,True
+323,giuliano.marzorati@gmail.com,2020-04-09,Pap-Test,Ginecologica,False,False
+324,alessandra.vespa-miniati@gmail.com,2020-10-15,Spirometria,Generale,False,False
+325,griselda.bova@gmail.com,2021-03-07,Agoaspirato,Oncologica,False,True
+326,luciano.sanguineti-terragni@gmail.com,2020-12-22,Ecografia transvaginale,Ginecologica,False,True
+327,rolando.trevisan@gmail.com,2021-04-07,Ecografia transvaginale,Ginecologica,True,False
+328,graziella.cheda@gmail.com,2021-03-21,Holter,Cardiologica,True,False
+329,orlando.bottigliero@gmail.com,2020-12-12,Scintigrafia,Diagnostica,True,False
+330,giacomo.giannetti@gmail.com,2021-03-06,Visita odontoiatrica,Odontoiatrica,True,True
+331,antonella.valguarnera@gmail.com,2021-03-29,Pap-Test,Ginecologica,False,False
+332,carolina.guarneri@gmail.com,2020-12-24,Pet,Diagnostica,True,False
+333,geronimo.boldù@gmail.com,2020-07-20,Elettrocardiogramma,Cardiologica,False,True
+334,dott..berenice.contarini@gmail.com,2020-03-23,Marcatori tumorali,Oncologica,False,False
+335,alfio.beccaria-legnante@gmail.com,2020-05-08,Agoaspirato,Oncologica,False,True
+336,nina.dulbecco@gmail.com,2020-11-19,Coronarografia,Cardiologica,False,False
+337,donna.priuli-lombardi@gmail.com,2021-04-08,Esame del sangue,Generale,False,True
+338,sig.ra.ramona.cociarelli@gmail.com,2021-02-19,Pap-Test,Ginecologica,True,True
+339,sig..alphons.carocci@gmail.com,2020-12-07,Hpv Dna Test,Ginecologica,True,False
+340,giovanna.callegaro-ficino@gmail.com,2020-12-20,Marcatori tumorali,Oncologica,True,False
+341,camilla.vismara@gmail.com,2021-03-04,Colonscopia,Oncologica,True,False
+342,benedetto.saragat@gmail.com,2021-01-10,Agoaspirato,Oncologica,False,False
+343,pietro.callegari@gmail.com,2021-04-10,Mammografia,Ginecologica,True,True
+344,alfio.parpinel-veltroni@gmail.com,2020-09-07,Elettrocardiogramma,Cardiologica,True,False
+345,lucio.filippelli@gmail.com,2021-01-28,Scintigrafia,Diagnostica,True,False
+346,annetta.romiti@gmail.com,2020-04-06,Hpv Dna Test,Ginecologica,False,False
+347,giulia.correr-folliero@gmail.com,2021-03-22,Hpv Dna Test,Ginecologica,False,True
+348,marina.cocci@gmail.com,2020-03-23,Biopsia prostatica,Andrologica,False,True
+349,sig.ra.melina.varano@gmail.com,2020-09-25,Pet,Diagnostica,True,False
+350,sig.ra.nadia.trincavelli@gmail.com,2020-11-01,Colonscopia,Oncologica,True,False
+351,gioffre.vivaldi@gmail.com,2021-02-09,Biopsia prostatica,Andrologica,False,True
+352,sig.ra.antonina.babato@gmail.com,2021-04-09,Mammografia,Ginecologica,False,False
+353,delfino.galeati@gmail.com,2021-03-18,Coronarografia,Cardiologica,False,True
+354,sig..achille.rossetti@gmail.com,2020-12-17,Agoaspirato,Oncologica,True,True
+355,lolita.fibonacci@gmail.com,2021-01-20,Colonscopia,Oncologica,True,True
+356,giacinto.sonnino@gmail.com,2021-02-28,Biopsia prostatica,Andrologica,True,True
+357,dott..rodolfo.galeati@gmail.com,2021-04-11,Biopsia prostatica,Andrologica,True,False
+358,renata.tozzo-interiano@gmail.com,2021-03-19,Coronarografia,Cardiologica,True,True
+359,sig.ra.donatella.tomasini@gmail.com,2020-11-09,Risonanza magnetica (RM),Diagnostica,True,True
+360,lorenzo.boldù@gmail.com,2021-04-07,Agoaspirato,Oncologica,False,False
+361,eleanora.vidoni@gmail.com,2020-10-19,Mammografia,Ginecologica,True,False
+362,giuseppina.tozzo@gmail.com,2021-03-09,Mammografia,Ginecologica,True,True
+363,giovanni.trobbiani@gmail.com,2020-09-12,Spirometria,Generale,True,False
+364,filippo.cantimori@gmail.com,2021-03-19,Ecografia mammaria,Ginecologica,True,False
+365,sig..delfino.fittipaldi@gmail.com,2020-10-04,Colonscopia,Oncologica,False,True
+366,ezio.pavone-vergassola@gmail.com,2020-11-16,Colonscopia,Oncologica,True,False
+367,liliana.rensi@gmail.com,2020-02-19,Pet,Diagnostica,True,False
+368,federico.dandolo@gmail.com,2021-01-15,Hpv Dna Test,Ginecologica,True,True
+369,dott..annunziata.galtarossa@gmail.com,2020-09-05,Biopsia prostatica,Andrologica,True,False
+370,vanessa.biagi-sanudo@gmail.com,2020-11-26,Ecografia mammaria,Ginecologica,True,True
+371,gioachino.tolentino-baglioni@gmail.com,2020-04-20,Ecografia transvaginale,Ginecologica,False,True
+372,beatrice.pausini@gmail.com,2020-07-20,Mammografia,Ginecologica,False,False
+373,cipriano.correr@gmail.com,2020-10-20,Ecocardiografia,Cardiologica,True,False
+374,ludovico.pigafetta@gmail.com,2020-11-19,Spirometria,Generale,True,False
+375,piero.guariento@gmail.com,2020-09-19,Colonscopia,Oncologica,False,False
+376,camilla.depero@gmail.com,2020-09-01,Hpv Dna Test,Ginecologica,True,False
+377,fortunata.pisaroni@gmail.com,2020-07-30,Esame del sangue,Generale,True,False
+378,eugenia.trussardi@gmail.com,2021-04-03,Ecografia mammaria,Ginecologica,True,False
+379,achille.bignami@gmail.com,2021-04-10,Mammografia,Ginecologica,False,True
+380,raffaella.montalcini-tropea@gmail.com,2021-01-02,Visita odontoiatrica,Odontoiatrica,False,True
+381,donato.corradi@gmail.com,2021-03-31,Biopsia prostatica,Andrologica,False,False
+382,eliana.navone-onisto@gmail.com,2020-08-25,Risonanza magnetica (RM),Diagnostica,False,True
+383,giada.lucchesi@gmail.com,2020-11-04,Visita odontoiatrica,Odontoiatrica,True,True
+384,giuseppe.barracco-iacovelli@gmail.com,2021-03-31,Marcatori tumorali,Oncologica,False,True
+385,dott..micheletto.ferrazzi@gmail.com,2021-01-23,Marcatori tumorali,Oncologica,True,False
+386,mercedes.mastroianni@gmail.com,2021-03-01,Mammografia,Ginecologica,False,True
+387,antonino.forza@gmail.com,2021-03-08,Spirometria,Generale,True,True
+388,fernanda.platini@gmail.com,2020-12-25,Coronarografia,Cardiologica,False,True
+389,mercedes.bramante@gmail.com,2020-11-11,Pet,Diagnostica,True,True
+390,mario.redi@gmail.com,2020-08-28,Elettrocardiogramma,Cardiologica,True,False
+391,lamberto.panzera-cerquiglini@gmail.com,2021-03-31,Risonanza magnetica (RM),Diagnostica,False,False
+392,francesco.tarantini@gmail.com,2021-04-07,Agoaspirato,Oncologica,False,True
+393,luciana.modiano@gmail.com,2020-11-28,Spirometria,Generale,True,False
+394,fulvio.scarlatti@gmail.com,2020-12-23,Mammografia,Ginecologica,False,True
+395,arsenio.borromini@gmail.com,2020-12-03,Colonscopia,Oncologica,True,True
+396,dott..ramona.tirabassi@gmail.com,2021-01-29,Esame del sangue,Generale,False,True
+397,sig.ra.martina.andreotti@gmail.com,2020-07-13,Scintigrafia,Diagnostica,True,True
+398,eva.muratori@gmail.com,2021-04-10,Hpv Dna Test,Ginecologica,True,True
+399,sig..giampaolo.tedesco@gmail.com,2021-04-11,Mammografia,Ginecologica,True,True
+400,sig..alphons.navarria@gmail.com,2021-02-16,Coronarografia,Cardiologica,False,True
+401,antonia.collodi@gmail.com,2021-02-03,Marcatori tumorali,Oncologica,False,False
+402,sig.ra.renata.magrassi@gmail.com,2020-09-18,Hpv Dna Test,Ginecologica,True,False
+403,veronica.alonzi@gmail.com,2021-03-10,Elettrocardiogramma,Cardiologica,False,False
+404,letizia.nadi-bonomo@gmail.com,2021-03-16,Spirometria,Generale,False,True
+405,bettina.conti@gmail.com,2021-03-09,Mammografia,Ginecologica,True,False
+406,saverio.camanni@gmail.com,2021-02-19,Colonscopia,Oncologica,False,True
+407,giuseppe.trillini@gmail.com,2020-04-15,Hpv Dna Test,Ginecologica,True,False
+408,elmo.veltroni@gmail.com,2021-03-06,Scintigrafia,Diagnostica,False,True
+409,enzio.maderna@gmail.com,2020-09-21,Ecografia mammaria,Ginecologica,False,True
+410,alessandro.salieri@gmail.com,2021-02-15,Biopsia prostatica,Andrologica,True,False
+411,mirko.udinese@gmail.com,2020-11-08,Colonscopia,Oncologica,False,False
+412,griselda.seddio@gmail.com,2021-02-27,Mammografia,Ginecologica,False,True
+413,eleanora.paruta@gmail.com,2021-03-17,Marcatori tumorali,Oncologica,True,False
+414,federico.marinetti@gmail.com,2021-04-11,Agoaspirato,Oncologica,True,True
+415,olga.nitto@gmail.com,2020-05-16,Pet,Diagnostica,False,False
+416,delfino.soderini@gmail.com,2020-02-25,Esame del sangue,Generale,True,True
+417,federica.rocca-palazzo@gmail.com,2020-12-18,Marcatori tumorali,Oncologica,True,False
+418,tatiana.garozzo@gmail.com,2021-02-05,Agoaspirato,Oncologica,True,True
+419,ramona.busoni@gmail.com,2020-12-26,Colonscopia,Oncologica,True,False
+420,giuliana.guarato-ricolfi@gmail.com,2021-02-10,Pet,Diagnostica,True,True
+421,vittoria.rocca@gmail.com,2020-08-11,Risonanza magnetica (RM),Diagnostica,True,True
+422,osvaldo.rusticucci@gmail.com,2021-03-12,Mammografia,Ginecologica,False,False
+423,ugo.trussardi@gmail.com,2021-02-13,Pet,Diagnostica,True,False
+424,paoletta.iacobucci-dallapé@gmail.com,2020-12-25,Marcatori tumorali,Oncologica,True,True
+425,cristina.tirabassi@gmail.com,2021-03-21,Biopsia prostatica,Andrologica,False,False
+426,berenice.mazzini@gmail.com,2021-04-06,Pap-Test,Ginecologica,False,False
+427,bianca.contarini@gmail.com,2020-06-22,Pap-Test,Ginecologica,False,False
+428,sergius.storladi@gmail.com,2020-09-29,Pet,Diagnostica,False,False
+429,patrizia.bruscantini@gmail.com,2021-03-20,Coronarografia,Cardiologica,True,False
+430,dott..graziano.ruberto@gmail.com,2020-11-26,Spirometria,Generale,True,True
+431,fabio.tozzi-pacetti@gmail.com,2020-10-08,Coronarografia,Cardiologica,False,False
+432,leonardo.zanichelli-giusti@gmail.com,2021-01-03,Risonanza magnetica (RM),Diagnostica,True,False
+433,stefani.farinelli@gmail.com,2020-05-13,Scintigrafia,Diagnostica,False,True
+434,germana.fantozzi-lucciano@gmail.com,2021-03-30,Ecografia transvaginale,Ginecologica,True,True
+435,dott..antonia.gulotta@gmail.com,2020-10-26,Ecografia mammaria,Ginecologica,True,False
+436,dott..puccio.abbagnale@gmail.com,2021-03-25,Coronarografia,Cardiologica,True,True
+437,lidia.conti-polizzi@gmail.com,2020-05-22,Ecografia mammaria,Ginecologica,True,True
+438,dott..alina.barese@gmail.com,2021-04-10,Holter,Cardiologica,False,False
+439,sig..amleto.cociarelli@gmail.com,2021-01-12,Marcatori tumorali,Oncologica,False,False
+440,valeria.sansoni@gmail.com,2021-02-03,Esame del sangue,Generale,True,True
+441,sig.ra.ornella.ferrabosco@gmail.com,2021-03-15,Biopsia prostatica,Andrologica,False,True
+442,fredo.finetti@gmail.com,2021-01-14,Hpv Dna Test,Ginecologica,True,False
+443,sandra.einaudi@gmail.com,2021-02-19,Biopsia prostatica,Andrologica,False,True
+444,raffaellino.monaco@gmail.com,2020-12-10,Ecografia mammaria,Ginecologica,False,False
+445,concetta.zamorani@gmail.com,2021-04-10,Colonscopia,Oncologica,True,False
+446,cassandra.cerquiglini@gmail.com,2020-10-16,Spirometria,Generale,True,True
+447,chiara.nitto@gmail.com,2021-03-26,Scintigrafia,Diagnostica,False,True
+448,ivo.argurio@gmail.com,2021-03-21,Colonscopia,Oncologica,False,False
+449,salvi.fermi-grimani@gmail.com,2020-12-12,Colonscopia,Oncologica,False,False
+450,irma.nordio-romano@gmail.com,2020-10-03,Colonscopia,Oncologica,False,True
+451,saverio.mocenigo@gmail.com,2020-04-23,Esame del sangue,Generale,False,True
+452,lidia.foletti@gmail.com,2021-02-11,Colonscopia,Oncologica,True,True
+453,gilberto.gargallo@gmail.com,2021-03-16,Ecocardiografia,Cardiologica,False,True
+454,dott..mattia.carnera@gmail.com,2021-03-03,Agoaspirato,Oncologica,True,False
+455,amanda.cusano-michelangeli@gmail.com,2021-04-06,Agoaspirato,Oncologica,False,False
+456,renata.asprucci@gmail.com,2021-03-25,Agoaspirato,Oncologica,True,True
+457,adriana.palazzo@gmail.com,2020-09-12,Colonscopia,Oncologica,False,False
+458,alina.peruzzi@gmail.com,2021-03-05,Risonanza magnetica (RM),Diagnostica,False,False
+459,cesare.cugia@gmail.com,2020-03-21,Risonanza magnetica (RM),Diagnostica,False,False
+460,liliana.ottino@gmail.com,2021-02-27,Hpv Dna Test,Ginecologica,True,False
+461,goffredo.ungaretti@gmail.com,2021-04-07,Ecografia mammaria,Ginecologica,True,True
+462,gianpietro.aldobrandi-travaglio@gmail.com,2021-02-22,Spirometria,Generale,False,False
+463,annibale.udinesi@gmail.com,2021-04-01,Agoaspirato,Oncologica,True,True
+464,temistocle.rossi@gmail.com,2020-12-24,Agoaspirato,Oncologica,True,False
+465,paoletta.casale@gmail.com,2020-07-24,Marcatori tumorali,Oncologica,False,True
+466,amanda.musatti@gmail.com,2021-02-11,Esame del sangue,Generale,False,False
+467,leone.agazzi@gmail.com,2020-08-30,Pet,Diagnostica,False,True
+468,mario.maffei@gmail.com,2021-03-15,Mammografia,Ginecologica,False,True
+469,bettina.turrini@gmail.com,2020-07-09,Visita odontoiatrica,Odontoiatrica,False,True
+470,sig..piergiorgio.correr@gmail.com,2020-12-24,Risonanza magnetica (RM),Diagnostica,False,False
+471,clelia.anguissola-barozzi@gmail.com,2021-03-16,Mammografia,Ginecologica,False,False
+472,lara.borzomì@gmail.com,2020-11-20,Mammografia,Ginecologica,True,False
+473,rosa.guidone@gmail.com,2020-10-30,Colonscopia,Oncologica,True,True
+474,gianluca.filippelli@gmail.com,2021-03-21,Ecografia mammaria,Ginecologica,True,True
+475,melina.tartaglia@gmail.com,2020-10-28,Risonanza magnetica (RM),Diagnostica,False,True
+476,silvia.brambilla@gmail.com,2020-07-12,Hpv Dna Test,Ginecologica,False,True
+477,pierluigi.brenna@gmail.com,2020-05-22,Pap-Test,Ginecologica,True,False
+478,beatrice.scarponi@gmail.com,2020-12-20,Ecografia mammaria,Ginecologica,False,True
+479,daria.govoni@gmail.com,2020-10-20,Ecografia mammaria,Ginecologica,True,False
+480,paride.grisoni-argenti@gmail.com,2021-03-01,Pap-Test,Ginecologica,False,True
+481,riccardo.vasari@gmail.com,2021-04-09,Esame del sangue,Generale,True,True
+482,erika.gritti@gmail.com,2020-11-03,Pap-Test,Ginecologica,True,True
+483,carolina.finzi-guariento@gmail.com,2020-12-29,Mammografia,Ginecologica,True,True
+484,jolanda.cainero@gmail.com,2021-02-01,Pet,Diagnostica,True,True
+485,bartolomeo.petralli@gmail.com,2021-02-16,Marcatori tumorali,Oncologica,False,True
+486,marisa.sinisi@gmail.com,2021-01-30,Ecografia transvaginale,Ginecologica,False,False
+487,giorgio.cannizzaro@gmail.com,2020-12-21,Agoaspirato,Oncologica,True,False
+488,mauro.vianello-aporti@gmail.com,2020-12-09,Pet,Diagnostica,False,False
+489,luciana.orengo@gmail.com,2021-03-12,Spirometria,Generale,True,True
+490,antonio.tasca@gmail.com,2021-02-22,Esame del sangue,Generale,True,False
+491,marisa.scarfoglio@gmail.com,2021-03-16,Holter,Cardiologica,True,False
+492,dott..puccio.mattarella@gmail.com,2020-12-20,Coronarografia,Cardiologica,False,False
+493,nedda.majewski@gmail.com,2021-02-28,Pet,Diagnostica,True,True
+494,serafina.ricolfi@gmail.com,2021-04-04,Ecografia mammaria,Ginecologica,True,True
+495,marina.renier-schiavo@gmail.com,2021-03-25,Holter,Cardiologica,False,True
+496,lilla.cristoforetti@gmail.com,2020-03-08,Holter,Cardiologica,False,True
+497,teresa.chittolini@gmail.com,2020-06-01,Risonanza magnetica (RM),Diagnostica,False,False
+498,virginia.prati@gmail.com,2020-12-01,Ecocardiografia,Cardiologica,True,False
+499,sig..rembrandt.gritti@gmail.com,2021-02-16,Biopsia prostatica,Andrologica,True,True
+500,riccardo.samele@gmail.com,2020-10-09,Visita odontoiatrica,Odontoiatrica,False,False
+501,fiamma.chiesa@gmail.com,2020-08-23,Colonscopia,Oncologica,False,False
+502,priscilla.faugno@gmail.com,2020-07-14,Ecografia mammaria,Ginecologica,True,False
+503,ettore.gatto@gmail.com,2021-02-12,Hpv Dna Test,Ginecologica,False,False
+504,chiara.calgari@gmail.com,2021-03-24,Spirometria,Generale,False,True
+505,sig..simone.fermi@gmail.com,2021-01-26,Ecografia transvaginale,Ginecologica,True,True
+506,sig.ra.rossana.strangio@gmail.com,2020-12-15,Biopsia prostatica,Andrologica,False,False
+507,olga.sraffa@gmail.com,2020-02-22,Elettrocardiogramma,Cardiologica,True,False
+508,pierluigi.panatta-roccabonella@gmail.com,2020-11-29,Ecocardiografia,Cardiologica,False,False
+509,gloria.fracci@gmail.com,2020-07-29,Spirometria,Generale,True,False
+510,franco.bragadin@gmail.com,2020-07-19,Pet,Diagnostica,True,True
+511,stefania.chigi@gmail.com,2020-07-28,Risonanza magnetica (RM),Diagnostica,True,True
+512,allegra.callegaro@gmail.com,2020-05-29,Colonscopia,Oncologica,True,True
+513,cipriano.tacchini@gmail.com,2020-09-16,Hpv Dna Test,Ginecologica,False,True
+514,marissa.gaito@gmail.com,2021-02-07,Esame del sangue,Generale,True,False
+515,lauretta.silvestri@gmail.com,2020-09-23,Elettrocardiogramma,Cardiologica,True,True
+516,renzo.mancini@gmail.com,2020-05-24,Agoaspirato,Oncologica,False,True
+517,federico.pizzo@gmail.com,2020-08-03,Scintigrafia,Diagnostica,False,False
+518,giorgia.puglisi@gmail.com,2021-03-15,Colonscopia,Oncologica,True,True
+519,gianfrancesco.calvo@gmail.com,2020-10-15,Ecografia transvaginale,Ginecologica,True,False
+520,lucio.valentino@gmail.com,2021-03-14,Agoaspirato,Oncologica,False,False
+521,atenulf.parri@gmail.com,2021-03-31,Colonscopia,Oncologica,True,True
+522,fernanda.nitto@gmail.com,2021-03-07,Ecografia mammaria,Ginecologica,False,True
+523,stefania.lucchesi@gmail.com,2021-04-01,Elettrocardiogramma,Cardiologica,False,True
+524,ermanno.gullotta@gmail.com,2020-07-31,Agoaspirato,Oncologica,True,True
+525,valerio.asprucci@gmail.com,2020-12-12,Ecografia mammaria,Ginecologica,False,False
+526,tiziano.lucchesi@gmail.com,2021-03-18,Risonanza magnetica (RM),Diagnostica,False,True
+527,irma.bignardi@gmail.com,2020-11-28,Spirometria,Generale,False,False
+528,azeglio.nonis@gmail.com,2021-02-08,Pet,Diagnostica,True,False
+529,galasso.mocenigo-tutino@gmail.com,2021-03-27,Visita odontoiatrica,Odontoiatrica,True,False
+530,valeria.pelli-battaglia@gmail.com,2020-07-22,Pap-Test,Ginecologica,True,True
+531,dott..ruggiero.donati@gmail.com,2021-03-03,Risonanza magnetica (RM),Diagnostica,True,True
+532,micheletto.gabrieli-falcone@gmail.com,2020-12-08,Biopsia prostatica,Andrologica,True,True
+533,clelia.zoppetto@gmail.com,2020-11-12,Risonanza magnetica (RM),Diagnostica,False,False
+534,edoardo.romagnoli@gmail.com,2020-05-24,Biopsia prostatica,Andrologica,True,False
+535,concetta.marazzi@gmail.com,2021-04-04,Risonanza magnetica (RM),Diagnostica,True,True
+536,isabella.onio@gmail.com,2021-01-27,Marcatori tumorali,Oncologica,True,False
+537,sig.ra.amanda.sauli@gmail.com,2020-08-02,Holter,Cardiologica,True,True
+538,federica.caetani@gmail.com,2020-11-10,Coronarografia,Cardiologica,False,False
+539,antonia.mercantini@gmail.com,2020-10-24,Holter,Cardiologica,True,True
+540,luigina.albertini@gmail.com,2020-10-05,Biopsia prostatica,Andrologica,True,False
+541,gioele.innocenti-toselli@gmail.com,2021-02-11,Holter,Cardiologica,True,True
+542,bartolomeo.pisacane@gmail.com,2021-03-09,Holter,Cardiologica,False,False
+543,sonia.magrassi@gmail.com,2021-03-15,Risonanza magnetica (RM),Diagnostica,True,True
+544,dott..lodovico.fallaci@gmail.com,2021-03-30,Scintigrafia,Diagnostica,False,True
+545,pier.abba-mazzacurati@gmail.com,2021-04-03,Colonscopia,Oncologica,True,True
+546,lidia.foa@gmail.com,2021-02-21,Spirometria,Generale,True,True
+547,dott..eugenia.casaleggio@gmail.com,2021-03-27,Colonscopia,Oncologica,True,True
+548,dionigi.berrè-cipolla@gmail.com,2021-03-26,Ecografia transvaginale,Ginecologica,False,False
+549,alderano.riccardi-mondadori@gmail.com,2021-01-15,Spirometria,Generale,True,False
+550,dott..amico.greco@gmail.com,2020-07-27,Hpv Dna Test,Ginecologica,True,True
+551,lilla.venturi@gmail.com,2020-10-28,Marcatori tumorali,Oncologica,True,True
+552,danilo.govoni@gmail.com,2020-09-22,Pet,Diagnostica,False,False
+553,giulia.carfagna-baglioni@gmail.com,2021-02-27,Hpv Dna Test,Ginecologica,True,True
+554,aurora.soprano-vittadello@gmail.com,2020-08-08,Pet,Diagnostica,False,False
+555,rosa.giannuzzi@gmail.com,2020-08-01,Ecocardiografia,Cardiologica,True,True
+556,stefano.grisoni-balbo@gmail.com,2021-02-26,Coronarografia,Cardiologica,True,False
+557,patrizio.bompiani@gmail.com,2021-01-04,Ecocardiografia,Cardiologica,True,False
+558,giacomo.cianciolo@gmail.com,2020-05-24,Elettrocardiogramma,Cardiologica,True,True
+559,dott..marisa.smirnoff@gmail.com,2020-12-31,Coronarografia,Cardiologica,False,False
+560,sig.ra.roberta.franscini@gmail.com,2021-01-02,Mammografia,Ginecologica,False,False
+561,napoleone.cafarchia@gmail.com,2021-01-27,Pap-Test,Ginecologica,True,True
+562,lamberto.sobrero@gmail.com,2020-10-25,Biopsia prostatica,Andrologica,True,False
+563,sig.ra.eva.gremese@gmail.com,2021-01-08,Coronarografia,Cardiologica,False,True
+564,marissa.casaleggio@gmail.com,2021-03-26,Ecocardiografia,Cardiologica,False,False
+565,dott..beatrice.morandi@gmail.com,2020-12-10,Ecografia transvaginale,Ginecologica,True,False
+566,alina.piovani-rossi@gmail.com,2021-02-19,Biopsia prostatica,Andrologica,True,True
+567,pina.casellati-sobrero@gmail.com,2020-09-23,Ecografia mammaria,Ginecologica,False,False
+568,lucio.abate@gmail.com,2020-11-09,Elettrocardiogramma,Cardiologica,True,True
+569,filippa.serlupi-albertini@gmail.com,2020-09-05,Spirometria,Generale,False,False
+570,dott..liana.barzini@gmail.com,2020-11-05,Ecografia mammaria,Ginecologica,False,False
+571,giuseppina.morricone@gmail.com,2020-07-22,Ecocardiografia,Cardiologica,True,True
+572,dott..matteo.botta@gmail.com,2021-01-21,Ecografia transvaginale,Ginecologica,True,False
+573,giampaolo.trupiano@gmail.com,2021-03-21,Visita odontoiatrica,Odontoiatrica,False,False
+574,gelsomina.moretti@gmail.com,2020-04-04,Ecografia transvaginale,Ginecologica,False,False
+575,alessandra.cossiga@gmail.com,2021-03-11,Agoaspirato,Oncologica,False,False
+576,giuseppina.romagnoli-polani@gmail.com,2020-07-11,Holter,Cardiologica,True,True
+577,priscilla.tafuri@gmail.com,2020-09-01,Risonanza magnetica (RM),Diagnostica,True,True
+578,sig.ra.diana.toselli@gmail.com,2020-11-14,Holter,Cardiologica,False,False
+579,sig..edoardo.tarantino@gmail.com,2021-02-07,Coronarografia,Cardiologica,False,True
+580,ermanno.palombi@gmail.com,2020-09-19,Elettrocardiogramma,Cardiologica,True,False
+581,virgilio.luna@gmail.com,2021-02-01,Coronarografia,Cardiologica,False,True
+582,rosalia.gianinazzi@gmail.com,2020-10-13,Risonanza magnetica (RM),Diagnostica,True,False
+583,donato.bembo@gmail.com,2020-09-16,Holter,Cardiologica,False,True
+584,dott..martina.bompiani@gmail.com,2021-01-06,Spirometria,Generale,True,True
+585,paolo.silvestri-tassoni@gmail.com,2021-02-21,Spirometria,Generale,True,False
+586,alderano.boezio@gmail.com,2021-01-05,Visita odontoiatrica,Odontoiatrica,False,False
+587,clelia.pedersoli@gmail.com,2021-03-07,Ecografia transvaginale,Ginecologica,True,False
+588,fabia.farinelli@gmail.com,2021-04-11,Marcatori tumorali,Oncologica,False,True
+589,vincenzo.pontecorvo@gmail.com,2021-02-06,Ecocardiografia,Cardiologica,False,False
+590,maria.biagiotti-satriani@gmail.com,2020-09-17,Marcatori tumorali,Oncologica,True,False
+591,nanni.pisaroni@gmail.com,2020-08-07,Biopsia prostatica,Andrologica,True,False
+592,nina.bataglia@gmail.com,2021-03-24,Agoaspirato,Oncologica,False,True
+593,sabatino.virgilio@gmail.com,2021-04-09,Spirometria,Generale,False,False
+594,mattia.bergoglio-bazzi@gmail.com,2020-12-16,Pet,Diagnostica,True,True
+595,calcedonio.mercantini@gmail.com,2021-02-04,Spirometria,Generale,True,False
+596,dino.tonisto@gmail.com,2021-01-15,Risonanza magnetica (RM),Diagnostica,False,False
+597,gianna.tacchini@gmail.com,2021-01-21,Colonscopia,Oncologica,False,True
+598,nicolò.gentileschi@gmail.com,2021-03-28,Ecocardiografia,Cardiologica,True,False
+599,sig.ra.loretta.onisto@gmail.com,2021-01-25,Biopsia prostatica,Andrologica,True,False
+600,ida.canova@gmail.com,2021-04-02,Ecografia mammaria,Ginecologica,False,False
+601,sig.ra.valeria.iacobucci@gmail.com,2021-03-31,Esame del sangue,Generale,False,False
+602,achille.jovinelli@gmail.com,2021-03-31,Pap-Test,Ginecologica,False,True
+603,filippa.almagià@gmail.com,2021-01-20,Elettrocardiogramma,Cardiologica,True,True
+604,aurora.pacetti-foconi@gmail.com,2020-04-26,Risonanza magnetica (RM),Diagnostica,False,False
+605,mercedes.zaguri@gmail.com,2020-12-23,Scintigrafia,Diagnostica,False,True
+606,nedda.vasari-draghi@gmail.com,2021-01-16,Agoaspirato,Oncologica,True,False
+607,luigina.rocca-sgalambro@gmail.com,2021-02-13,Holter,Cardiologica,True,True
+608,nanni.badoer@gmail.com,2020-12-29,Hpv Dna Test,Ginecologica,True,False
+609,annalisa.trotta@gmail.com,2020-10-07,Ecocardiografia,Cardiologica,True,True
+610,sig..jacopo.gadda@gmail.com,2020-08-07,Hpv Dna Test,Ginecologica,False,False
+611,emma.contarini@gmail.com,2021-02-18,Ecocardiografia,Cardiologica,True,True
+612,rosina.rossellini@gmail.com,2020-12-14,Scintigrafia,Diagnostica,True,False
+613,guglielmo.dossi@gmail.com,2020-12-20,Biopsia prostatica,Andrologica,False,True
+614,laura.micheletti@gmail.com,2021-03-04,Colonscopia,Oncologica,False,True
+615,giovanni.monaco@gmail.com,2021-04-07,Ecocardiografia,Cardiologica,False,False
+616,armando.combi@gmail.com,2021-03-08,Hpv Dna Test,Ginecologica,True,False
+617,agnolo.tuzzolino@gmail.com,2020-10-10,Mammografia,Ginecologica,False,False
+618,marina.argan@gmail.com,2021-04-07,Scintigrafia,Diagnostica,False,True
+619,sig..giacinto.belletini@gmail.com,2020-08-13,Scintigrafia,Diagnostica,True,False
+620,renzo.grisoni@gmail.com,2021-04-10,Biopsia prostatica,Andrologica,True,False
+621,severino.pontecorvo@gmail.com,2021-03-17,Elettrocardiogramma,Cardiologica,True,True
+622,dott..sebastiano.curatoli@gmail.com,2020-06-27,Biopsia prostatica,Andrologica,True,False
+623,angelica.ioppi@gmail.com,2020-09-22,Pet,Diagnostica,True,False
+624,francesca.bellini@gmail.com,2021-03-13,Ecografia transvaginale,Ginecologica,True,True
+625,silvia.virgilio-donini@gmail.com,2021-03-26,Elettrocardiogramma,Cardiologica,False,False
+626,rosa.cabibbo@gmail.com,2021-03-08,Hpv Dna Test,Ginecologica,False,True
+627,beatrice.druso@gmail.com,2021-03-07,Visita odontoiatrica,Odontoiatrica,True,True
+628,bartolomeo.monicelli@gmail.com,2020-12-21,Pet,Diagnostica,False,True
+629,giovanna.cappelli-ferrari@gmail.com,2020-12-04,Marcatori tumorali,Oncologica,False,False
+630,venancio.brunelleschi-mercantini@gmail.com,2021-03-11,Holter,Cardiologica,True,True
+631,etta.vercelloni@gmail.com,2020-12-06,Agoaspirato,Oncologica,True,True
+632,ferdinando.pareto@gmail.com,2020-11-11,Coronarografia,Cardiologica,True,False
+633,elisa.ziani@gmail.com,2020-08-25,Ecografia mammaria,Ginecologica,True,True
+634,dott..lolita.soranzo@gmail.com,2021-03-01,Mammografia,Ginecologica,False,False
+635,sabatino.bernetti-tremonti@gmail.com,2021-02-05,Risonanza magnetica (RM),Diagnostica,True,False
+636,ludovico.jilani@gmail.com,2021-01-17,Ecografia mammaria,Ginecologica,True,False
+637,riccardo.broggini@gmail.com,2020-12-27,Ecografia transvaginale,Ginecologica,True,True
+638,dott..ermenegildo.palazzo@gmail.com,2020-11-24,Scintigrafia,Diagnostica,False,True
+639,filippa.franzese@gmail.com,2020-07-23,Mammografia,Ginecologica,False,False
+640,massimo.correr@gmail.com,2021-03-24,Mammografia,Ginecologica,False,True
+641,uberto.jovinelli@gmail.com,2021-04-10,Hpv Dna Test,Ginecologica,True,False
+642,imelda.martucci@gmail.com,2021-04-07,Coronarografia,Cardiologica,True,False
+643,elisa.cattaneo@gmail.com,2021-02-16,Marcatori tumorali,Oncologica,False,False
+644,aria.ostinelli@gmail.com,2021-01-03,Visita odontoiatrica,Odontoiatrica,False,True
+645,laureano.lattuada-giannini@gmail.com,2020-10-16,Elettrocardiogramma,Cardiologica,False,False
+646,antonina.argento@gmail.com,2021-01-04,Spirometria,Generale,False,False
+647,sig.ra.valeria.iannotti@gmail.com,2021-01-28,Visita odontoiatrica,Odontoiatrica,False,True
+648,renata.armellini-bandello@gmail.com,2021-01-02,Pap-Test,Ginecologica,False,False
+649,valentina.salata-vecellio@gmail.com,2020-08-03,Visita odontoiatrica,Odontoiatrica,False,False
+650,vincenza.farinelli@gmail.com,2021-01-17,Scintigrafia,Diagnostica,True,True
+651,nina.polizzi@gmail.com,2020-12-10,Pet,Diagnostica,False,False
+652,mirko.bragaglia@gmail.com,2021-01-07,Esame del sangue,Generale,True,False
+653,annetta.lopresti-ziani@gmail.com,2021-03-25,Biopsia prostatica,Andrologica,False,False
+654,fiamma.comolli@gmail.com,2021-03-31,Hpv Dna Test,Ginecologica,True,True
+655,melina.montesano@gmail.com,2021-02-25,Visita odontoiatrica,Odontoiatrica,True,False
+656,sergius.sobrero@gmail.com,2021-04-11,Elettrocardiogramma,Cardiologica,True,False
+657,diana.leonetti@gmail.com,2020-10-22,Pap-Test,Ginecologica,False,True
+658,chiara.baroffio-trincavelli@gmail.com,2021-03-27,Elettrocardiogramma,Cardiologica,True,False
+659,dott..donatello.mantegazza@gmail.com,2021-03-21,Pet,Diagnostica,True,True
+660,loretta.eco@gmail.com,2021-01-30,Holter,Cardiologica,False,True
+661,mattia.bembo-innocenti@gmail.com,2021-04-09,Mammografia,Ginecologica,False,False
+662,dott..lina.cantimori@gmail.com,2021-03-12,Scintigrafia,Diagnostica,True,False
+663,sante.rosmini@gmail.com,2020-07-28,Visita odontoiatrica,Odontoiatrica,False,True
+664,vanessa.fornaciari@gmail.com,2021-02-25,Coronarografia,Cardiologica,False,True
+665,vincenzo.malipiero@gmail.com,2020-07-16,Pap-Test,Ginecologica,False,True
+666,nicola.tozzi-nosiglia@gmail.com,2020-11-26,Risonanza magnetica (RM),Diagnostica,True,True
+667,vincentio.ritacca@gmail.com,2021-03-17,Pap-Test,Ginecologica,False,False
+668,eraldo.iadanza@gmail.com,2020-07-15,Coronarografia,Cardiologica,False,False
+669,enzo.romiti@gmail.com,2021-03-17,Ecografia transvaginale,Ginecologica,False,False
+670,umberto.casagrande@gmail.com,2021-02-22,Ecografia mammaria,Ginecologica,True,False
+671,temistocle.bova@gmail.com,2021-04-09,Agoaspirato,Oncologica,True,True
+672,ilaria.durante@gmail.com,2020-06-21,Pap-Test,Ginecologica,False,False
+673,annamaria.ferrazzi-giovine@gmail.com,2021-02-02,Spirometria,Generale,True,True
+674,sig.ra.virginia.lombardi@gmail.com,2021-03-07,Holter,Cardiologica,False,True
+675,luciana.migliaccio@gmail.com,2020-11-14,Coronarografia,Cardiologica,True,True
+676,ugolino.palladio@gmail.com,2021-03-01,Agoaspirato,Oncologica,True,True
+677,sig..ivo.foletti@gmail.com,2020-11-28,Holter,Cardiologica,True,True
+678,cassandra.buscetta@gmail.com,2020-12-31,Scintigrafia,Diagnostica,False,True
+679,bettina.fantini@gmail.com,2021-03-15,Ecografia transvaginale,Ginecologica,True,True
+680,agostino.tolentino@gmail.com,2021-03-12,Marcatori tumorali,Oncologica,True,False
+681,rembrandt.redi@gmail.com,2020-05-03,Visita odontoiatrica,Odontoiatrica,False,True
+682,filippo.maffei@gmail.com,2020-03-23,Visita odontoiatrica,Odontoiatrica,False,True
+683,ippazio.paganini@gmail.com,2020-11-26,Risonanza magnetica (RM),Diagnostica,True,True
+684,annamaria.gozzi-sonnino@gmail.com,2020-12-11,Ecografia transvaginale,Ginecologica,False,True
+685,ilaria.verdi@gmail.com,2020-04-29,Mammografia,Ginecologica,True,False
+686,gastone.chindamo-grifeo@gmail.com,2020-12-21,Biopsia prostatica,Andrologica,True,True
+687,rossana.tarchetti-ponti@gmail.com,2021-03-22,Colonscopia,Oncologica,False,False
+688,liliana.germano-loredan@gmail.com,2021-03-10,Visita odontoiatrica,Odontoiatrica,False,False
+689,rosa.palazzo@gmail.com,2020-07-03,Visita odontoiatrica,Odontoiatrica,True,True
+690,federico.semitecolo@gmail.com,2021-04-06,Pet,Diagnostica,False,False
+691,dott..tonia.caccioppoli@gmail.com,2021-02-02,Agoaspirato,Oncologica,False,False
+692,sig..piergiuseppe.paltrinieri@gmail.com,2020-07-14,Visita odontoiatrica,Odontoiatrica,False,True
+693,sylvia.pacetti-traetta@gmail.com,2021-02-04,Marcatori tumorali,Oncologica,True,True
+694,puccio.carosone-ceci@gmail.com,2021-02-13,Spirometria,Generale,False,True
+695,alderano.bresciani@gmail.com,2021-02-26,Coronarografia,Cardiologica,True,True
+696,dott..paulina.baracca@gmail.com,2020-11-08,Scintigrafia,Diagnostica,True,False
+697,nino.broschi@gmail.com,2021-04-10,Agoaspirato,Oncologica,False,True
+698,clelia.vigorelli@gmail.com,2021-03-27,Elettrocardiogramma,Cardiologica,False,True
+699,cirillo.agostinelli@gmail.com,2020-07-10,Scintigrafia,Diagnostica,True,True
+700,costanzo.nosiglia@gmail.com,2020-07-10,Ecografia transvaginale,Ginecologica,False,False
+701,sig.ra.annamaria.gussoni@gmail.com,2021-02-05,Pet,Diagnostica,False,False
+702,sig.ra.rosa.abatantuono@gmail.com,2020-10-16,Pap-Test,Ginecologica,True,True
+703,sebastiano.tosto@gmail.com,2021-03-10,Ecografia mammaria,Ginecologica,False,False
+704,valentina.solari@gmail.com,2020-02-01,Agoaspirato,Oncologica,True,False
+705,flavio.ramazzotti@gmail.com,2020-06-29,Visita odontoiatrica,Odontoiatrica,True,False
+706,marissa.zaccagnini@gmail.com,2021-01-14,Marcatori tumorali,Oncologica,False,True
+707,giulietta.jovinelli@gmail.com,2020-12-09,Ecografia mammaria,Ginecologica,True,True
+708,elena.viola@gmail.com,2020-02-20,Pet,Diagnostica,False,False
+709,rolando.bassi@gmail.com,2020-08-04,Colonscopia,Oncologica,True,True
+710,filippa.vergerio@gmail.com,2020-10-02,Ecografia transvaginale,Ginecologica,True,True
+711,berenice.druso@gmail.com,2021-03-24,Visita odontoiatrica,Odontoiatrica,False,True
+712,sig.ra.roberta.cicala@gmail.com,2021-02-08,Holter,Cardiologica,True,False
+713,dott..veronica.giannuzzi@gmail.com,2020-06-12,Marcatori tumorali,Oncologica,False,True
+714,sig..cipriano.dibiasi@gmail.com,2020-07-16,Esame del sangue,Generale,False,True
+715,dott..mariana.pasolini@gmail.com,2020-07-02,Coronarografia,Cardiologica,False,True
+716,greco.comeriato-tomasetti@gmail.com,2021-03-07,Mammografia,Ginecologica,False,True
+717,ludovica.naccari@gmail.com,2020-11-16,Mammografia,Ginecologica,True,True
+718,costanzo.emanuelli@gmail.com,2021-01-09,Visita odontoiatrica,Odontoiatrica,False,True
+719,giulietta.bongiorno@gmail.com,2020-10-26,Spirometria,Generale,False,True
+720,ezio.gussoni@gmail.com,2021-04-04,Holter,Cardiologica,False,True
+721,sig.ra.lidia.missoni@gmail.com,2021-03-14,Mammografia,Ginecologica,False,False
+722,gianpietro.bosurgi-federico@gmail.com,2021-03-30,Ecografia transvaginale,Ginecologica,True,False
+723,ilaria.finotto@gmail.com,2021-01-22,Agoaspirato,Oncologica,True,False
+724,gastone.righi@gmail.com,2021-02-01,Holter,Cardiologica,False,False
+725,adelasia.spanevello@gmail.com,2020-08-30,Coronarografia,Cardiologica,False,True
+726,marco.cannizzaro@gmail.com,2021-01-20,Elettrocardiogramma,Cardiologica,False,False
+727,ruggiero.guidotti-trotta@gmail.com,2021-02-24,Mammografia,Ginecologica,True,True
+728,donna.bottaro@gmail.com,2021-02-04,Hpv Dna Test,Ginecologica,True,True
+729,piergiorgio.sonnino@gmail.com,2020-09-15,Marcatori tumorali,Oncologica,False,False
+730,paloma.scarfoglio@gmail.com,2020-09-07,Ecografia transvaginale,Ginecologica,False,True
+731,mattia.agazzi@gmail.com,2021-02-18,Spirometria,Generale,True,True
+732,paulina.conte@gmail.com,2020-10-08,Marcatori tumorali,Oncologica,False,False
+733,raffaella.alonzi-civaschi@gmail.com,2021-04-11,Agoaspirato,Oncologica,False,True
+734,loredana.moneta-borroni@gmail.com,2021-01-26,Colonscopia,Oncologica,False,True
+735,romina.vecellio@gmail.com,2020-09-12,Pap-Test,Ginecologica,True,True
+736,ida.filangieri@gmail.com,2021-01-19,Elettrocardiogramma,Cardiologica,False,False
+737,ricciotti.fantini@gmail.com,2020-09-01,Pet,Diagnostica,False,True
+738,rembrandt.zamengo@gmail.com,2021-01-21,Hpv Dna Test,Ginecologica,False,False
+739,greco.oliboni-togliatti@gmail.com,2020-12-24,Colonscopia,Oncologica,False,True
+740,gabriele.zaguri@gmail.com,2020-09-20,Visita odontoiatrica,Odontoiatrica,False,False
+741,erika.donà@gmail.com,2020-09-10,Risonanza magnetica (RM),Diagnostica,False,True
+742,martino.montanari@gmail.com,2021-01-01,Ecografia transvaginale,Ginecologica,False,False
+743,dott..giada.perozzo@gmail.com,2020-07-28,Biopsia prostatica,Andrologica,True,False
+744,luigina.leone-tornatore@gmail.com,2021-03-31,Spirometria,Generale,True,True
+745,melissa.turati@gmail.com,2020-04-29,Visita odontoiatrica,Odontoiatrica,False,False
+746,pasquale.stefanelli@gmail.com,2021-03-02,Coronarografia,Cardiologica,False,False
+747,angelina.morlacchi@gmail.com,2020-12-23,Agoaspirato,Oncologica,False,True
+748,giorgia.vismara@gmail.com,2021-02-26,Hpv Dna Test,Ginecologica,True,True
+749,milo.pausini@gmail.com,2020-11-30,Agoaspirato,Oncologica,True,False
+750,roberta.franscini@gmail.com,2021-01-25,Esame del sangue,Generale,True,False
+751,ruggiero.capuana-parpinel@gmail.com,2021-02-03,Elettrocardiogramma,Cardiologica,False,True
+752,alessandra.tutino@gmail.com,2020-07-04,Ecografia mammaria,Ginecologica,False,True
+753,sig..valerio.marini@gmail.com,2021-01-02,Holter,Cardiologica,False,False
+754,lando.schicchi@gmail.com,2020-09-14,Holter,Cardiologica,True,True
+755,annibale.grisoni@gmail.com,2021-03-24,Visita odontoiatrica,Odontoiatrica,True,False
+756,nedda.stoppani@gmail.com,2021-02-14,Pap-Test,Ginecologica,True,True
+757,galasso.sanudo@gmail.com,2021-03-25,Hpv Dna Test,Ginecologica,False,False
+758,mirco.altera-crispi@gmail.com,2021-01-31,Spirometria,Generale,True,True
+759,sophia.amato@gmail.com,2020-04-14,Pet,Diagnostica,True,False
+760,giuseppe.petrucci@gmail.com,2020-08-14,Risonanza magnetica (RM),Diagnostica,False,True
+761,sig.ra.melissa.balbi@gmail.com,2021-04-09,Pet,Diagnostica,False,True
+762,dott..federigo.sgarbi@gmail.com,2021-03-25,Risonanza magnetica (RM),Diagnostica,True,False
+763,sylvia.venier@gmail.com,2021-04-07,Visita odontoiatrica,Odontoiatrica,True,False
+764,raffaella.travaglia@gmail.com,2021-04-11,Marcatori tumorali,Oncologica,True,True
+765,dott..lara.capuana@gmail.com,2021-03-11,Risonanza magnetica (RM),Diagnostica,False,False
+766,sig.ra.nina.iannelli@gmail.com,2021-02-11,Marcatori tumorali,Oncologica,False,True
+767,romolo.babbo-moschino@gmail.com,2020-07-04,Visita odontoiatrica,Odontoiatrica,False,True
+768,leopoldo.mazzacurati@gmail.com,2021-04-03,Ecocardiografia,Cardiologica,False,False
+769,dott..cristina.anichini@gmail.com,2020-09-07,Coronarografia,Cardiologica,True,False
+770,cesare.buscetta@gmail.com,2020-12-28,Ecografia mammaria,Ginecologica,False,False
+771,concetta.bragadin@gmail.com,2021-02-26,Ecografia transvaginale,Ginecologica,False,True
+772,rosina.grasso@gmail.com,2021-03-09,Ecografia mammaria,Ginecologica,True,False
+773,baldassare.camuccini@gmail.com,2020-08-19,Ecografia mammaria,Ginecologica,False,False
+774,dott..liana.gemito@gmail.com,2021-03-01,Ecografia transvaginale,Ginecologica,True,False
+775,sig..giulio.medici@gmail.com,2021-03-19,Pap-Test,Ginecologica,True,False
+776,greco.moresi@gmail.com,2021-04-04,Agoaspirato,Oncologica,True,False
+777,matilda.gussoni@gmail.com,2021-03-21,Esame del sangue,Generale,False,True
+778,cassandra.perozzo@gmail.com,2021-03-07,Marcatori tumorali,Oncologica,True,False
+779,rosario.conte@gmail.com,2020-10-18,Scintigrafia,Diagnostica,False,False
+780,rosina.toscanini-trupiano@gmail.com,2021-03-11,Mammografia,Ginecologica,False,False
+781,sig.ra.angelica.balla@gmail.com,2020-05-31,Ecocardiografia,Cardiologica,False,True
+782,romina.bosurgi@gmail.com,2021-03-05,Biopsia prostatica,Andrologica,True,True
+783,enzio.cuda@gmail.com,2020-12-27,Elettrocardiogramma,Cardiologica,True,False
+784,sig..pierpaolo.borromini@gmail.com,2020-07-24,Ecografia mammaria,Ginecologica,False,False
+785,morena.marconi@gmail.com,2021-02-24,Marcatori tumorali,Oncologica,False,False
+786,iolanda.paolini@gmail.com,2021-03-06,Mammografia,Ginecologica,False,False
+787,giorgio.majorana-tognazzi@gmail.com,2020-11-12,Ecografia transvaginale,Ginecologica,True,False
+788,dott..mirko.sanguineti@gmail.com,2020-11-03,Visita odontoiatrica,Odontoiatrica,True,False
+789,gioacchino.cignaroli@gmail.com,2021-03-11,Elettrocardiogramma,Cardiologica,True,True
+790,beppe.columbo@gmail.com,2021-04-04,Hpv Dna Test,Ginecologica,True,True
+791,matilda.manunta@gmail.com,2020-03-29,Spirometria,Generale,True,True
+792,dott..pierina.iacobucci@gmail.com,2020-08-14,Ecografia transvaginale,Ginecologica,True,True
+793,sig.ra.ramona.garzoni@gmail.com,2021-02-06,Pap-Test,Ginecologica,True,False
+794,viridiana.pratesi@gmail.com,2021-01-06,Colonscopia,Oncologica,False,True
+795,gabriele.geraci-tassoni@gmail.com,2021-03-25,Visita odontoiatrica,Odontoiatrica,True,True
+796,arnaldo.carullo@gmail.com,2020-07-16,Mammografia,Ginecologica,False,False
+797,antonello.pedroni@gmail.com,2021-03-29,Scintigrafia,Diagnostica,False,False
+798,silvia.boitani@gmail.com,2021-03-22,Risonanza magnetica (RM),Diagnostica,False,False
+799,diana.rizzo@gmail.com,2020-12-21,Risonanza magnetica (RM),Diagnostica,False,False
+800,carla.interiano@gmail.com,2021-01-08,Scintigrafia,Diagnostica,True,True
+801,antonietta.pezzali@gmail.com,2021-03-30,Esame del sangue,Generale,True,True
+802,cassandra.garrone@gmail.com,2020-11-08,Colonscopia,Oncologica,True,True
+803,vanessa.ramazzotti@gmail.com,2021-04-02,Ecocardiografia,Cardiologica,False,False
+804,sig.ra.evangelista.giannone@gmail.com,2021-01-17,Risonanza magnetica (RM),Diagnostica,True,False
+805,silvio.canova-venditti@gmail.com,2021-02-25,Hpv Dna Test,Ginecologica,True,True
+806,nicolò.rossetti-interiano@gmail.com,2021-04-11,Pap-Test,Ginecologica,False,True
+807,eraldo.giannotti@gmail.com,2021-02-09,Ecocardiografia,Cardiologica,True,True
+808,pompeo.iannelli@gmail.com,2021-02-18,Pet,Diagnostica,True,False
+809,sig.ra.flora.trotta@gmail.com,2020-08-28,Coronarografia,Cardiologica,False,True
+810,virginia.puccini@gmail.com,2020-11-01,Pet,Diagnostica,False,False
+811,enrico.polizzi@gmail.com,2021-01-18,Coronarografia,Cardiologica,True,False
+812,geronimo.pinamonte@gmail.com,2020-11-16,Hpv Dna Test,Ginecologica,True,True
+813,marina.scotti@gmail.com,2021-04-01,Spirometria,Generale,False,True
+814,gabriele.rosselli@gmail.com,2021-01-26,Pap-Test,Ginecologica,True,False
+815,dott..fabrizio.golino@gmail.com,2020-10-18,Risonanza magnetica (RM),Diagnostica,False,False
+816,pasquale.babbo@gmail.com,2020-12-27,Ecografia transvaginale,Ginecologica,True,False
+817,claudia.pozzecco@gmail.com,2021-04-03,Colonscopia,Oncologica,True,True
+818,renata.sagnelli@gmail.com,2021-03-11,Marcatori tumorali,Oncologica,True,False
+819,jacopo.sgalambro@gmail.com,2020-07-02,Biopsia prostatica,Andrologica,True,True
+820,sig.ra.donna.federici@gmail.com,2021-01-12,Risonanza magnetica (RM),Diagnostica,True,True
+821,tullio.cicala@gmail.com,2021-02-12,Ecocardiografia,Cardiologica,True,True
+822,donna.romano@gmail.com,2021-03-27,Holter,Cardiologica,True,True
+823,eleanora.lercari@gmail.com,2021-03-05,Marcatori tumorali,Oncologica,True,True
+824,corrado.baresi@gmail.com,2020-12-04,Visita odontoiatrica,Odontoiatrica,False,True
+825,giulio.spanevello@gmail.com,2020-11-01,Pap-Test,Ginecologica,False,False
+826,sig..marcantonio.morgagni@gmail.com,2020-07-08,Ecografia transvaginale,Ginecologica,True,False
+827,dott..serafina.rienzo@gmail.com,2020-12-03,Risonanza magnetica (RM),Diagnostica,True,False
+828,antonello.conti@gmail.com,2021-03-02,Coronarografia,Cardiologica,True,False
+829,alphons.bragadin@gmail.com,2020-10-07,Agoaspirato,Oncologica,False,False
+830,sig.ra.melissa.tasca@gmail.com,2020-04-16,Scintigrafia,Diagnostica,False,False
+831,lazzaro.mondadori@gmail.com,2020-10-17,Ecocardiografia,Cardiologica,False,True
+832,michelangelo.salgari@gmail.com,2020-11-25,Risonanza magnetica (RM),Diagnostica,False,True
+833,guido.casale@gmail.com,2021-04-05,Visita odontoiatrica,Odontoiatrica,False,True
+834,natalia.vecoli@gmail.com,2021-03-26,Holter,Cardiologica,False,False
+835,dolores.balbo@gmail.com,2020-11-13,Ecografia mammaria,Ginecologica,False,True
+836,stefania.greco@gmail.com,2020-09-05,Pet,Diagnostica,False,True
+837,ivan.sauli@gmail.com,2020-02-25,Pap-Test,Ginecologica,True,False
+838,azeglio.emanuelli-nugnes@gmail.com,2021-03-27,Coronarografia,Cardiologica,False,True
+839,griselda.seddio-gianvecchio@gmail.com,2020-09-21,Elettrocardiogramma,Cardiologica,False,True
+840,saverio.soffici-pisano@gmail.com,2021-01-21,Marcatori tumorali,Oncologica,False,True
+841,sig..gioachino.campise@gmail.com,2021-03-03,Visita odontoiatrica,Odontoiatrica,True,True
+842,achille.piccio@gmail.com,2021-01-03,Pet,Diagnostica,True,False
+843,nanni.camuccini@gmail.com,2021-03-02,Coronarografia,Cardiologica,True,False
+844,etta.manolesso@gmail.com,2020-12-26,Pap-Test,Ginecologica,False,False
+845,sig..giancarlo.balbi@gmail.com,2021-04-02,Spirometria,Generale,True,True
+846,monica.ughi@gmail.com,2021-03-22,Risonanza magnetica (RM),Diagnostica,False,False
+847,simonetta.fagiani@gmail.com,2021-02-21,Biopsia prostatica,Andrologica,True,True
+848,lucia.carnera@gmail.com,2021-02-27,Ecografia mammaria,Ginecologica,False,True
+849,antonia.parisi@gmail.com,2021-03-05,Ecografia mammaria,Ginecologica,False,True
+850,carlo.righi@gmail.com,2021-03-22,Elettrocardiogramma,Cardiologica,False,True
+851,donatello.malenchini@gmail.com,2021-03-14,Agoaspirato,Oncologica,True,False
+852,valentina.fagiani@gmail.com,2020-12-17,Ecografia mammaria,Ginecologica,False,True
+853,antonia.borrani@gmail.com,2020-10-24,Visita odontoiatrica,Odontoiatrica,False,False
+854,pina.pirandello@gmail.com,2021-04-07,Esame del sangue,Generale,True,True
+855,augusto.gremese@gmail.com,2021-02-23,Ecografia transvaginale,Ginecologica,False,False
+856,dott..piermaria.garrone@gmail.com,2021-04-08,Ecocardiografia,Cardiologica,True,False
+857,emma.totino@gmail.com,2021-01-06,Risonanza magnetica (RM),Diagnostica,False,False
+858,dott..mario.pizziol@gmail.com,2021-03-02,Elettrocardiogramma,Cardiologica,False,False
+859,eliana.cainero@gmail.com,2020-09-20,Coronarografia,Cardiologica,True,False
+860,sig..coluccio.collina@gmail.com,2020-07-07,Spirometria,Generale,False,True
+861,dott..greco.cadorna@gmail.com,2020-10-06,Risonanza magnetica (RM),Diagnostica,True,True
+862,barbara.martinelli-bembo@gmail.com,2020-06-24,Elettrocardiogramma,Cardiologica,True,False
+863,vittorio.colletti@gmail.com,2020-07-28,Scintigrafia,Diagnostica,False,True
+864,gianmarco.cesaroni@gmail.com,2021-02-28,Hpv Dna Test,Ginecologica,True,False
+865,sig.ra.giovanna.badoglio@gmail.com,2021-02-10,Ecocardiografia,Cardiologica,True,False
+866,roman.emanuelli@gmail.com,2021-01-15,Pet,Diagnostica,True,False
+867,dott..greca.bonatti@gmail.com,2021-02-19,Holter,Cardiologica,False,False
+868,raffaele.sbarbaro@gmail.com,2021-02-25,Hpv Dna Test,Ginecologica,False,False
+869,alessia.sommaruga@gmail.com,2021-04-10,Coronarografia,Cardiologica,False,True
+870,dott..rosaria.filippini@gmail.com,2021-03-23,Colonscopia,Oncologica,True,False
+871,maria.cimarosa@gmail.com,2020-05-03,Agoaspirato,Oncologica,False,False
+872,eliana.anichini@gmail.com,2021-03-09,Marcatori tumorali,Oncologica,False,True
+873,torquato.mengolo-buscetta@gmail.com,2020-11-09,Risonanza magnetica (RM),Diagnostica,True,False
+874,antonina.malenchini-beccaria@gmail.com,2021-03-14,Marcatori tumorali,Oncologica,True,True
+875,giacomo.mascheroni-montalti@gmail.com,2021-03-09,Biopsia prostatica,Andrologica,False,True
+876,ruggero.palladio@gmail.com,2021-02-14,Colonscopia,Oncologica,True,True
+877,sante.peano-lussu@gmail.com,2021-02-09,Marcatori tumorali,Oncologica,True,False
+878,baldassare.bocelli-paganini@gmail.com,2020-07-14,Visita odontoiatrica,Odontoiatrica,False,False
+879,adelmo.volterra@gmail.com,2021-02-16,Colonscopia,Oncologica,True,True
+880,camilla.parpinel@gmail.com,2020-12-12,Pet,Diagnostica,True,True
+881,umberto.botta-tarantini@gmail.com,2020-09-12,Colonscopia,Oncologica,True,False
+882,donato.abatantuono-pelli@gmail.com,2021-04-08,Marcatori tumorali,Oncologica,True,True
+883,giustino.galilei@gmail.com,2020-11-15,Spirometria,Generale,False,False
+884,sig..micheletto.mengolo@gmail.com,2020-12-05,Hpv Dna Test,Ginecologica,True,True
+885,alfio.mantegazza-foletti@gmail.com,2020-03-21,Elettrocardiogramma,Cardiologica,True,True
+886,sig..calogero.ajello@gmail.com,2020-07-28,Spirometria,Generale,False,True
+887,nico.antonelli@gmail.com,2020-02-20,Ecocardiografia,Cardiologica,False,False
+888,mirco.leblanc@gmail.com,2021-03-25,Marcatori tumorali,Oncologica,True,True
+889,dott..calcedonio.tolentino@gmail.com,2021-03-21,Spirometria,Generale,False,True
+890,beppe.tozzi@gmail.com,2020-07-10,Scintigrafia,Diagnostica,False,True
+891,marcella.modiano@gmail.com,2021-02-21,Esame del sangue,Generale,True,False
+892,marissa.golgi@gmail.com,2020-10-07,Colonscopia,Oncologica,True,False
+893,claudia.ossola-detti@gmail.com,2021-01-05,Ecografia transvaginale,Ginecologica,True,True
+894,sig..maurilio.gussoni@gmail.com,2020-11-09,Biopsia prostatica,Andrologica,True,True
+895,annamaria.micca@gmail.com,2021-01-07,Mammografia,Ginecologica,False,True
+896,camilla.vergerio@gmail.com,2021-03-01,Coronarografia,Cardiologica,False,True
+897,silvestro.marini@gmail.com,2021-01-11,Marcatori tumorali,Oncologica,False,False
+898,ludovico.veneziano@gmail.com,2021-03-25,Ecocardiografia,Cardiologica,True,False
+899,arnaldo.rizzo@gmail.com,2020-11-06,Spirometria,Generale,False,True
+900,dino.notarbartolo@gmail.com,2020-09-06,Pet,Diagnostica,True,False
+901,sig..luca.giacometti@gmail.com,2021-04-05,Colonscopia,Oncologica,False,False
+902,gelsomina.antelami@gmail.com,2020-05-21,Ecocardiografia,Cardiologica,False,False
+903,aria.borgia@gmail.com,2021-03-21,Coronarografia,Cardiologica,True,True
+904,bettina.chiesa@gmail.com,2021-04-04,Ecografia mammaria,Ginecologica,False,True
+905,roberta.columbo-gori@gmail.com,2020-11-27,Esame del sangue,Generale,False,False
+906,melania.pascarella@gmail.com,2020-12-23,Visita odontoiatrica,Odontoiatrica,False,True
+907,ludovico.tresoldi@gmail.com,2021-03-21,Esame del sangue,Generale,False,True
+908,simone.varano@gmail.com,2021-03-22,Coronarografia,Cardiologica,True,False
+909,romeo.sordi@gmail.com,2021-01-03,Holter,Cardiologica,True,False
+910,dante.malpighi@gmail.com,2021-03-04,Ecocardiografia,Cardiologica,False,True
+911,guido.baggio-barozzi@gmail.com,2021-02-13,Holter,Cardiologica,True,False
+912,ronaldo.farnese@gmail.com,2021-02-19,Pet,Diagnostica,False,False
+913,berenice.guinizzelli@gmail.com,2021-02-07,Coronarografia,Cardiologica,True,False
+914,annunziata.mascagni@gmail.com,2020-11-28,Mammografia,Ginecologica,False,False
+915,rosaria.segrè@gmail.com,2021-04-10,Esame del sangue,Generale,False,False
+916,graziella.fogazzaro@gmail.com,2020-06-23,Biopsia prostatica,Andrologica,True,True
+917,isa.rensi@gmail.com,2021-04-11,Colonscopia,Oncologica,False,False
+918,sylvia.busoni@gmail.com,2021-03-03,Coronarografia,Cardiologica,False,True
+919,daria.lettiere-fornaciari@gmail.com,2021-02-13,Mammografia,Ginecologica,True,True
+920,sophia.platini@gmail.com,2020-04-20,Biopsia prostatica,Andrologica,False,False
+921,gianpietro.sordi@gmail.com,2020-12-04,Agoaspirato,Oncologica,True,False
+922,fiamma.vergerio@gmail.com,2020-12-27,Pet,Diagnostica,True,True
+923,dina.curatoli@gmail.com,2021-04-02,Holter,Cardiologica,False,False
+924,biagio.palombi@gmail.com,2021-02-08,Spirometria,Generale,True,True
+925,lauretta.leone@gmail.com,2020-10-29,Pet,Diagnostica,False,True
+926,virginia.cabibbo-foa@gmail.com,2020-10-21,Pap-Test,Ginecologica,True,False
+927,dott..matteo.antonini@gmail.com,2021-04-01,Spirometria,Generale,True,True
+928,fulvio.salvemini@gmail.com,2021-03-23,Pap-Test,Ginecologica,True,False
+929,niccolò.anguissola@gmail.com,2021-03-28,Ecografia mammaria,Ginecologica,False,True
+930,vittorio.bellini@gmail.com,2020-05-07,Marcatori tumorali,Oncologica,False,True
+931,nadia.juvara-mondadori@gmail.com,2021-03-10,Scintigrafia,Diagnostica,False,True
+932,dott..nedda.manacorda@gmail.com,2021-04-08,Spirometria,Generale,False,True
+933,arturo.maspero@gmail.com,2021-03-26,Colonscopia,Oncologica,False,True
+934,bettina.querini@gmail.com,2021-03-11,Coronarografia,Cardiologica,False,False
+935,antonino.pausini@gmail.com,2021-04-07,Hpv Dna Test,Ginecologica,True,False
+936,pierangelo.michelangeli@gmail.com,2021-03-07,Esame del sangue,Generale,True,True
+937,cecilia.branciforte@gmail.com,2020-10-31,Pap-Test,Ginecologica,True,False
+938,carlo.cimarosa@gmail.com,2020-11-01,Marcatori tumorali,Oncologica,False,False
+939,liana.gozzi-gasperi@gmail.com,2020-10-06,Visita odontoiatrica,Odontoiatrica,False,False
+940,dott..simone.borzomì@gmail.com,2020-11-09,Risonanza magnetica (RM),Diagnostica,False,True
+941,evangelista.rismondo@gmail.com,2021-04-05,Scintigrafia,Diagnostica,False,True
+942,ramona.giannone@gmail.com,2020-12-21,Ecografia mammaria,Ginecologica,False,True
+943,dino.baresi@gmail.com,2021-03-18,Spirometria,Generale,True,True
+944,dott..maria.cutuli@gmail.com,2021-01-30,Pet,Diagnostica,False,True
+945,amico.dossi@gmail.com,2020-07-29,Risonanza magnetica (RM),Diagnostica,True,False
+946,luciano.tartaglia@gmail.com,2020-06-03,Pet,Diagnostica,False,True
+947,lisa.foa@gmail.com,2021-04-02,Marcatori tumorali,Oncologica,False,False
+948,camilla.paruta-poerio@gmail.com,2021-04-03,Elettrocardiogramma,Cardiologica,True,False
+949,tina.gilardoni@gmail.com,2021-01-01,Spirometria,Generale,False,True
+950,antonella.bonolis-fagotto@gmail.com,2020-12-03,Biopsia prostatica,Andrologica,True,True
+951,emilio.brugnaro@gmail.com,2021-02-26,Pap-Test,Ginecologica,False,True
+952,sig.ra.sylvia.vecoli@gmail.com,2021-02-28,Ecocardiografia,Cardiologica,True,False
+953,stefano.galtarossa@gmail.com,2021-02-05,Ecografia transvaginale,Ginecologica,True,True
+954,lorenzo.marini@gmail.com,2021-03-10,Pet,Diagnostica,True,True
+955,sig.ra.luciana.bernardini@gmail.com,2021-02-02,Ecografia mammaria,Ginecologica,True,True
+956,raffaele.monduzzi@gmail.com,2021-03-31,Scintigrafia,Diagnostica,False,False
+957,fortunata.carocci@gmail.com,2020-06-27,Pap-Test,Ginecologica,False,True
+958,ottavio.altera@gmail.com,2020-11-01,Risonanza magnetica (RM),Diagnostica,False,True
+959,toni.zacchia@gmail.com,2021-03-30,Holter,Cardiologica,False,True
+960,gelsomina.sinisi@gmail.com,2020-11-06,Spirometria,Generale,True,False
+961,sig.ra.berenice.turrini@gmail.com,2020-09-01,Holter,Cardiologica,True,False
+962,giustino.argentero@gmail.com,2021-04-08,Holter,Cardiologica,True,False
+963,ermanno.catenazzi@gmail.com,2020-11-04,Elettrocardiogramma,Cardiologica,True,False
+964,angelica.mocenigo@gmail.com,2021-02-18,Elettrocardiogramma,Cardiologica,True,True
+965,cecilia.bajardi@gmail.com,2021-03-28,Agoaspirato,Oncologica,False,True
+966,corrado.fornaciari@gmail.com,2021-04-02,Agoaspirato,Oncologica,True,True
+967,luciano.gotti@gmail.com,2021-03-28,Pet,Diagnostica,False,False
+968,giulio.cossiga@gmail.com,2021-02-08,Pap-Test,Ginecologica,False,False
+969,maura.pepe@gmail.com,2020-08-30,Pap-Test,Ginecologica,True,True
+970,sig.ra.pierina.tamburello@gmail.com,2020-08-19,Risonanza magnetica (RM),Diagnostica,False,False
+971,sig..rosario.farinelli@gmail.com,2020-06-07,Risonanza magnetica (RM),Diagnostica,False,False
+972,gioffre.scarfoglio@gmail.com,2021-02-18,Agoaspirato,Oncologica,True,True
+973,ottavio.morlacchi@gmail.com,2021-03-15,Pap-Test,Ginecologica,False,False
+974,renata.dandolo-ottino@gmail.com,2021-03-07,Ecografia mammaria,Ginecologica,False,False
+975,sig.ra.marina.randazzo@gmail.com,2020-10-30,Mammografia,Ginecologica,True,True
+976,sig.ra.lidia.michelangeli@gmail.com,2020-12-04,Ecocardiografia,Cardiologica,False,False
+977,luciana.tafuri@gmail.com,2021-04-04,Esame del sangue,Generale,True,False
+978,alessandro.desio@gmail.com,2021-03-16,Esame del sangue,Generale,True,True
+979,raimondo.verga@gmail.com,2021-04-10,Pet,Diagnostica,True,False
+980,sylvia.polesel@gmail.com,2021-01-02,Mammografia,Ginecologica,True,True
+981,sig.ra.ilaria.peruzzi@gmail.com,2021-02-03,Coronarografia,Cardiologica,False,True
+982,dott..carla.offredi@gmail.com,2021-04-11,Biopsia prostatica,Andrologica,True,False
+983,uberto.gramsci@gmail.com,2020-09-19,Ecografia transvaginale,Ginecologica,True,True
+984,sophia.scaduto@gmail.com,2021-02-04,Colonscopia,Oncologica,True,False
+985,ninetta.bersani@gmail.com,2021-01-25,Marcatori tumorali,Oncologica,True,True
+986,luchino.brambilla@gmail.com,2021-03-30,Holter,Cardiologica,False,True
+987,maurizio.jovinelli@gmail.com,2021-04-09,Holter,Cardiologica,True,True
+988,piermaria.rossellini@gmail.com,2020-08-03,Agoaspirato,Oncologica,True,True
+989,dott..gianni.pozzecco@gmail.com,2021-01-10,Ecografia mammaria,Ginecologica,False,True
+990,paulina.cerquiglini-alboni@gmail.com,2021-03-23,Biopsia prostatica,Andrologica,False,True
+991,mariana.salata@gmail.com,2021-03-31,Spirometria,Generale,True,True
+992,dott..flavia.detti@gmail.com,2021-03-24,Ecografia transvaginale,Ginecologica,False,False
+993,pierina.semitecolo-zarlino@gmail.com,2020-11-16,Marcatori tumorali,Oncologica,False,False
+994,isabella.fischetti@gmail.com,2020-12-12,Visita odontoiatrica,Odontoiatrica,False,True
+995,simonetta.luria-pace@gmail.com,2021-03-16,Coronarografia,Cardiologica,False,False
+996,ermanno.solari-berlusconi@gmail.com,2020-06-12,Coronarografia,Cardiologica,True,False
+997,giancarlo.palumbo-tamborini@gmail.com,2020-11-01,Agoaspirato,Oncologica,True,False
+998,evangelista.gualandi@gmail.com,2021-04-02,Ecografia mammaria,Ginecologica,False,False
+999,amleto.gentilini@gmail.com,2020-07-01,Marcatori tumorali,Oncologica,True,False
