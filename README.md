@@ -16,7 +16,7 @@ I dati dell'applicazione vengono raccolti in modo anonimo e vengono presentati i
 
 
 ## Features
-  * Supportata dai component del framework [Ionic!](https://ionicframework.com/),  l'app si presenta con un'interfaccia facile ed intuitiva, adatta ad ogni età.
+  * Supportata dai component del framework [Ionic](https://ionicframework.com/),  l'app si presenta con un'interfaccia facile ed intuitiva, adatta ad ogni età.
   * L'applicazioni si predispone inoltre per essere integrata con l'APP IO, essendo creata con la stessa tecnologia, ed con il portale MioDottore.it per prenotare in modo facile e veloce gli esami consigliati dall'applicazione.
   * Dashboard che aggrega i dati generati dagli utenti e ne permette la consultazione per fini statistici 
 
@@ -24,7 +24,7 @@ I dati dell'applicazione vengono raccolti in modo anonimo e vengono presentati i
   * **App Mobile**: Ionic React Framework
   * **Backend**: Firebase
   * **Dashboard**: Tableau Public
-  * **Code**: Python
+  * **Code**: Python, Typescript
   * **Project Management**: Trello
 
 
