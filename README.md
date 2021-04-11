@@ -1,4 +1,6 @@
 # HealtHabit
+<p align="center"><img align="center" src="https://github.com/GregoryPardini/HealtHabit/blob/master/public/assets/images/logo.png" width="30%" style="text-align: center"></p>
+
 # Link 
  1. Video presentazione:
 
