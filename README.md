@@ -5,8 +5,6 @@
 <h3 align="center">Challenge: Beyond Covid-19 MSD Italia</h3>
 
 # Link Utili
- 1. [Video presentazione (formato verticale)](https://youtu.be/9a3hPKswI5Y)
- 1. [Video presentazione (formato landscape)](https://www.youtube.com/watch?v=xqUfsBED6OQ)
  2. [Dashboard per le analytics](https://public.tableau.com/profile/giulia.ciardi#!/vizhome/HealtHabit/Stat)
  3. [Presentazione Powerpoint](https://github.com/gerti98/HealtHabit/blob/master/Healthabit.pdf)
 
