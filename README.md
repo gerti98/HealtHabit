@@ -8,6 +8,8 @@
  1. [Video presentazione (formato verticale)](https://youtu.be/9a3hPKswI5Y)
  1. [Video presentazione (formato landscape)](https://www.youtube.com/watch?v=xqUfsBED6OQ)
  2. [Dashboard per le analytics](https://public.tableau.com/profile/giulia.ciardi#!/vizhome/HealtHabit/Stat)
+ 3. [Presentazione Powerpoint](https://github.com/gerti98/HealtHabit/blob/master/Healthabit.pdf)
+
 # Descrizione
 A causa dell'emergenza sanitaria causata dal Covid-19, a partire da Marzo 2020, molti pazienti sono rimasti indietro nei percorsi di cura cura diagnostici terapeutici, nelle nuove diagnosi, nelle visite di follow-up o negli esami di routine. Ad aggravare la situazione, inoltre, c'è la totale mancanza di dati che impedisce di poter quantificare il danno di salute provocato ai cittadini che non hanno potuto sottoporsi a tali servizi
 
@@ -35,3 +37,5 @@ I dati dell'applicazione vengono raccolti in modo anonimo e vengono presentati i
  * *Olgerti Xhanej*: Frontend App Developer
  * *Giulia Ciardi*: Data Scientist
  * *Alessandro Jin*: Backend App Developer
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgerti98%2FHealtHabit&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
