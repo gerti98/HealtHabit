@@ -4,11 +4,11 @@
 
 <h3 align="center">Challenge: Beyond Covid-19 MSD Italia</h3>
 
-# Link Utili
- 2. [Dashboard per le analytics](https://public.tableau.com/profile/giulia.ciardi#!/vizhome/HealtHabit/Stat)
- 3. [Presentazione Powerpoint](https://github.com/gerti98/HealtHabit/blob/master/Healthabit.pdf)
+# Useful Links
+ 2. [Analytics Dashboard (demo)](https://public.tableau.com/profile/giulia.ciardi#!/vizhome/HealtHabit/Stat)
+ 3. [Powerpoint Presentation (in Italian)](https://github.com/gerti98/HealtHabit/blob/master/Healthabit.pdf)
 
-# Descrizione
+# Description
 Due to the health emergency caused by Covid-19, starting from March 2020, many patients have fallen behind in therapeutic diagnostic care pathways, in new diagnoses, in follow-up visits or in routine examinations. Furthermore, the situation is aggravated by the total lack of data which prevents us from being able to quantify the health damage caused to citizens who have not been able to undergo these services
 
 The HealthHabit project aims to help you keep track of all the exams you have to take during the year. Through an ad-hoc developed and already functioning app, the user is invited to fill in various surveys relating to routine exams or lifestyle in order to give targeted advice regarding possible visits to be made.
